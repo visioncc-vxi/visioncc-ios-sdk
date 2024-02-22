@@ -1,2 +1,0 @@
-# visioncc-ios-sdk
-# DOC
