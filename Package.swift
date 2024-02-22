@@ -30,9 +30,9 @@ let package = Package(
             name: "VisionCCiOSSDKPackage"
         ),
         .binaryTarget(
-            name: "VisionCCiOSSDK", //二进制库的名称
+            name: "VisionCCiOSSDK.xcframework", //二进制库的名称
             url: "https://vcc-sdk.vxish.cn/VisionCCiOSSDK.xcframework.zip", // 二进制库的下载链接 上一步生成的
-            checksum: "e28bee98703efd680cf1642c2ef78183515d0d3d614f8a29643e0100d417dfaf" // 二进制库的校验和 上一步生成的
+            checksum: "570b4bbb9a59fce920aa0343459cfb1e5d1e851637f2f0425b1e24c9b4c0a795" // 二进制库的校验和 上一步生成的
         ),
         .testTarget(
             name: "VisionCCiOSSDKPackageTests",
