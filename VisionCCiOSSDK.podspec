@@ -12,7 +12,9 @@ Pod::Spec.new do |s|
   s.framework    = "UIKit"
   s.source_files  = "Sources", "Sources/**/*.{swift}"
   s.requires_arc = true
-  s.vendored_frameworks  = 'https://vcc-sdk.vxish.cn/VisionCCiOSSDK.xcframework.zip'
+  s.ios.vendored_frameworks  = 'https://vcc-sdk.vxish.cn/VisionCCiOSSDK.xcframework.zip'
+
+  #外部依赖
   s.dependency 'RxSwift', '6.5.0'
   s.dependency 'Alamofire', '5.7.1'
   s.dependency 'SnapKit', '5.6.0'
