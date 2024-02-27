@@ -1,0 +1,2 @@
+*.dSYM filter=lfs diff=lfs merge=lfs -text
+VisionCCiOSSDK filter=lfs diff=lfs merge=lfs -text
