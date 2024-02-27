@@ -21,5 +21,9 @@ Pod::Spec.new do |s|
   s.dependency 'RealmSwift','10.47.0'
   s.dependency 'Socket.IO-Client-Swift', '~> 16.1.0'
   s.dependency 'JXSegmentedView', '1.2.7'
+
+ #工程配置
+  s.user_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
+  s.pod_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
   
 end
