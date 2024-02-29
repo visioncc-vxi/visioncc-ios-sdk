@@ -26,8 +26,8 @@ let package = Package(
         //.binaryTarget(name: "VisionCCiOSSDK", path: "VisionCCiOSSDK.xcframework"),
         .binaryTarget(
             name: "VisionCCiOSSDK", 
-            url: "https://vcc-sdk.vxish.cn/VisionCCiOSSDK-1.0.7.xcframework.zip",
-            checksum: "5a4d8ab11f47f18d94bc12b38f26b69dea428334d55713a6b1dcebf7124630b7"
+            url: "https://vcc-sdk.vxish.cn/sdk/1.1.0/VisionCCiOSSDK.xcframework.zip",
+            checksum: "9fba2e41abc4a5db51b11bf7c861c068dd1aea1612972b08b30ba0010d61bc52"
         )
     ],
     swiftLanguageVersions: [
