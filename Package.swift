@@ -45,7 +45,7 @@ let package = Package(
             name: "VisionCCiOSSDK", 
             url: "https://vcc-sdk.vxish.cn/sdk/1.1.0/VisionCCiOSSDK.xcframework.zip",
             checksum: "9fba2e41abc4a5db51b11bf7c861c068dd1aea1612972b08b30ba0010d61bc52"
-        ),
+        )
     ],
     swiftLanguageVersions: [
         .v5
