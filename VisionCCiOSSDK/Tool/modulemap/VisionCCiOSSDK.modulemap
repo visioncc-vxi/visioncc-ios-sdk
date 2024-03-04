@@ -1,0 +1,6 @@
+framework module VisionCCiOSSDK {
+  umbrella header "VisionCCiOSSDK.h"
+  
+  export *
+  module * { export * }
+}
