@@ -1,9 +1,10 @@
+This branch is only for testing!
+
 SPM
 ```
 dependencies: [
-    .package(url: "https://github.com/visioncc-vxi/visioncc-ios-sdk.git", .upToNextMajor(from: "1.1.2"))
+    .package(url: "https://github.com/visioncc-vxi/visioncc-ios-sdk.git", .upToNextMajor(from: "1.1.5"))
 ]
-
 
 SDK内部依赖
 dependencies: [
