@@ -1,7 +1,7 @@
 SPM
 ```
 dependencies: [
-    .package(url: "https://github.com/visioncc-vxi/visioncc-ios-sdk.git", .upToNextMajor(from: "1.4.5"))
+    .package(url: "https://github.com/visioncc-vxi/visioncc-ios-sdk.git", .upToNextMajor(from: "1.4.5-15.2"))
 ]
 
 
