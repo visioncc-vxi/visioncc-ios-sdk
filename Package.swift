@@ -22,6 +22,7 @@ let package = Package(
         .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.7.1")),
         .package(url: "https://github.com/ReactiveX/RxSwift.git", .upToNextMajor(from: "6.5.0")),
         .package(url: "https://github.com/SnapKit/SnapKit.git", .upToNextMajor(from: "5.6.0")),
+        .package(url: "https://github.com/SVProgressHUD/SVProgressHUD.git", .upToNextMajor(from: "2.3.1")),        
         .package(url: "https://github.com/realm/realm-swift.git", exact: "10.32.3"),
     ],
     targets: [
@@ -38,13 +39,15 @@ let package = Package(
                 .product(name: "RxSwift", package: "RxSwift"),
                 .product(name: "RxCocoa", package: "RxSwift"),
                 .product(name: "RealmSwift", package: "realm-swift"),
+                .product(name: "SVProgressHUD", package: "SVProgressHUD"),
+
             ],
             path: "VisionCCLibrary"
         ),
        .binaryTarget(
             name: "VisionCCiOSSDK", 
-            url: "https://vcc-sdk.vxish.cn/sdk/xcode15.2/1.4.5/VisionCCiOSSDK.xcframework.zip",
-            checksum: "824282f2015d19b6f7600f1dfe7324f5ed2c2a659db347bc6c5108df5e8b8f43"
+            url: "https://vcc-sdk.vxish.cn/sdk/xcode15.2/1.4.6/VisionCCiOSSDK.xcframework.zip",
+            checksum: "c7b1a9c96d2d0d636320f2d12270058719cd58197b35e53032fc8ae6df84cc73"
         )
     ],
     swiftLanguageVersions: [
