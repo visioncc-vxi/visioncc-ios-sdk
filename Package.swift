@@ -43,7 +43,7 @@ let package = Package(
         ),
        .binaryTarget(
             name: "VisionCCiOSSDK", 
-            url: "https://vcc-sdk.vxish.cn/sdk/xcode15.2/1.5.2.1/VisionCCiOSSDK.xcframework.zip",
+            url: "https://vcc-sdk.vxish.cn/sdk/xcode15.2/1.5.3/VisionCCiOSSDK.xcframework.zip",
             checksum: "78e0189fe3b25a6bba7c49b759737c2b9a3d3d80044f7dbb2568b08eda288af4"
         )
     ],
