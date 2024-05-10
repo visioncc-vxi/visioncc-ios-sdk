@@ -42,19 +42,10 @@ func runCommand() -> String {
 extension Target {
     static func sdk() -> Target {
         let result = runCommand()
-        if result == "15.2" {
-            return .binaryTarget(
+        return .binaryTarget(
                 name: "VisionCCiOSSDK", 
-                url: "https://vcc-sdk.vxish.cn/sdk/xcode\(result)/1.5.11/VisionCCiOSSDK.xcframework.zip",
-                checksum: "5cff5ae8cee84f5ca8a6695aadaa154f4942c96cd1e38ce36ed4cb86925a4f9e"
+                path: "Framework/\(result)/VisionCCiOSSDK.xcframework"
             )
-        } else {
-            return .binaryTarget(
-                name: "VisionCCiOSSDK", 
-                url: "https://vcc-sdk.vxish.cn/sdk/xcode15.0.1/1.5.11/VisionCCiOSSDK.xcframework.zip",
-                checksum: "99dc11ca8cec21e3d350fbd5360293684ed0f4b5a4140aaf73c6e7404788a738"
-            )
-        }
     }
 }
 
