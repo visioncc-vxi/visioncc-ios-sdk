@@ -75,7 +75,7 @@ public class CCKFApi: BaseChatVC {
         
         serviceNavType = .machine
         setUI()
-        //        _start()
+        
     }
     
     public override func viewWillAppear(_ animated: Bool) {
@@ -87,6 +87,7 @@ public class CCKFApi: BaseChatVC {
         ///界面消息出现或消失隐藏键盘
         self.view.endEditing(true)
         
+#if DEBUG
         for family in UIFont.familyNames.sorted() {
             debugPrint("Family: \(family)")
             
@@ -98,6 +99,7 @@ public class CCKFApi: BaseChatVC {
                 debugPrint("- \(fontName)")
             }
         }
+#endif
     }
     
     /// 状态栏
@@ -186,7 +188,7 @@ public class CCKFApi: BaseChatVC {
             guard let (isOk,msg) = _input.element as? (Bool,String) else { return }
             if isOk {
                 //监听SocketIO 里面的 guestQueuePrompt 消息
-                self.serviceNavType = .lineup
+                //self.serviceNavType = .lineup
                 
                 if VXISocketManager.share.socketManager?.status.active == false {
                     debugPrint("SocketManager 连接已关闭，需要重连")
@@ -219,9 +221,6 @@ public class CCKFApi: BaseChatVC {
             }
             
             if _isOK,var _arr = _any as? [MessageModel] {
-                //                guard !_arr.isEmpty else {
-                //                    return
-                //                }
                 
                 if MessageHistoryDirection.init(rawValue: _direction) == .new {
                     //保留本地发送失败的
@@ -298,21 +297,14 @@ public class CCKFApi: BaseChatVC {
                 DispatchQueue.main.async {
                     UserDefaults.standard.synchronize()
                 }
-                
-                ///重新排序
-                //self.setisShowFor(ArrData: &self.dataArray)
-                
-                ///滚动到最底部
-                if self.isFirst {
-                    self.scrollBottom()
-                }
             }
             else{
                 VXIUIConfig.shareInstance.keyWindow().showErrInfo(at: _msg)
             }
             
             self.stopAnimationFor(Refresh: MessageHistoryDirection.init(rawValue: _direction) == .new,
-                                  andHasNextPage: _haxNextPagge)
+                                  andHasNextPage: _haxNextPagge,
+                                  andNeedScrollBottom: false)
         }.disposed(by: rx.disposeBag)
         
         /// 发送消息状态更新
@@ -325,10 +317,6 @@ public class CCKFApi: BaseChatVC {
                     _new["mStatus"] = 1//已收未读
                 }
                 self.newMessageActionFor(Data: _new)
-                //                self.tableView.reloadData()
-                //                self.tableView.beginUpdates()
-                //                self.tableView.endUpdates()
-                //                self.efScrollToLastCell()
             }
         }.disposed(by: rx.disposeBag)
         
@@ -433,14 +421,16 @@ public class CCKFApi: BaseChatVC {
                 self.tableView.snp.remakeConstraints{[weak self] make in
                     guard let self = self else { return }
                     make.left.right.equalTo(0)
-                    make.top.equalTo(_h)
+                    make.top.equalTo(44 + VXIUIConfig.shareInstance.xp_statusBarHeight())
                     make.bottom.equalTo(self.chatView.evInputView.snp.top)
                 }
+                
                 
                 debugPrint("ChatServiceNavType-我显示了，\(self.serviceNavType)")
             }
             else{
                 self.serviceNavBgView.isHidden = true
+                self.labLineUpInfo.text = ""
                 var _frame = self.navView.frame
                 _frame.size.height = 44 + VXIUIConfig.shareInstance.xp_statusBarHeight()
                 self.navView.frame = _frame
@@ -728,8 +718,6 @@ public class CCKFApi: BaseChatVC {
     /// true 同意，false 拒绝
     public var guestPrivacyAcceptBlock:((Bool)->Void)? = nil
     
-    //    var _entryId: String? = nil
-    //    var _um: UserMappingModel? = nil
 }
 
 
@@ -772,7 +760,6 @@ extension CCKFApi {
         //还原初始状态
         VXIShenCeConfig.shareInstance.isFiveSecondLater = false
         self._receptionistId = nil
-        //        self._entryId = entryId
         
         //秘钥
         VXISocketManager.share.appKey = appkey
@@ -786,20 +773,23 @@ extension CCKFApi {
         
         //DeviceId
         var _um = userMappings
-        let oldDeviceID = UserDefaults.standard.value(forKey: "deviceIdKey") as? String
+        //Fix 20、未传identity和deviceid 时，并没有使用idfv的值为deviceid 兜底
+        //let oldDeviceID = UserDefaults.standard.value(forKey: "deviceIdKey") as? String
         
         if _um.deviceId == nil || _um.deviceId?.isEmpty == true {
-            _um.deviceId = oldDeviceID ?? TGSUIModel.getDeviceUUID()
+            //_um.deviceId = oldDeviceID ?? TGSUIModel.getDeviceUUID()
+            _um.deviceId = TGSUIModel.getDeviceUUID()
         }
         
-        //        self._um = _um
-        
         ///存储deviceId和entryId 在请求历史数据做校验，两者一样消息发送的数据才显示，不一样就只用请求的数据
-        UserDefaults.standard.setValue(_um.deviceId, forKey: "deviceIdKey")
+        //UserDefaults.standard.setValue(_um.deviceId, forKey: "deviceIdKey")
         UserDefaults.standard.setValue(entryId, forKey: "kSaveEntryIdKey")
         DispatchQueue.main.async {
             UserDefaults.standard.synchronize()
         }
+        
+        NSLog("startSession:{deviceIdKey:%@,kSaveEntryIdKey:%@}", _um.deviceId ?? "--",entryId)
+        
         //检查隐私政策
         self.privacyCheckBy(EntryId: entryId,
                             andUserMappings: _um) {[weak self] in
@@ -824,26 +814,6 @@ extension CCKFApi {
             }
         }
     }
-    
-    //    private func _start() {
-    ////        VXISocketManager.share.callBack = callBack
-    //
-    //        //无改变
-    ////        if VXISocketManager.share.xentry == entryId && VXISocketManager.share.uMolde != nil
-    ////            && VXISocketManager.share.uMolde == _um {
-    ////            self.show()
-    ////        }
-    ////        //已改变
-    ////        else{
-    //        VXISocketManager.share.uMolde = self._um
-    //
-    //            //先关闭
-    //            self.close()
-    //
-    //            //开启SocketIO
-    //        VXISocketManager.share.startSocketIOFor(XEntry: self._entryId)
-    ////        }
-    //    }
     
     
     /// 支持SDK已经开启会话后，跳出聊天页面后再次打开聊天窗口，避免多次startSession
@@ -958,10 +928,8 @@ extension CCKFApi {
                 message.mType = msgType
                 message.messageBody = msgBody
                 
-                self.dataArray.append(message)
                 self.saveRealmFor(Data: message)
-                self.tableView.insertRows(at: [IndexPath.init(row: dataArray.count-1, section: 0)], with: .bottom)
-                self.efScrollToLastCell()
+                self.inserNewsFor(Model: message, andScrollToBottom: self.isScrollToBottom())
                 
                 /// 发送
                 VXIChatViewModel.conversationSendFor(Type: msgType,
@@ -973,7 +941,9 @@ extension CCKFApi {
                     if _isOk {
                         //                        VXIUIConfig.shareInstance.keyWindow().showSuccessInfo(at: _msg)
                         debugPrint("发送消息成功！详见：\(_msg)")
-                        self.efScrollToLastCell()
+                        
+                        //self.efScrollToLastCell()
+                        self.scrollBottom()
                     }
                     else{
                         VXIUIConfig.shareInstance.keyWindow().showErrInfo(at: _msg)
@@ -1034,7 +1004,7 @@ extension CCKFApi {
                 
                 if VXISocketManager.share.socketManager?.status.active == false {
                     debugPrint("SocketManager 连接已关闭，需要重连")
-                    self.shePromptInfoBy(Text: "SocketIO 正在重连...",andisShow: true)
+                    self.shePromptInfoBy(Text: "正在重新连接客服...",andisShow: true)
                     
                     //重连
                     VXISocketManager.share.cliectReconnect()
@@ -1155,7 +1125,6 @@ extension CCKFApi {
     private func configServiceNavBgView(){
         serviceNavBgView.addSubview(serviceNavIV)
         serviceNavBgView.addSubview(serviceNavNameLabel)
-        
         serviceNavBgView.addSubview(self.labLineUpInfo)
         serviceNavBgView.addSubview(self.btnCancelLineup)
     }
@@ -1424,10 +1393,16 @@ extension CCKFApi {
                 if let _s = _d["mStatus"] as? Int {
                     if _m.mStatus != _s {
                         _m.mStatus = _s
-                        //                        self.tableView.beginUpdates()
+                        
                         //列更新
-                        self.tableView.reloadRows(at: [IndexPath.init(row: _index!, section: 0)], with: .none)
-                        //                        self.tableView.endUpdates()
+                        let _indexPath = IndexPath.init(row: _index!, section: 0)
+                        if self.tableView.cellForRow(at: _indexPath) != nil {
+                            self.tableView.performBatchUpdates {
+                                self.tableView.reloadRows(at: [_indexPath], with: .none)
+                            } completion: { (_:Bool) in
+                                //...
+                            }
+                        }
                     }
                 }
                 
@@ -1461,10 +1436,11 @@ extension CCKFApi {
                                 //                                    let _rct =  _result.createTime ?? TGSUIModel.localUnixTimeDouble()
                                 //                                _result.timeFormatInfo = TGSUIModel.setIMMessageTimeFor(LastTime: _rct)
                                 //                                    if let _dalct = self.dataArray.last?.createTime, _rct > _dalct {
-                                self.tableView.beginUpdates()
-                                self.dataArray.append(_result)
-                                self.tableView.insertRows(at: [.init(row: max(self.dataArray.count - 1, 0), section: 0)], with: .none)
-                                self.tableView.endUpdates()
+                                
+                                self.inserNewsFor(Model: _result,
+                                                  andScrollToBottom: self.isScrollToBottom(),
+                                                  andRowAnimation: .none)
+                                
                                 //                                        self.saveRealmFor(Data: _result)
                                 //                                        self.saveLocationUpdateFor(Size: self.dataArray.count - 1)
                                 
@@ -1515,7 +1491,6 @@ extension CCKFApi {
                         
                         ///滚动到最底部
                         self.scrollBottom()
-                        
                     }
                     catch(let _error){
                         debugPrint(_error)
@@ -1524,7 +1499,6 @@ extension CCKFApi {
             }
             
             //替换
-            
             if let _mid = _d["mId"] as? Int64, let _index = self.dataArray.firstIndex(where: { $0.mId == _mid && $0.cMid?.isEmpty == false }) {
                 //do{
                 //RLMRealm.default().beginWriteTransaction()
@@ -1541,6 +1515,7 @@ extension CCKFApi {
             else {
                 _tempBlock(nil)
             }
+            debugPrint("isScrollToBottom:\(self.isScrollToBottom())")
         }
     }
     
@@ -1666,6 +1641,9 @@ extension CCKFApi  {
             if _msg?.last != nil,
                let _data = TGSUIModel.getJsonDataFor(Any: _msg!.last!),
                let _model = try? JSONDecoder().decode(GuestSessionModel.self, from: _data) {
+                
+                debugPrint("SRE.updateGuestSessionStatus: eId:\(self.eid ?? 0) -> \(_model.eId ?? 0) | sessionType:\(_model.sessionType ?? 0),sessionStatus:\(_model.sessionStatus ?? 0), \((_model.eId ?? 0) > (self.eid ?? 0) ? "PASS" : "DISCARD")")
+                
                 if self.eid == nil {
                     self.updateConversationFor(Model: _model)
                 }
