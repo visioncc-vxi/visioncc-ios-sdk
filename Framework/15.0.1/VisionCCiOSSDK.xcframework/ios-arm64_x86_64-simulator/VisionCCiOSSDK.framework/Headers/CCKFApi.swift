@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import Realm
+//import Realm
 import RxSwift
 import SnapKit
 import SocketIO
@@ -186,7 +186,7 @@ public class CCKFApi: BaseChatVC {
             guard let (isOk,msg) = _input.element as? (Bool,String) else { return }
             if isOk {
                 //监听SocketIO 里面的 guestQueuePrompt 消息
-                self.serviceNavType = .lineup
+                //self.serviceNavType = .lineup
                 
                 if VXISocketManager.share.socketManager?.status.active == false {
                     debugPrint("SocketManager 连接已关闭，需要重连")
@@ -433,14 +433,16 @@ public class CCKFApi: BaseChatVC {
                 self.tableView.snp.remakeConstraints{[weak self] make in
                     guard let self = self else { return }
                     make.left.right.equalTo(0)
-                    make.top.equalTo(_h)
+                    make.top.equalTo(44 + VXIUIConfig.shareInstance.xp_statusBarHeight())
                     make.bottom.equalTo(self.chatView.evInputView.snp.top)
                 }
+                
                 
                 debugPrint("ChatServiceNavType-我显示了，\(self.serviceNavType)")
             }
             else{
                 self.serviceNavBgView.isHidden = true
+                self.labLineUpInfo.text = ""
                 var _frame = self.navView.frame
                 _frame.size.height = 44 + VXIUIConfig.shareInstance.xp_statusBarHeight()
                 self.navView.frame = _frame
@@ -786,16 +788,12 @@ extension CCKFApi {
         
         //DeviceId
         var _um = userMappings
-        let oldDeviceID = UserDefaults.standard.value(forKey: "deviceIdKey") as? String
-        
+
         if _um.deviceId == nil || _um.deviceId?.isEmpty == true {
-            _um.deviceId = oldDeviceID ?? TGSUIModel.getDeviceUUID()
+            _um.deviceId = TGSUIModel.getDeviceUUID()
         }
         
-        //        self._um = _um
-        
         ///存储deviceId和entryId 在请求历史数据做校验，两者一样消息发送的数据才显示，不一样就只用请求的数据
-        UserDefaults.standard.setValue(_um.deviceId, forKey: "deviceIdKey")
         UserDefaults.standard.setValue(entryId, forKey: "kSaveEntryIdKey")
         DispatchQueue.main.async {
             UserDefaults.standard.synchronize()
@@ -958,9 +956,13 @@ extension CCKFApi {
                 message.mType = msgType
                 message.messageBody = msgBody
                 
+                self.tableView.beginUpdates()
+                
                 self.dataArray.append(message)
                 self.saveRealmFor(Data: message)
-                self.tableView.insertRows(at: [IndexPath.init(row: dataArray.count-1, section: 0)], with: .bottom)
+                self.tableView.insertRows(at: [IndexPath.init(row: dataArray.count-1, section: 0)], with: .none)
+                self.tableView.endUpdates()
+                
                 self.efScrollToLastCell()
                 
                 /// 发送
@@ -1034,7 +1036,7 @@ extension CCKFApi {
                 
                 if VXISocketManager.share.socketManager?.status.active == false {
                     debugPrint("SocketManager 连接已关闭，需要重连")
-                    self.shePromptInfoBy(Text: "SocketIO 正在重连...",andisShow: true)
+                    self.shePromptInfoBy(Text: "正在重新连接客服...",andisShow: true)
                     
                     //重连
                     VXISocketManager.share.cliectReconnect()
@@ -1155,7 +1157,6 @@ extension CCKFApi {
     private func configServiceNavBgView(){
         serviceNavBgView.addSubview(serviceNavIV)
         serviceNavBgView.addSubview(serviceNavNameLabel)
-        
         serviceNavBgView.addSubview(self.labLineUpInfo)
         serviceNavBgView.addSubview(self.btnCancelLineup)
     }
@@ -1403,7 +1404,9 @@ extension CCKFApi {
         }
     }
     
-    
+    private func reloadRows(_index: Int) throws -> Void {
+        tableView.reloadRows(at: [IndexPath.init(row: _index, section: 0)], with: .none)
+    }
     //MARK: 新会话消息处理
     /// 新会话消息处理
     /// - Parameter _d: <#_d description#>
@@ -1424,10 +1427,17 @@ extension CCKFApi {
                 if let _s = _d["mStatus"] as? Int {
                     if _m.mStatus != _s {
                         _m.mStatus = _s
-                        //                        self.tableView.beginUpdates()
                         //列更新
-                        self.tableView.reloadRows(at: [IndexPath.init(row: _index!, section: 0)], with: .none)
-                        //                        self.tableView.endUpdates()
+                        
+                        let isInRows = self.tableView.indexPathsForVisibleRows?.contains(IndexPath.init(row: _index!, section: 0))
+                        
+                        let lastRow = self.tableView.numberOfRows(inSection: 0) - 1
+                        debugPrint("tableView.numberOfSections.UP: DataIndex:\(_index!) LastRow:\(lastRow) IsInRows:\(String(describing: isInRows)) \(String(describing: self.tableView.indexPathsForVisibleRows))")
+                        
+                        if lastRow >= _index! {
+                            self.tableView.reloadRows(at: [IndexPath.init(row: _index!, section: 0)], with: .none)
+                        }
+                        
                     }
                 }
                 
@@ -1461,10 +1471,24 @@ extension CCKFApi {
                                 //                                    let _rct =  _result.createTime ?? TGSUIModel.localUnixTimeDouble()
                                 //                                _result.timeFormatInfo = TGSUIModel.setIMMessageTimeFor(LastTime: _rct)
                                 //                                    if let _dalct = self.dataArray.last?.createTime, _rct > _dalct {
-                                self.tableView.beginUpdates()
-                                self.dataArray.append(_result)
-                                self.tableView.insertRows(at: [.init(row: max(self.dataArray.count - 1, 0), section: 0)], with: .none)
-                                self.tableView.endUpdates()
+
+                                
+//                                UIView.performWithoutAnimation
+                                
+                                DispatchQueue.main.async {
+                                    self.dataArray.append(_result)
+                                    
+                                    let lastRow = self.tableView.numberOfRows(inSection: 0) - 1
+                                    let i = max(self.dataArray.count - 1,0)
+                                    debugPrint("tableView.numberOfSections.LN: IndexPath:\(i) LastRow\(lastRow) \(String(describing: self.tableView.indexPathsForVisibleRows))")
+                                    UIView.performWithoutAnimation{
+                                        self.tableView.beginUpdates()
+                                        self.tableView.insertRows(at: [.init(row: i, section: 0)], with: .none)
+                                        self.tableView.endUpdates()
+                                    }
+                                    self.tableView.scrollToRow(at: .init(row: i, section: 0), at: .bottom, animated: true)
+                                }
+
                                 //                                        self.saveRealmFor(Data: _result)
                                 //                                        self.saveLocationUpdateFor(Size: self.dataArray.count - 1)
                                 
@@ -1513,8 +1537,14 @@ extension CCKFApi {
                             }
                         }
                         
-                        ///滚动到最底部
-                        self.scrollBottom()
+                        
+                        
+                        debugPrint("MessageModel:\(_result)")
+                        debugPrint("isScrollToBottom:\(self.isScrollToBottom())")
+                        debugPrint("visibleCells:\(self.tableView.visibleCells.count) \(self.tableView.visibleSize.height)")
+                        ///新消息滚动到最底部
+                        
+                        
                         
                     }
                     catch(let _error){
@@ -1541,6 +1571,8 @@ extension CCKFApi {
             else {
                 _tempBlock(nil)
             }
+
+
         }
     }
     
@@ -1666,6 +1698,9 @@ extension CCKFApi  {
             if _msg?.last != nil,
                let _data = TGSUIModel.getJsonDataFor(Any: _msg!.last!),
                let _model = try? JSONDecoder().decode(GuestSessionModel.self, from: _data) {
+                
+                debugPrint("SRE.updateGuestSessionStatus: eId:\(self.eid ?? 0) -> \(_model.eId ?? 0) | sessionType:\(_model.sessionType ?? 0),sessionStatus:\(_model.sessionStatus ?? 0), \((_model.eId ?? 0) > (self.eid ?? 0) ? "PASS" : "DISCARD")")
+                
                 if self.eid == nil {
                     self.updateConversationFor(Model: _model)
                 }

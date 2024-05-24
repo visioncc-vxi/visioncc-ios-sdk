@@ -20,8 +20,6 @@ import ObjectiveC
 import Photos
 import PhotosUI
 import QuartzCore
-import Realm
-import RealmSwift
 import RxCocoa
 import RxSwift
 import SnapKit
@@ -288,8 +286,10 @@ public class MessageBody : Swift.Codable {
   public var satisfactionOptions: [VisionCCiOSSDK.EvaluatOptionsModel]?
   public var isEvaluated: Swift.Bool?
   public var validPeriod: Swift.Int?
+  public var enableLabels: Swift.Bool?
+  public var evaluateIndex: Swift.Int?
   public var businessProps: [Swift.String : Swift.String]?
-  public init(options: [VisionCCiOSSDK.MessageOptions]? = nil, mediaUrl: Swift.String? = nil, duration: Swift.Double? = nil, width: Swift.Float? = nil, height: Swift.Float? = nil, content: Swift.String? = nil, image: Foundation.Data? = nil, name: Swift.String? = nil, voiceLocalPath: Swift.String? = nil, annexLocalData: Foundation.Data? = nil, annexLocalPath: Swift.String? = nil, contentType: Swift.String? = nil, fileName: Swift.String? = nil, fileSize: Swift.Double? = nil, videoLocalPath: Swift.String? = nil, videoCoverImage: Foundation.Data? = nil, coverUrl: Swift.String? = nil, videoName: Swift.String? = nil, linkUrl: Swift.String? = nil, title: Swift.String? = nil, link_description: Swift.String? = nil, openMethod: Swift.Int? = nil, imageUrl: Swift.String? = nil, question_group: [VisionCCiOSSDK.MessageQuestions]? = nil, url: Swift.String? = nil, button: Swift.String? = nil, cardType: Swift.Int? = nil, cardGuide: Swift.String? = nil, cardDesc: Swift.String? = nil, cardImg: Swift.String? = nil, cardLink: Swift.String? = nil, customFields: [VisionCCiOSSDK.MessageCustomFields]? = nil, customItems: [VisionCCiOSSDK.MessageCustomItems]? = nil, customMenus: [VisionCCiOSSDK.MessageCustomMenus]? = nil, titleWord: Swift.String? = nil, stfTemplateId: Swift.Int64? = nil, pushType: Swift.Int? = nil, customPageUrl: Swift.String? = nil, styleType: Swift.Int? = nil, satisfactionOptions: [VisionCCiOSSDK.EvaluatOptionsModel]? = nil, isEvaluated: Swift.Bool? = nil, validPeriod: Swift.Int? = nil, businessProps: [Swift.String : Swift.String]? = nil)
+  public init(options: [VisionCCiOSSDK.MessageOptions]? = nil, mediaUrl: Swift.String? = nil, duration: Swift.Double? = nil, width: Swift.Float? = nil, height: Swift.Float? = nil, content: Swift.String? = nil, image: Foundation.Data? = nil, name: Swift.String? = nil, voiceLocalPath: Swift.String? = nil, annexLocalData: Foundation.Data? = nil, annexLocalPath: Swift.String? = nil, contentType: Swift.String? = nil, fileName: Swift.String? = nil, fileSize: Swift.Double? = nil, videoLocalPath: Swift.String? = nil, videoCoverImage: Foundation.Data? = nil, coverUrl: Swift.String? = nil, videoName: Swift.String? = nil, linkUrl: Swift.String? = nil, title: Swift.String? = nil, link_description: Swift.String? = nil, openMethod: Swift.Int? = nil, imageUrl: Swift.String? = nil, question_group: [VisionCCiOSSDK.MessageQuestions]? = nil, url: Swift.String? = nil, button: Swift.String? = nil, cardType: Swift.Int? = nil, cardGuide: Swift.String? = nil, cardDesc: Swift.String? = nil, cardImg: Swift.String? = nil, cardLink: Swift.String? = nil, customFields: [VisionCCiOSSDK.MessageCustomFields]? = nil, customItems: [VisionCCiOSSDK.MessageCustomItems]? = nil, customMenus: [VisionCCiOSSDK.MessageCustomMenus]? = nil, titleWord: Swift.String? = nil, stfTemplateId: Swift.Int64? = nil, pushType: Swift.Int? = nil, customPageUrl: Swift.String? = nil, styleType: Swift.Int? = nil, satisfactionOptions: [VisionCCiOSSDK.EvaluatOptionsModel]? = nil, isEvaluated: Swift.Bool? = nil, validPeriod: Swift.Int? = nil, enableLabels: Swift.Bool? = nil, evaluateIndex: Swift.Int? = nil, businessProps: [Swift.String : Swift.String]? = nil)
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
@@ -304,14 +304,16 @@ public class MessageOptions : Swift.Codable {
 }
 public class MessageQuestions : Swift.Codable {
   public var name: Swift.String?
+  public var type: Swift.Int?
   public var items: [VisionCCiOSSDK.MessageGroupItems]
-  public init(name: Swift.String? = nil, items: [VisionCCiOSSDK.MessageGroupItems] = [MessageGroupItems]())
+  public var pageIndex: Swift.Int?
+  public init(name: Swift.String? = nil, type: Swift.Int? = nil, items: [VisionCCiOSSDK.MessageGroupItems] = [MessageGroupItems]())
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
 public class MessageGroupItems : Swift.Codable {
-  public init(id: VisionCCiOSSDK.AnyCodable? = nil, title: Swift.String? = nil)
+  public init(id: VisionCCiOSSDK.AnyCodable? = nil, title: Swift.String? = nil, linkUrl: Swift.String? = nil, imageUrl: Swift.String? = nil)
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
