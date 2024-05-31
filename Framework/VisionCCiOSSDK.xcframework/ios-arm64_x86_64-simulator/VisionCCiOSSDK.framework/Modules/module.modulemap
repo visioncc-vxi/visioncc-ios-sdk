@@ -1,0 +1,11 @@
+framework module VisionCCiOSSDK {
+  umbrella header "VisionCCiOSSDK.h"
+  export *
+
+  module * { export * }
+}
+
+module VisionCCiOSSDK.Swift {
+  header "VisionCCiOSSDK-Swift.h"
+  requires objc
+}
