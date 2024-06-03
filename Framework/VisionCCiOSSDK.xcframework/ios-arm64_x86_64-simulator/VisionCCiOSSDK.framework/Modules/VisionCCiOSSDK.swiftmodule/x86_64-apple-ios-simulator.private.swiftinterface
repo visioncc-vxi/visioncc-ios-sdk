@@ -16,7 +16,7 @@ extension VisionCCiOSSDK.CCKFApi {
   @_Concurrency.MainActor(unsafe) public func startSession(host: Swift.String, entryId: Swift.String, appkey: Swift.String, userMappings: VisionCCiOSSDK.UserMappingModel, callBack: (() -> Swift.Void)? = nil)
   @_Concurrency.MainActor(unsafe) public func sendMessage(msgType: Swift.Int, msgBody: VisionCCiOSSDK.MessageBody)
   @_Concurrency.MainActor(unsafe) public static func getSDKVersion(isShort: Swift.Bool = false) -> Swift.String
-  @_Concurrency.MainActor(unsafe) public static func getDeviceModel() -> Swift.String
+  @_Concurrency.MainActor(unsafe) public func close()
 }
 extension VisionCCiOSSDK.CCKFApi : WebKit.WKScriptMessageHandler, UIKit.UINavigationControllerDelegate {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
@@ -50,11 +50,13 @@ public struct WebViewEnvModel : Swift.Codable {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) public func showAlert(title: Swift.String, message: Swift.String, viewController: UIKit.UIViewController, callBack: (() -> Swift.Void)? = nil)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
 public protocol CCKFApiConversationDelegate {
+  func unReadMessageCountEvent(count: Swift.Int)
+  func shortCutEvent(model: VisionCCiOSSDK.ShortcutsModel)
+  func messageEvent(model: VisionCCiOSSDK.MessageModel)
   func trackEvent(name: Swift.String, attributes: [Swift.String : Swift.String])
 }
 public struct UserMappingModel : Swift.Codable, Swift.Equatable {
@@ -72,6 +74,36 @@ public struct UserMappingModel : Swift.Codable, Swift.Equatable {
   public func getJsonString() -> Swift.String
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
+}
+public struct ShortcutsModel : Swift.Codable {
+  public var title: Swift.String?
+  public var shortcutType: Swift.Int?
+  public var command: Swift.String?
+  public init(title: Swift.String? = nil, shortcutType: Swift.Int? = nil, command: Swift.String? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public class MessageModel : Swift.Codable {
+  final public let messageUUId: Swift.String
+  public var mId: Swift.Int64?
+  public var createTime: Swift.Double?
+  public var timestamp: Swift.Double?
+  public var timeFormatInfo: Swift.String?
+  public var cMid: Swift.String?
+  public var mType: Swift.Int?
+  public var messageBody: VisionCCiOSSDK.MessageBody?
+  public var optionSelected: Swift.String?
+  public var sUserId: Swift.String?
+  public var sessionId: Swift.String?
+  public var mStatus: Swift.Int?
+  public var memberType: Swift.Int?
+  public var isSensitive: Swift.Bool?
+  public var sessionStartTime: Swift.Double?
+  public var renderMemberType: Swift.Int?
+  public init(mId: Swift.Int64? = nil, createTime: Swift.Double? = nil, timestamp: Swift.Double? = nil, timeFormatInfo: Swift.String? = nil, cMid: Swift.String? = nil, mType: Swift.Int? = nil, messageBody: VisionCCiOSSDK.MessageBody? = nil, optionSelected: Swift.String? = nil, sUserId: Swift.String? = nil, sessionId: Swift.String? = nil, mStatus: Swift.Int? = nil, memberType: Swift.Int? = nil, isSensitive: Swift.Bool? = nil, sessionStartTime: Swift.Double? = nil, renderMemberType: Swift.Int? = nil)
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 public class MessageBody : Swift.Codable {
   public var msgType: Swift.Int?
