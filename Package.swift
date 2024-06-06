@@ -7,7 +7,7 @@ extension Target {
     static func sdk() -> Target {
         return .binaryTarget(
                 name: "VisionCCiOSSDK", 
-                path: "VisionCCLibrary/VisionCCiOSSDK.xcframework"
+                path: "VisionCCiOSSDK.xcframework"
             )
     }
 }
@@ -41,7 +41,7 @@ let package = Package(
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "VisionCCLibrary",
+            name: "VisionCCLibraryTarget",
             dependencies: [
                 "VisionCCiOSSDK",
                 .product(name: "SocketIO", package: "socket.io-client-swift"),
