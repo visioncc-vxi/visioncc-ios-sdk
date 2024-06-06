@@ -2,7 +2,16 @@
 // The swift-tools-version declares the minimum version of Swift required to build this package.
  
 import PackageDescription
- 
+
+extension Target {
+    static func sdk() -> Target {
+        return .binaryTarget(
+                name: "VisionCCiOSSDK", 
+                path: "VisionCCLibrary/VisionCCiOSSDK.xcframework"
+            )
+    }
+}
+
 let package = Package(
     name: "VisionCCLibrary",
     defaultLocalization: "en",
@@ -22,13 +31,17 @@ let package = Package(
         .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.7.1")),
         .package(url: "https://github.com/ReactiveX/RxSwift.git", .upToNextMajor(from: "6.5.0")),
         .package(url: "https://github.com/SnapKit/SnapKit.git", .upToNextMajor(from: "5.6.0")),
-        .package(url: "https://github.com/realm/realm-swift.git", exact: "10.32.3"),
+        .package(url: "https://github.com/longitachi/ZLPhotoBrowser.git", .upToNextMajor(from: "4.5.3")),
+        .package(url: "https://github.com/mchoe/SwiftSVG.git", .upToNextMajor(from: "2.3.2")),
+        .package(url: "https://github.com/hackiftekhar/IQKeyboardManager.git", exact: "6.5.11"),
+        .package(url: "https://github.com/RxSwiftCommunity/NSObject-Rx.git", .upToNextMajor(from: "5.2.2")),
+        .package(url: "https://github.com/unpeng/Refresh.git", .upToNextMajor(from: "1.5.4")),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "VisionCCLibraryTarget",
+            name: "VisionCCLibrary",
             dependencies: [
                 "VisionCCiOSSDK",
                 .product(name: "SocketIO", package: "socket.io-client-swift"),
@@ -36,16 +49,15 @@ let package = Package(
                 .product(name: "Alamofire", package: "Alamofire"),
                 .product(name: "SnapKit", package: "SnapKit"),
                 .product(name: "RxSwift", package: "RxSwift"),
-                .product(name: "RxCocoa", package: "RxSwift"),
-                .product(name: "RealmSwift", package: "realm-swift"),
+                .product(name: "ZLPhotoBrowser", package: "ZLPhotoBrowser"),
+                .product(name: "IQKeyboardManagerSwift", package: "IQKeyboardManager"),
+                .product(name: "SwiftSVG", package: "SwiftSVG"),
+                .product(name: "MJRefreshSwift", package: "MJRefreshSwift"),
+                .product(name: "NSObject-Rx", package: "NSObject-Rx"),
             ],
             path: "VisionCCLibrary"
         ),
-       .binaryTarget(
-            name: "VisionCCiOSSDK", 
-            url: "https://vcc-sdk.vxish.cn/sdk/1.4.5/VisionCCiOSSDK.xcframework.zip",
-            checksum: "0c03b913f8917732cc68e3e10944e0f0ce9b591b402e1ae040dfb4336a6862d9"
-        )
+        Target.sdk()
     ],
     swiftLanguageVersions: [
         .v5

@@ -1,0 +1,444 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name VisionCCiOSSDK
+import AVFAudio
+import AVFoundation
+import AVKit
+import AudioToolbox
+import CommonCrypto
+import CoreFoundation
+import Foundation
+import JRefresh
+import LocalAuthentication
+import Photos
+import Swift
+import UIKit.UIGestureRecognizerSubclass
+import UIKit
+import UniformTypeIdentifiers
+@_exported import VisionCCiOSSDK
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public class MessageModel : Swift.Codable {
+  final public let messageUUId: Swift.String
+  public var mId: Swift.Int64?
+  public var createTime: Swift.Double?
+  public var timestamp: Swift.Double?
+  public var timeFormatInfo: Swift.String?
+  public var cMid: Swift.String?
+  public var mType: Swift.Int?
+  public var messageBody: VisionCCiOSSDK.MessageBody?
+  public var optionSelected: Swift.String?
+  public var sUserId: Swift.String?
+  public var sessionId: Swift.String?
+  public var mStatus: Swift.Int?
+  public var memberType: Swift.Int?
+  public var isSensitive: Swift.Bool?
+  public var sessionStartTime: Swift.Double?
+  public var renderMemberType: Swift.Int?
+  public init(mId: Swift.Int64? = nil, createTime: Swift.Double? = nil, timestamp: Swift.Double? = nil, timeFormatInfo: Swift.String? = nil, cMid: Swift.String? = nil, mType: Swift.Int? = nil, messageBody: VisionCCiOSSDK.MessageBody? = nil, optionSelected: Swift.String? = nil, sUserId: Swift.String? = nil, sessionId: Swift.String? = nil, mStatus: Swift.Int? = nil, memberType: Swift.Int? = nil, isSensitive: Swift.Bool? = nil, sessionStartTime: Swift.Double? = nil, renderMemberType: Swift.Int? = nil)
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public class MessageBody : Swift.Codable {
+  public var options: [VisionCCiOSSDK.MessageOptions]?
+  public var mediaUrl: Swift.String?
+  public var duration: Swift.Double?
+  public var width: Swift.Float?
+  public var height: Swift.Float?
+  public var content: Swift.String?
+  public var image: Foundation.Data?
+  public var name: Swift.String?
+  public var voiceLocalPath: Swift.String?
+  public var annexLocalData: Foundation.Data?
+  public var annexLocalPath: Swift.String?
+  public var contentType: Swift.String?
+  public var fileName: Swift.String?
+  public var fileSize: Swift.Double?
+  public var videoLocalPath: Swift.String?
+  public var videoCoverImage: Foundation.Data?
+  public var coverUrl: Swift.String?
+  public var videoName: Swift.String?
+  public var linkUrl: Swift.String?
+  public var title: Swift.String?
+  public var link_description: Swift.String?
+  public var openMethod: Swift.Int?
+  public var imageUrl: Swift.String?
+  public var question_group: [VisionCCiOSSDK.MessageQuestions]?
+  public var url: Swift.String?
+  public var button: Swift.String?
+  public var cardType: Swift.Int?
+  public var cardGuide: Swift.String?
+  public var cardDesc: Swift.String?
+  public var cardImg: Swift.String?
+  public var cardLink: Swift.String?
+  public var customFields: [VisionCCiOSSDK.MessageCustomFields]?
+  public var customItems: [VisionCCiOSSDK.MessageCustomItems]?
+  public var customMenus: [VisionCCiOSSDK.MessageCustomMenus]?
+  public var titleWord: Swift.String?
+  public var stfTemplateId: Swift.Int64?
+  public var pushType: Swift.Int?
+  public var customPageUrl: Swift.String?
+  public var styleType: Swift.Int?
+  public var satisfactionOptions: [VisionCCiOSSDK.EvaluatOptionsModel]?
+  public var isEvaluated: Swift.Bool?
+  public var validPeriod: Swift.Int?
+  public var enableLabels: Swift.Bool?
+  public var evaluateIndex: Swift.Int?
+  public var businessProps: [Swift.String : Swift.String]?
+  public init(options: [VisionCCiOSSDK.MessageOptions]? = nil, mediaUrl: Swift.String? = nil, duration: Swift.Double? = nil, width: Swift.Float? = nil, height: Swift.Float? = nil, content: Swift.String? = nil, image: Foundation.Data? = nil, name: Swift.String? = nil, voiceLocalPath: Swift.String? = nil, annexLocalData: Foundation.Data? = nil, annexLocalPath: Swift.String? = nil, contentType: Swift.String? = nil, fileName: Swift.String? = nil, fileSize: Swift.Double? = nil, videoLocalPath: Swift.String? = nil, videoCoverImage: Foundation.Data? = nil, coverUrl: Swift.String? = nil, videoName: Swift.String? = nil, linkUrl: Swift.String? = nil, title: Swift.String? = nil, link_description: Swift.String? = nil, openMethod: Swift.Int? = nil, imageUrl: Swift.String? = nil, question_group: [VisionCCiOSSDK.MessageQuestions]? = nil, url: Swift.String? = nil, button: Swift.String? = nil, cardType: Swift.Int? = nil, cardGuide: Swift.String? = nil, cardDesc: Swift.String? = nil, cardImg: Swift.String? = nil, cardLink: Swift.String? = nil, customFields: [VisionCCiOSSDK.MessageCustomFields]? = nil, customItems: [VisionCCiOSSDK.MessageCustomItems]? = nil, customMenus: [VisionCCiOSSDK.MessageCustomMenus]? = nil, titleWord: Swift.String? = nil, stfTemplateId: Swift.Int64? = nil, pushType: Swift.Int? = nil, customPageUrl: Swift.String? = nil, styleType: Swift.Int? = nil, satisfactionOptions: [VisionCCiOSSDK.EvaluatOptionsModel]? = nil, isEvaluated: Swift.Bool? = nil, validPeriod: Swift.Int? = nil, enableLabels: Swift.Bool? = nil, evaluateIndex: Swift.Int? = nil, businessProps: [Swift.String : Swift.String]? = nil)
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public class MessageOptions : Swift.Codable {
+  public var id: VisionCCiOSSDK.AnyCodable?
+  public var title: Swift.String?
+  public init(id: VisionCCiOSSDK.AnyCodable? = nil, title: Swift.String? = nil)
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public class MessageQuestions : Swift.Codable {
+  public var name: Swift.String?
+  public var type: Swift.Int?
+  public var items: [VisionCCiOSSDK.MessageGroupItems]
+  public var pageIndex: Swift.Int?
+  public init(name: Swift.String? = nil, type: Swift.Int? = nil, items: [VisionCCiOSSDK.MessageGroupItems] = [MessageGroupItems]())
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public class MessageGroupItems : Swift.Codable {
+  public init(id: VisionCCiOSSDK.AnyCodable? = nil, title: Swift.String? = nil, linkUrl: Swift.String? = nil, imageUrl: Swift.String? = nil)
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public class MessageCustomItems : Swift.Codable {
+  public init(customMenus: [VisionCCiOSSDK.MessageCustomMenus]? = nil, customFields: [VisionCCiOSSDK.MessageCustomFields]? = nil, customCardDesc: Swift.String? = nil, customCardLink: Swift.String? = nil, customCardName: Swift.String? = nil, customCardAmount: Swift.String? = nil, customCardThumbnail: Swift.String? = nil, customCardAmountSymbol: Swift.String? = nil, customCardAmountName: Swift.String? = nil, customCardOriginalAmount: Swift.String? = nil)
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public class MessageCustomMenus : Swift.Codable {
+  public init(type: Swift.Int? = nil, title: Swift.String? = nil, command: Swift.String? = nil, visible: [Swift.String]? = nil)
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public class MessageCustomFields : Swift.Codable {
+  public init(key: Swift.String? = nil, value: Swift.String? = nil)
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public struct EvaluatLabelModel : Swift.Codable {
+  public var stfLabelsId: Swift.Int64?
+  public var stfOptionsId: Swift.Int64?
+  public var labelsName: Swift.String?
+  public var labelsValue: Swift.String?
+  public var sort: Swift.Int?
+  public var isSelected: Swift.Bool?
+  public init(stfLabelsId: Swift.Int64? = nil, stfOptionsId: Swift.Int64? = nil, labelsName: Swift.String? = nil, labelsValue: Swift.String? = nil, sort: Swift.Int? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct EvaluatOptionsModel : Swift.Codable {
+  public var stfOptionsId: Swift.Int64?
+  public var pattern: Swift.Int?
+  public var sort: Swift.Int?
+  public var tagRequired: Swift.Bool?
+  public var remarkRequired: Swift.Bool?
+  public var optionsName: Swift.String?
+  public var optionsScore: Swift.Int?
+  public var optionsIcon: Swift.String?
+  public var labels: [VisionCCiOSSDK.EvaluatLabelModel]?
+  public init(stfOptionsId: Swift.Int64? = nil, pattern: Swift.Int? = nil, sort: Swift.Int? = nil, tagRequired: Swift.Bool? = nil, remarkRequired: Swift.Bool? = nil, optionsName: Swift.String? = nil, optionsScore: Swift.Int? = nil, optionsIcon: Swift.String? = nil, labels: [VisionCCiOSSDK.EvaluatLabelModel]? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct EvaluatResultModel : Swift.Codable {
+  public var main: VisionCCiOSSDK.EvaluatResultMainModel?
+  public var options: [VisionCCiOSSDK.EvaluatResultOptionsModel]?
+  public init(main: VisionCCiOSSDK.EvaluatResultMainModel? = nil, options: [VisionCCiOSSDK.EvaluatResultOptionsModel]? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct EvaluatResultMainModel : Swift.Codable {
+  public var satisfactionId: Swift.Int64?
+  public var stfTemplateId: Swift.Int64?
+  public var sessionId: Swift.String?
+  public var evaluatorId: Swift.String?
+  public var receptionistId: Swift.String?
+  public var score: Swift.Int?
+  public var comment: Swift.String?
+  public var createTime: Swift.Double?
+  public var titleWord: Swift.String?
+  public var appreciateWord: Swift.String?
+  public var pattern: Swift.Int?
+  public var enableResolved: Swift.Bool?
+  public var biggerSocreBetter: Swift.Bool?
+  public init(satisfactionId: Swift.Int64? = nil, stfTemplateId: Swift.Int64? = nil, sessionId: Swift.String? = nil, evaluatorId: Swift.String? = nil, receptionistId: Swift.String? = nil, score: Swift.Int? = nil, comment: Swift.String? = nil, createTime: Swift.Double? = nil, titleWord: Swift.String? = nil, appreciateWord: Swift.String? = nil, pattern: Swift.Int? = nil, enableResolved: Swift.Bool? = nil, biggerSocreBetter: Swift.Bool? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct EvaluatResultOptionsModel : Swift.Codable {
+  public var stfOptionsId: Swift.Int64?
+  public var choosedValues: [Swift.String]?
+  public var choosedNames: [Swift.String]?
+  public var sort: Swift.Int?
+  public var tagRequired: Swift.Bool?
+  public var remarkRequired: Swift.Bool?
+  public var optionsName: Swift.String?
+  public var optionsScore: Swift.Int?
+  public var optionsIcon: Swift.String?
+  public init(stfOptionsId: Swift.Int64? = nil, choosedValues: [Swift.String]? = nil, choosedNames: [Swift.String]? = nil, sort: Swift.Int? = nil, tagRequired: Swift.Bool? = nil, remarkRequired: Swift.Bool? = nil, optionsName: Swift.String? = nil, optionsScore: Swift.Int? = nil, optionsIcon: Swift.String? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct GlobalCgaModel : Swift.Codable {
+  public var guest: VisionCCiOSSDK.GuestModel?
+  public var channel: VisionCCiOSSDK.ChannelModel?
+  public var shortcuts: [VisionCCiOSSDK.ShortcutsModel]?
+  public var stickerPkgs: [VisionCCiOSSDK.StickerPkgsModel]?
+  public init(guest: VisionCCiOSSDK.GuestModel? = nil, channel: VisionCCiOSSDK.ChannelModel? = nil, shortcuts: [VisionCCiOSSDK.ShortcutsModel]? = nil, stickerPkgs: [VisionCCiOSSDK.StickerPkgsModel]? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct GuestModel : Swift.Codable {
+  public var tenantId: Swift.Int?
+  public var enabledGuestSensitive: Swift.Bool?
+  public var enabledGlobalAvatar: Swift.Bool?
+  public var receptionistAvatarUrl: Swift.String?
+  public var receptionistTagType: Swift.Int?
+  public var companyName: Swift.String?
+  public var companyLogoUrl: Swift.String?
+  public var enabledGuestOfflineTime: Swift.Bool?
+  public var guestOfflineTime: Swift.Int?
+  public var guestReplyTimeout1: Swift.Int?
+  public var guestReplyTimeout2: Swift.Int?
+  public var enabledGuestSwitch: Swift.Bool?
+  public var enabledReceptionistStatus: Swift.Bool?
+  public var enabledGuestWithdrawal: Swift.Bool?
+  public var messageWithdrawtime: Swift.Int?
+  public var guestInputAssociate: Swift.Int?
+  public init(tenantId: Swift.Int? = nil, enabledGuestSensitive: Swift.Bool? = nil, enabledGlobalAvatar: Swift.Bool? = nil, receptionistAvatarUrl: Swift.String? = nil, receptionistTagType: Swift.Int? = nil, companyName: Swift.String? = nil, companyLogoUrl: Swift.String? = nil, enabledGuestOfflineTime: Swift.Bool? = nil, guestOfflineTime: Swift.Int? = nil, guestReplyTimeout1: Swift.Int? = nil, guestReplyTimeout2: Swift.Int? = nil, enabledGuestSwitch: Swift.Bool? = nil, enabledReceptionistStatus: Swift.Bool? = nil, enabledGuestWithdrawal: Swift.Bool? = nil, messageWithdrawtime: Swift.Int? = nil, guestInputAssociate: Swift.Int? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ChannelModel : Swift.Codable {
+  public var id: Swift.Int?
+  public var tenant_id: Swift.Int?
+  public var channel_id: Swift.Int?
+  public var channel_app_id: Swift.Int?
+  public var app_id: Swift.String?
+  public var app_name: Swift.String?
+  public var entry_code: Swift.String?
+  public var entry_name: Swift.String?
+  public var entry_skill_id: Swift.Int?
+  public var enabled: Swift.Bool?
+  public var enabled_entrance: Swift.Bool?
+  public var enabled_reception: Swift.Bool?
+  public var reception_robot_id: Swift.String?
+  public var reception_robot_name: Swift.String?
+  public var reception_robot_avatar_url: Swift.String?
+  public var reception_robot_skill_id: Swift.Int?
+  public var enabled_assistant: Swift.Bool?
+  public var assistant_robot_id: Swift.String?
+  public var assistant_robot_name: Swift.String?
+  public var assistant_robot_skill_id: Swift.Int?
+  public var entry_id: Swift.Int?
+  public var deploy_info: Swift.String?
+  public var docking_mode: Swift.Int?
+  public var reception_ability: Swift.Int?
+  public var voice_provider: Swift.Int?
+  public var voice_app_id: Swift.String?
+  public var auto_open_voice: Swift.Bool?
+  public var video_provider: Swift.Int?
+  public var video_app_id: Swift.String?
+  public var auto_open_video: Swift.Bool?
+  public init(id: Swift.Int? = nil, tenant_id: Swift.Int? = nil, channel_id: Swift.Int? = nil, channel_app_id: Swift.Int? = nil, app_id: Swift.String? = nil, app_name: Swift.String? = nil, entry_code: Swift.String? = nil, entry_name: Swift.String? = nil, entry_skill_id: Swift.Int? = nil, enabled: Swift.Bool? = nil, enabled_entrance: Swift.Bool? = nil, enabled_reception: Swift.Bool? = nil, reception_robot_id: Swift.String? = nil, reception_robot_name: Swift.String? = nil, reception_robot_avatar_url: Swift.String? = nil, reception_robot_skill_id: Swift.Int? = nil, enabled_assistant: Swift.Bool? = nil, assistant_robot_id: Swift.String? = nil, assistant_robot_name: Swift.String? = nil, assistant_robot_skill_id: Swift.Int? = nil, entry_id: Swift.Int? = nil, deploy_info: Swift.String? = nil, docking_mode: Swift.Int? = nil, reception_ability: Swift.Int? = nil, voice_provider: Swift.Int? = nil, voice_app_id: Swift.String? = nil, auto_open_voice: Swift.Bool? = nil, video_provider: Swift.Int? = nil, video_app_id: Swift.String? = nil, auto_open_video: Swift.Bool? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ShortcutsModel : Swift.Codable {
+  public var title: Swift.String?
+  public var shortcutType: Swift.Int?
+  public var command: Swift.String?
+  public init(title: Swift.String? = nil, shortcutType: Swift.Int? = nil, command: Swift.String? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct StickerPkgsModel : Swift.Codable {
+  public var groupId: Swift.Int
+  public var title: Swift.String?
+  public var icon: Swift.String?
+  public var sort: Swift.Int?
+  public var stickers: [VisionCCiOSSDK.StickersModel]?
+  public init(groupId: Swift.Int, title: Swift.String? = nil, icon: Swift.String? = nil, sort: Swift.Int? = nil, stickers: [VisionCCiOSSDK.StickersModel]? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct StickersModel : Swift.Codable {
+  public var stickerId: Swift.Int?
+  public var groupId: Swift.Int?
+  public var title: Swift.String?
+  public var path: Swift.String?
+  public var sort: Swift.Int
+  public init(stickerId: Swift.Int? = nil, groupId: Swift.Int? = nil, title: Swift.String? = nil, path: Swift.String? = nil, sort: Swift.Int)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum SessionStatus : Swift.Int {
+  case isInvalid
+  case isNotAccess
+  case isQueuing
+  case isTransferring
+  case isSuccess
+  case isAllocated
+  case isTransferred
+  case isTimeOut
+  case isEnded
+  case isTerminated
+  case isOffline
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum SessionType : Swift.Int {
+  case blackList
+  case system
+  case ai
+  case original
+  case transfer
+  case queuing
+  case leavingMessage
+  case claim
+  case invitation
+  case overflow
+  case offline
+  case epWeChat
+  case videoChat
+  case reservation
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct GuestqueuepromptModel : Swift.Codable {
+  public var isQueuing: Swift.Bool?
+  public var promptWord: Swift.String?
+  public var queueNumber: Swift.Int?
+  public var queueWaitTime: Swift.Int?
+  public init(isQueuing: Swift.Bool? = nil, promptWord: Swift.String? = nil, queueNumber: Swift.Int? = nil, queueWaitTime: Swift.Int? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct GuestSessionModel : Swift.Codable {
+  public var channel: Swift.Int?
+  public var customerId: Swift.String?
+  public var endTime: Swift.Double?
+  public var entryId: Swift.Int64?
+  public var parentId: Swift.String?
+  public var receptionistId: Swift.String?
+  public var receptionistName: Swift.String?
+  public var satisfactionConfig: VisionCCiOSSDK.SatisfactionConfig?
+  public var sessionId: Swift.String?
+  public var eId: Swift.Int64?
+  public var sessionStatus: Swift.Int?
+  public var sessionType: Swift.Int?
+  public var socketId: Swift.String?
+  public var startTime: Swift.Double?
+  public var traceId: Swift.Int64?
+  public init(channel: Swift.Int? = nil, customerId: Swift.String? = nil, endTime: Swift.Double? = nil, entryId: Swift.Int64? = nil, parentId: Swift.String? = nil, receptionistId: Swift.String? = nil, receptionistName: Swift.String? = nil, satisfactionConfig: VisionCCiOSSDK.SatisfactionConfig? = nil, sessionId: Swift.String? = nil, eId: Swift.Int64? = nil, sessionStatus: Swift.Int? = nil, sessionType: Swift.Int? = nil, socketId: Swift.String? = nil, startTime: Swift.Double? = nil, traceId: Swift.Int64? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SatisfactionConfig : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct UserMappingModel : Swift.Codable, Swift.Equatable {
+  public var identity_id: Swift.String?
+  public var visitor_name: Swift.String?
+  public var phone: Swift.String?
+  public var email: Swift.String?
+  public var deviceId: Swift.String?
+  public var app_id: Swift.String?
+  public var app_name: Swift.String?
+  public var env_name: Swift.String?
+  public init(identity_id: Swift.String? = nil, visitor_name: Swift.String? = nil, phone: Swift.String? = nil, email: Swift.String? = nil, deviceId: Swift.String? = nil, app_id: Swift.String? = nil, app_name: Swift.String? = nil, env_name: Swift.String? = nil)
+  public static func == (lhs: VisionCCiOSSDK.UserMappingModel, rhs: VisionCCiOSSDK.UserMappingModel) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public protocol CCKFApiConversationDelegate {
+  func unReadMessageCountEvent(count: Swift.Int)
+  func shortCutEvent(model: VisionCCiOSSDK.ShortcutsModel)
+  func messageEvent(model: VisionCCiOSSDK.MessageModel)
+  func trackEvent(name: Swift.String, attributes: [Swift.String : Swift.String])
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class CCKFApi : VisionCCiOSSDK.BaseChatVC {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var preferredStatusBarStyle: UIKit.UIStatusBarStyle {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func updateViewConstraints()
+  @_Concurrency.MainActor(unsafe) public var guestPrivacyAcceptBlock: ((Swift.Bool) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension VisionCCiOSSDK.CCKFApi {
+  @_Concurrency.MainActor(unsafe) public static func getSDKVersion(isShort: Swift.Bool = false) -> Swift.String
+  @_Concurrency.MainActor(unsafe) public func startSession(host: Swift.String, entryId: Swift.String, appkey: Swift.String, userMappings: VisionCCiOSSDK.UserMappingModel, callBack: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor(unsafe) public func show()
+  @_Concurrency.MainActor(unsafe) public func close()
+  @_Concurrency.MainActor(unsafe) public static func registerNetUser(RequestCallback: @escaping ((Swift.Bool, Any?) -> Swift.Void))
+  @_Concurrency.MainActor(unsafe) public func sendMessage(msgType: Swift.Int, msgBody: VisionCCiOSSDK.MessageBody)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class BaseChatVC : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public var conversionDelegate: (any VisionCCiOSSDK.CCKFApiConversationDelegate)?
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func updateViewConstraints()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+extension VisionCCiOSSDK.BaseChatVC : UIKit.UITableViewDelegate, UIKit.UITableViewDataSource {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+}
+extension VisionCCiOSSDK.BaseChatVC : UIKit.UIScrollViewDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewWillBeginDragging(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidEndDecelerating(_ scrollView: UIKit.UIScrollView)
+}
+extension VisionCCiOSSDK.BaseChatVC : UIKit.UIDocumentInteractionControllerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func documentInteractionController(_ controller: UIKit.UIDocumentInteractionController, willBeginSendingToApplication application: Swift.String?)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func documentInteractionController(_ controller: UIKit.UIDocumentInteractionController, didEndSendingToApplication application: Swift.String?)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func documentInteractionControllerDidDismissOpenInMenu(_ controller: UIKit.UIDocumentInteractionController)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func documentInteractionControllerViewControllerForPreview(_ controller: UIKit.UIDocumentInteractionController) -> UIKit.UIViewController
+}
+@objc @_hasMissingDesignatedInitializers public class AnyCodable : ObjectiveC.NSObject, Swift.Decodable {
+  @objc public var value: Any
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+}
+extension VisionCCiOSSDK.AnyCodable : Swift.Encodable {
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+extension VisionCCiOSSDK.SessionStatus : Swift.Equatable {}
+extension VisionCCiOSSDK.SessionStatus : Swift.Hashable {}
+extension VisionCCiOSSDK.SessionStatus : Swift.RawRepresentable {}
+extension VisionCCiOSSDK.SessionType : Swift.Equatable {}
+extension VisionCCiOSSDK.SessionType : Swift.Hashable {}
+extension VisionCCiOSSDK.SessionType : Swift.RawRepresentable {}
