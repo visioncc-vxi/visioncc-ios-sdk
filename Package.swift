@@ -52,7 +52,7 @@ let package = Package(
                 .product(name: "ZLPhotoBrowser", package: "ZLPhotoBrowser"),
                 .product(name: "IQKeyboardManagerSwift", package: "IQKeyboardManager"),
                 .product(name: "SwiftSVG", package: "SwiftSVG"),
-                .product(name: "MJRefreshSwift", package: "Refresh"),
+                .product(name: "JRefresh", package: "Refresh"),
                 .product(name: "NSObject-Rx", package: "NSObject-Rx"),
             ],
             path: "VisionCCLibrary"
