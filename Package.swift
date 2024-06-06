@@ -35,7 +35,7 @@ let package = Package(
         .package(url: "https://github.com/mchoe/SwiftSVG.git", .upToNextMajor(from: "2.3.2")),
         .package(url: "https://github.com/hackiftekhar/IQKeyboardManager.git", exact: "6.5.11"),
         .package(url: "https://github.com/RxSwiftCommunity/NSObject-Rx.git", .upToNextMajor(from: "5.2.2")),
-        .package(url: "https://github.com/unpeng/Refresh.git", .upToNextMajor(from: "1.5.4")),
+        .package(url: "https://github.com/unpeng/MJRefreshSwift.git", .upToNextMajor(from: "1.5.6")),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -52,7 +52,7 @@ let package = Package(
                 .product(name: "ZLPhotoBrowser", package: "ZLPhotoBrowser"),
                 .product(name: "IQKeyboardManagerSwift", package: "IQKeyboardManager"),
                 .product(name: "SwiftSVG", package: "SwiftSVG"),
-                .product(name: "JRefresh", package: "Refresh"),
+                .product(name: "MJRefreshSwift", package: "MJRefreshSwift"),
                 .product(name: "NSObject-Rx", package: "NSObject-Rx"),
             ],
             path: "VisionCCLibrary"

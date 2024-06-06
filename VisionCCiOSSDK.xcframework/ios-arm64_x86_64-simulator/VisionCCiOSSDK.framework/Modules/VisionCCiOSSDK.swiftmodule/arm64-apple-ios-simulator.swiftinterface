@@ -8,7 +8,6 @@ import AudioToolbox
 import CommonCrypto
 import CoreFoundation
 import Foundation
-import JRefresh
 import LocalAuthentication
 import Photos
 import Swift

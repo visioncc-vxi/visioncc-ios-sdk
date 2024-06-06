@@ -31735,10 +31735,13 @@
       },
       {
         "kind": "Import",
-        "name": "JRefresh",
-        "printedName": "JRefresh",
+        "name": "MJRefreshSwift",
+        "printedName": "MJRefreshSwift",
         "declKind": "Import",
-        "moduleName": "VisionCCiOSSDK"
+        "moduleName": "VisionCCiOSSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -41267,224 +41270,224 @@
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk\/VisionCCiOSSDK\/VisionCCiOSSDK\/VisionCCiOSSDK\/Tool\/Chat\/C\/BaseChatVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 573,
+      "offset": 600,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk\/VisionCCiOSSDK\/VisionCCiOSSDK\/VisionCCiOSSDK\/Tool\/Chat\/C\/BaseChatVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 12445,
+      "offset": 12472,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk\/VisionCCiOSSDK\/VisionCCiOSSDK\/VisionCCiOSSDK\/Tool\/Chat\/C\/BaseChatVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 13778,
+      "offset": 13805,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk\/VisionCCiOSSDK\/VisionCCiOSSDK\/VisionCCiOSSDK\/Tool\/Chat\/C\/BaseChatVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 14058,
+      "offset": 14085,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk\/VisionCCiOSSDK\/VisionCCiOSSDK\/VisionCCiOSSDK\/Tool\/Chat\/C\/BaseChatVC.swift",
       "kind": "StringLiteral",
-      "offset": 14488,
+      "offset": 14515,
       "length": 58,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk\/VisionCCiOSSDK\/VisionCCiOSSDK\/VisionCCiOSSDK\/Tool\/Chat\/C\/BaseChatVC.swift",
       "kind": "StringLiteral",
-      "offset": 14537,
+      "offset": 14564,
       "length": 8,
       "value": "\"_success\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk\/VisionCCiOSSDK\/VisionCCiOSSDK\/VisionCCiOSSDK\/Tool\/Chat\/C\/BaseChatVC.swift",
       "kind": "StringLiteral",
-      "offset": 14613,
+      "offset": 14640,
       "length": 58,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk\/VisionCCiOSSDK\/VisionCCiOSSDK\/VisionCCiOSSDK\/Tool\/Chat\/C\/BaseChatVC.swift",
       "kind": "StringLiteral",
-      "offset": 14662,
+      "offset": 14689,
       "length": 8,
       "value": "\"_failure\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk\/VisionCCiOSSDK\/VisionCCiOSSDK\/VisionCCiOSSDK\/Tool\/Chat\/C\/BaseChatVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 17234,
+      "offset": 17261,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk\/VisionCCiOSSDK\/VisionCCiOSSDK\/VisionCCiOSSDK\/Tool\/Chat\/C\/BaseChatVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 17277,
+      "offset": 17304,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk\/VisionCCiOSSDK\/VisionCCiOSSDK\/VisionCCiOSSDK\/Tool\/Chat\/C\/BaseChatVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 17487,
+      "offset": 17514,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk\/VisionCCiOSSDK\/VisionCCiOSSDK\/VisionCCiOSSDK\/Tool\/Chat\/C\/BaseChatVC.swift",
       "kind": "StringLiteral",
-      "offset": 17593,
+      "offset": 17620,
       "length": 18,
       "value": "\"0条未读消息\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk\/VisionCCiOSSDK\/VisionCCiOSSDK\/VisionCCiOSSDK\/Tool\/Chat\/C\/BaseChatVC.swift",
       "kind": "StringLiteral",
-      "offset": 17827,
+      "offset": 17854,
       "length": 14,
       "value": "\"tool_back_up\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk\/VisionCCiOSSDK\/VisionCCiOSSDK\/VisionCCiOSSDK\/Tool\/Chat\/C\/BaseChatVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 17994,
+      "offset": 18021,
       "length": 8,
       "value": "0x000000"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk\/VisionCCiOSSDK\/VisionCCiOSSDK\/VisionCCiOSSDK\/Tool\/Chat\/C\/BaseChatVC.swift",
       "kind": "FloatLiteral",
-      "offset": 18011,
+      "offset": 18038,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk\/VisionCCiOSSDK\/VisionCCiOSSDK\/VisionCCiOSSDK\/Tool\/Chat\/C\/BaseChatVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 18158,
+      "offset": 18185,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk\/VisionCCiOSSDK\/VisionCCiOSSDK\/VisionCCiOSSDK\/Tool\/Chat\/C\/BaseChatVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 18357,
+      "offset": 18384,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk\/VisionCCiOSSDK\/VisionCCiOSSDK\/VisionCCiOSSDK\/Tool\/Chat\/C\/BaseChatVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 18569,
+      "offset": 18596,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk\/VisionCCiOSSDK\/VisionCCiOSSDK\/VisionCCiOSSDK\/Tool\/Chat\/C\/BaseChatVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 18679,
+      "offset": 18706,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk\/VisionCCiOSSDK\/VisionCCiOSSDK\/VisionCCiOSSDK\/Tool\/Chat\/C\/BaseChatVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 18770,
+      "offset": 18797,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk\/VisionCCiOSSDK\/VisionCCiOSSDK\/VisionCCiOSSDK\/Tool\/Chat\/C\/BaseChatVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 18920,
+      "offset": 18947,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk\/VisionCCiOSSDK\/VisionCCiOSSDK\/VisionCCiOSSDK\/Tool\/Chat\/C\/BaseChatVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 19690,
+      "offset": 19717,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk\/VisionCCiOSSDK\/VisionCCiOSSDK\/VisionCCiOSSDK\/Tool\/Chat\/C\/BaseChatVC.swift",
       "kind": "StringLiteral",
-      "offset": 19722,
+      "offset": 19749,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk\/VisionCCiOSSDK\/VisionCCiOSSDK\/VisionCCiOSSDK\/Tool\/Chat\/C\/BaseChatVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 21456,
+      "offset": 21483,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk\/VisionCCiOSSDK\/VisionCCiOSSDK\/VisionCCiOSSDK\/Tool\/Chat\/C\/BaseChatVC.swift",
       "kind": "StringLiteral",
-      "offset": 21933,
+      "offset": 21960,
       "length": 9,
       "value": "\"#8E8E93\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk\/VisionCCiOSSDK\/VisionCCiOSSDK\/VisionCCiOSSDK\/Tool\/Chat\/C\/BaseChatVC.swift",
       "kind": "StringLiteral",
-      "offset": 22074,
+      "offset": 22101,
       "length": 9,
       "value": "\"#FFFFFF\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk\/VisionCCiOSSDK\/VisionCCiOSSDK\/VisionCCiOSSDK\/Tool\/Chat\/C\/BaseChatVC.swift",
       "kind": "StringLiteral",
-      "offset": 22188,
+      "offset": 22215,
       "length": 29,
       "value": "\"正在重新连接客服...\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk\/VisionCCiOSSDK\/VisionCCiOSSDK\/VisionCCiOSSDK\/Tool\/Chat\/C\/BaseChatVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 22345,
+      "offset": 22372,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk\/VisionCCiOSSDK\/VisionCCiOSSDK\/VisionCCiOSSDK\/Tool\/Chat\/C\/BaseChatVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 22530,
+      "offset": 22557,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk\/VisionCCiOSSDK\/VisionCCiOSSDK\/VisionCCiOSSDK\/Tool\/Chat\/C\/BaseChatVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 22556,
+      "offset": 22583,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk\/VisionCCiOSSDK\/VisionCCiOSSDK\/VisionCCiOSSDK\/Tool\/Chat\/C\/BaseChatVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 22830,
+      "offset": 22857,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk\/VisionCCiOSSDK\/VisionCCiOSSDK\/VisionCCiOSSDK\/Tool\/Chat\/C\/BaseChatVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 23464,
+      "offset": 23491,
       "length": 4,
       "value": "true"
     },
