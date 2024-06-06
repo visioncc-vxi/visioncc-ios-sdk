@@ -25,11 +25,10 @@ pod 'VisionCCiOSSDK'
 pod 'VisionCCiOSSDK', '1.6.3'
 ```
 
-```swift
-import VisionCCiOSSDK
-
 
 #### Installation with Swift Package Manager
+
+[![Github tag](https://img.shields.io/github/tag/visioncc-vxi/visioncc-ios-sdk.svg)]()
 
 [Swift Package Manager(SPM)](https://swift.org/package-manager/) is Apple's dependency manager tool. It is now supported in Xcode 11. So it can be used in all appleOS types of projects. It can be used alongside other tools like CocoaPods and Carthage as well. 
 
@@ -40,6 +39,12 @@ To install visioncc-ios-sdk package via Xcode
  * And choose the version you want
 
 
+```swift
+import VisionCCiOSSDK
+
+
+
+```
 
 LICENSE
 ---
@@ -51,4 +56,4 @@ Any contribution is more than welcome! You can contribute through pull requests 
 
 Author
 ---
-If you wish to contact me, email at: peng.wang@vxichina.com
+If you wish to contact me, email at: esbu@vxichina.com
