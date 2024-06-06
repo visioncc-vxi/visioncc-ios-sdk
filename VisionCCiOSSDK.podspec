@@ -18,7 +18,6 @@ Pod::Spec.new do |s|
   s.dependency 'Alamofire', '5.7.1'
   s.dependency 'SnapKit', '5.6.0'
   s.dependency 'RxCocoa', '6.5.0'
-  s.dependency 'RealmSwift','10.47.0'
   s.dependency 'Starscream','4.0.6'
   s.dependency 'Socket.IO-Client-Swift', '~> 16.1.0'
   s.dependency 'JXSegmentedView', '1.2.7'
