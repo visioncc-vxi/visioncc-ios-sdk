@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.dependency 'NSObject+Rx', '5.2.2'
   s.dependency 'SwiftSVG', '~> 2.3.2'
   s.dependency 'ZLPhotoBrowser', '4.5.3'
-  s.dependency 'MJRefreshSwift',:git => 'https://github.com/unpeng/MJRefreshSwift',:commit => '243905eadd76655461391cb0ca78ad724c452679'
+  s.dependency 'MJRefreshSwift', '1.5.10'
   s.dependency 'IQKeyboardManagerSwift', '6.5.11'
 
  #工程配置
