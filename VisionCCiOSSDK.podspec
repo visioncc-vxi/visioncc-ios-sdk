@@ -14,18 +14,18 @@ Pod::Spec.new do |s|
   s.ios.vendored_frameworks  = 'VisionCCiOSSDK.xcframework'
 
   #外部依赖
-  s.dependency 'RxSwift', '6.5.0'
-  s.dependency 'Alamofire', '5.7.1'
-  s.dependency 'SnapKit', '5.6.0'
-  s.dependency 'RxCocoa', '6.5.0'
-  s.dependency 'Starscream','4.0.6'
-  s.dependency 'Socket.IO-Client-Swift', '~> 16.1.0'
-  s.dependency 'JXSegmentedView', '1.2.7'
-  s.dependency 'NSObject+Rx', '5.2.2'
-  s.dependency 'SwiftSVG', '~> 2.3.2'
-  s.dependency 'ZLPhotoBrowser', '4.5.3'
+  # s.dependency 'RxSwift', '6.5.0'
+  # s.dependency 'Alamofire', '5.7.1'
+  # s.dependency 'SnapKit', '5.6.0'
+  # s.dependency 'RxCocoa', '6.5.0'
+  # s.dependency 'Starscream','4.0.6'
+  # s.dependency 'Socket.IO-Client-Swift', '~> 16.1.0'
+  # s.dependency 'JXSegmentedView', '1.2.7'
+  # s.dependency 'NSObject+Rx', '5.2.2'
+  # s.dependency 'SwiftSVG', '~> 2.3.2'
+  # s.dependency 'ZLPhotoBrowser', '4.5.3'
   # s.dependency 'MJRefreshSwift', '1.5.12'
-  s.dependency 'IQKeyboardManagerSwift', '6.5.11'
+  # s.dependency 'IQKeyboardManagerSwift', '6.5.11'
 
  #工程配置
   s.user_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
