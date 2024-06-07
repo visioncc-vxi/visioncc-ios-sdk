@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.author       = { "vxi" => "peng.wang@vxichina.com" }
   s.platform     = :ios, "12.0"
   s.swift_version = "5.0"
-  s.source       = { :git => "https://git.vxish.cn/visioncc-vxi/visioncc-ios-sdk.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/visioncc-vxi/visioncc-ios-sdk.git", :tag => "#{s.version}" }
   s.framework    = "UIKit"
   s.requires_arc = true
   s.ios.vendored_frameworks  = 'VisionCCiOSSDK.xcframework'
