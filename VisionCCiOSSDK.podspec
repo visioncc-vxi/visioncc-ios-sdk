@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.swift_version = "5.0"
   s.source       = { :git => "https://github.com/visioncc-vxi/visioncc-ios-sdk.git", :tag => "#{s.version}" }
   s.framework    = "UIKit"
-  # s.requires_arc = true
+  s.requires_arc = true
   s.ios.vendored_frameworks  = 'VisionCCiOSSDK.xcframework'
   s.prepare_command = <<-CMD
                       cp -rf 'VisionCCiOSSDKThem.bundle' 'VisionCCiOSSDK.xcframework/ios-arm64/VisionCCiOSSDK.framework/'
