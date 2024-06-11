@@ -12,7 +12,6 @@ Pod::Spec.new do |s|
   s.framework    = "UIKit"
   s.requires_arc = true
   s.ios.vendored_frameworks  = 'VisionCCiOSSDK.xcframework'
-  s.source_files = "VisionCCiOSSDKThem.bundle"
   s.prepare_command = <<-CMD
                       cp -rf 'VisionCCiOSSDKThem.bundle' 'VisionCCiOSSDK.xcframework/ios-arm64/VisionCCiOSSDK.framework/'
                       cp -rf 'VisionCCiOSSDKThem.bundle' 'VisionCCiOSSDK.xcframework/ios-arm64_x86_64-simulator/VisionCCiOSSDK.framework/'
