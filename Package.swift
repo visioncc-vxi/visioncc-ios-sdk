@@ -26,7 +26,8 @@ let package = Package(
             targets: ["VisionCCLibraryTarget"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/longitachi/ZLPhotoBrowser.git", .upToNextMajor(from: "4.5.3"))
+        .package(url: "https://github.com/longitachi/ZLPhotoBrowser.git", .upToNextMajor(from: "4.5.3")),
+        .package(url: "https://github.com/unpeng/MJRefreshSwift.git", .upToNextMajor(from: "1.5.6"))
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -35,7 +36,8 @@ let package = Package(
             name: "VisionCCLibraryTarget",
             dependencies: [
                 "VisionCCiOSSDK",
-                .product(name: "ZLPhotoBrowser", package: "ZLPhotoBrowser")
+                .product(name: "ZLPhotoBrowser", package: "ZLPhotoBrowser"),
+                .product(name: "MJRefreshSwift", package: "MJRefreshSwift")
             ],
             path: "VisionCCLibrary"
         ),
