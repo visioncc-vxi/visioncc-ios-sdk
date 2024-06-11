@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.swift_version = "5.0"
   s.source       = { :git => "https://github.com/visioncc-vxi/visioncc-ios-sdk.git", :tag => "#{s.version}" }
   s.framework    = "UIKit"
-  s.requires_arc = true
+  # s.requires_arc = true
   s.ios.vendored_frameworks  = 'VisionCCiOSSDK.xcframework'
   s.prepare_command = <<-CMD
                       cp -rf 'VisionCCiOSSDKThem.bundle' 'VisionCCiOSSDK.xcframework/ios-arm64/VisionCCiOSSDK.framework/'
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   s.dependency 'Socket.IO-Client-Swift', '~> 16.1.0'
   s.dependency 'JXSegmentedView', '1.2.7'
   s.dependency 'NSObject+Rx', '5.2.2'
-  s.dependency 'SwiftSVG', '~> 2.0'
+  s.dependency 'SwiftSVG', '~> 2.3.2'
   s.dependency 'ZLPhotoBrowser', '4.5.3'
   s.dependency 'MJRefreshSwift', '1.5.14'
   s.dependency 'IQKeyboardManagerSwift', '6.5.11'
