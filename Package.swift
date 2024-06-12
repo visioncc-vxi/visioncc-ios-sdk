@@ -3,15 +3,6 @@
  
 import PackageDescription
 
-extension Target {
-    static func sdk() -> Target {
-        return .binaryTarget(
-                name: "VisionCCiOSSDK", 
-                path: "VisionCCiOSSDK.xcframework"
-            )
-    }
-}
-
 let package = Package(
     name: "VisionCCLibrary",
     defaultLocalization: "en",
@@ -22,7 +13,7 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "VisionCCLibraryTarget",
+            name: "VisionCCLibrary",
             targets: ["VisionCCLibraryTarget"]),
     ],
     dependencies: [
@@ -35,13 +26,14 @@ let package = Package(
         .target(
             name: "VisionCCLibraryTarget",
             dependencies: [
-                "VisionCCiOSSDK",
-                .product(name: "ZLPhotoBrowser", package: "ZLPhotoBrowser"),
-                .product(name: "MJRefreshSwift", package: "MJRefreshSwift")
+                "VisionCCiOSSDK"
             ],
             path: "VisionCCLibrary"
         ),
-        Target.sdk()
+        .binaryTarget(
+            name: "VisionCCiOSSDK", 
+            path: "VisionCCiOSSDK.xcframework"
+        )
     ],
     swiftLanguageVersions: [
         .v5
