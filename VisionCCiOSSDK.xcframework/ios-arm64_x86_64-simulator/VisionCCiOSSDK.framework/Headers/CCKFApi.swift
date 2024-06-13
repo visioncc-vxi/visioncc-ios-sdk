@@ -88,17 +88,17 @@ public class CCKFApi: BaseChatVC {
         ///界面消息出现或消失隐藏键盘
         self.view.endEditing(true)
         
-        for family in UIFont.familyNames.sorted() {
-            debugPrint("Family: \(family)")
-            
-            let names = UIFont.fontNames(forFamilyName: family)
-            for fontName in names {
-                if fontName.contains("Adihau") {
-                    debugPrint("OK")
-                }
-                debugPrint("- \(fontName)")
-            }
-        }
+//        for family in UIFont.familyNames.sorted() {
+//            debugPrint("Family: \(family)")
+//            
+//            let names = UIFont.fontNames(forFamilyName: family)
+//            for fontName in names {
+//                if fontName.contains("Adihau") {
+//                    debugPrint("OK")
+//                }
+//                debugPrint("- \(fontName)")
+//            }
+//        }
     }
     
     /// 状态栏
@@ -137,7 +137,7 @@ public class CCKFApi: BaseChatVC {
         if self.serviceNavBgView.subviews.contains(self.serviceNavIV){
             self.serviceNavIV.snp.makeConstraints { make in
                 make.left.equalTo(15)
-                make.size.equalTo(VXIUIConfig.shareInstance.robotImageSize())
+                make.size.equalTo(VXIUIConfig.shareInstance.robotImageSize()).priority(450)
                 make.top.equalTo(7)
                 make.bottom.equalTo(-7)
             }
@@ -451,7 +451,7 @@ public class CCKFApi: BaseChatVC {
                 self.tableView.snp.remakeConstraints{[weak self] make in
                     guard let self = self else { return }
                     make.left.right.equalTo(0)
-                    make.top.equalTo(44 + VXIUIConfig.shareInstance.xp_statusBarHeight())
+                    make.top.equalTo(44 + VXIUIConfig.shareInstance.xp_statusBarHeight()).priority(450)
                     make.bottom.equalTo(self.chatView.evInputView.snp.top)
                 }
                 
