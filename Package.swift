@@ -7,7 +7,7 @@ extension Target {
     static func sdk() -> Target {
         return .binaryTarget(
                 name: "VisionCCiOSSDK", 
-                path: "Framework/VisionCCiOSSDK.xcframework"
+                path: "VisionCCiOSSDK.xcframework"
             )
     }
 }

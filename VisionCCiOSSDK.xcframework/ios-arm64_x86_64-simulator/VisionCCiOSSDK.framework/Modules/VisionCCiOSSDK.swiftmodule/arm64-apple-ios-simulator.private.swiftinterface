@@ -1,0 +1,165 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name VisionCCiOSSDK
+import AVKit
+import Foundation
+import Photos
+import Swift
+import UIKit
+@_exported import VisionCCiOSSDK
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+extension VisionCCiOSSDK.CCKFApi {
+  @_Concurrency.MainActor(unsafe) public func startSession(host: Swift.String, entryId: Swift.String, appkey: Swift.String, userMappings: VisionCCiOSSDK.UserMappingModel, callBack: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor(unsafe) public func sendMessage(msgType: Swift.Int, msgBody: VisionCCiOSSDK.MessageBody)
+  @_Concurrency.MainActor(unsafe) public static func getSDKVersion(isShort: Swift.Bool = false) -> Swift.String
+  @_Concurrency.MainActor(unsafe) public func close()
+}
+extension VisionCCiOSSDK.CCKFApi : WebKit.WKScriptMessageHandler, UIKit.UINavigationControllerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
+}
+extension VisionCCiOSSDK.CCKFApi : UIKit.UIImagePickerControllerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func imagePickerController(_ picker: UIKit.UIImagePickerController, didFinishPickingMediaWithInfo info: [UIKit.UIImagePickerController.InfoKey : Any])
+}
+extension VisionCCiOSSDK.CCKFApi : WebKit.WKNavigationDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didStartProvisionalNavigation navigation: WebKit.WKNavigation!)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didCommit navigation: WebKit.WKNavigation!)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didReceiveServerRedirectForProvisionalNavigation navigation: WebKit.WKNavigation!)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationResponse: WebKit.WKNavigationResponse, decisionHandler: @escaping (WebKit.WKNavigationResponsePolicy) -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, preferences: WebKit.WKWebpagePreferences, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy, WebKit.WKWebpagePreferences) -> Swift.Void)
+}
+public struct WebViewEnvModel : Swift.Codable {
+  public var app_name: Swift.String?
+  public var env_name: Swift.String?
+  public var hh: Swift.Int?
+  public var bh: Swift.Int?
+  public var os_name: Swift.String?
+  public init(app_name: Swift.String? = nil, env_name: Swift.String? = "test", hh: Swift.Int?, bh: Swift.Int?, os_name: Swift.String? = "iOS")
+  public func getJsonString() -> Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class CCKFApi : UIKit.UIViewController, WebKit.WKUIDelegate {
+  @_Concurrency.MainActor(unsafe) public var conversionDelegate: (any VisionCCiOSSDK.CCKFApiConversationDelegate)?
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+public protocol CCKFApiConversationDelegate {
+  func unReadMessageCountEvent(count: Swift.Int)
+  func shortCutEvent(model: VisionCCiOSSDK.ShortcutsModel)
+  func messageEvent(model: VisionCCiOSSDK.MessageModel)
+  func trackEvent(name: Swift.String, attributes: [Swift.String : Swift.String])
+}
+public struct UserMappingModel : Swift.Codable, Swift.Equatable {
+  public var identity_id: Swift.String?
+  public var visitor_name: Swift.String?
+  public var phone: Swift.String?
+  public var email: Swift.String?
+  public var deviceId: Swift.String?
+  public var app_id: Swift.String?
+  public var app_name: Swift.String?
+  public var env_name: Swift.String?
+  public init(identity_id: Swift.String? = nil, visitor_name: Swift.String? = nil, phone: Swift.String? = nil, email: Swift.String? = nil, deviceId: Swift.String? = nil, app_id: Swift.String? = nil, app_name: Swift.String? = nil, env_name: Swift.String? = nil)
+  public static func == (lhs: VisionCCiOSSDK.UserMappingModel, rhs: VisionCCiOSSDK.UserMappingModel) -> Swift.Bool
+  public func toURLQuery() -> Swift.String
+  public func getJsonString() -> Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ShortcutsModel : Swift.Codable {
+  public var title: Swift.String?
+  public var shortcutType: Swift.Int?
+  public var command: Swift.String?
+  public init(title: Swift.String? = nil, shortcutType: Swift.Int? = nil, command: Swift.String? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public class MessageModel : Swift.Codable {
+  final public let messageUUId: Swift.String
+  public var mId: Swift.Int64?
+  public var createTime: Swift.Double?
+  public var timestamp: Swift.Double?
+  public var timeFormatInfo: Swift.String?
+  public var cMid: Swift.String?
+  public var mType: Swift.Int?
+  public var messageBody: VisionCCiOSSDK.MessageBody?
+  public var optionSelected: Swift.String?
+  public var sUserId: Swift.String?
+  public var sessionId: Swift.String?
+  public var mStatus: Swift.Int?
+  public var memberType: Swift.Int?
+  public var isSensitive: Swift.Bool?
+  public var sessionStartTime: Swift.Double?
+  public var renderMemberType: Swift.Int?
+  public init(mId: Swift.Int64? = nil, createTime: Swift.Double? = nil, timestamp: Swift.Double? = nil, timeFormatInfo: Swift.String? = nil, cMid: Swift.String? = nil, mType: Swift.Int? = nil, messageBody: VisionCCiOSSDK.MessageBody? = nil, optionSelected: Swift.String? = nil, sUserId: Swift.String? = nil, sessionId: Swift.String? = nil, mStatus: Swift.Int? = nil, memberType: Swift.Int? = nil, isSensitive: Swift.Bool? = nil, sessionStartTime: Swift.Double? = nil, renderMemberType: Swift.Int? = nil)
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public class MessageBody : Swift.Codable {
+  public var msgType: Swift.Int?
+  public var mediaUrl: Swift.String?
+  public var duration: Swift.Double?
+  public var width: Swift.Float?
+  public var height: Swift.Float?
+  public var content: Swift.String?
+  public var image: Foundation.Data?
+  public var name: Swift.String?
+  public var voiceLocalPath: Swift.String?
+  public var annexLocalData: Foundation.Data?
+  public var annexLocalPath: Swift.String?
+  public var contentType: Swift.String?
+  public var fileName: Swift.String?
+  public var fileSize: Swift.Double?
+  public var videoLocalPath: Swift.String?
+  public var videoCoverImage: Foundation.Data?
+  public var coverUrl: Swift.String?
+  public var videoName: Swift.String?
+  public var linkUrl: Swift.String?
+  public var title: Swift.String?
+  public var link_description: Swift.String?
+  public var openMethod: Swift.Int?
+  public var imageUrl: Swift.String?
+  public var url: Swift.String?
+  public var button: Swift.String?
+  public var cardType: Swift.Int?
+  public var cardGuide: Swift.String?
+  public var cardDesc: Swift.String?
+  public var cardImg: Swift.String?
+  public var cardLink: Swift.String?
+  public var customFields: [VisionCCiOSSDK.MessageCustomFields]?
+  public var customItems: [VisionCCiOSSDK.MessageCustomItems]?
+  public var customMenus: [VisionCCiOSSDK.MessageCustomMenus]?
+  public var businessProps: [Swift.String : Swift.String]?
+  public init(msgType: Swift.Int? = nil, mediaUrl: Swift.String? = nil, duration: Swift.Double? = nil, width: Swift.Float? = nil, height: Swift.Float? = nil, content: Swift.String? = nil, image: Foundation.Data? = nil, name: Swift.String? = nil, voiceLocalPath: Swift.String? = nil, annexLocalData: Foundation.Data? = nil, annexLocalPath: Swift.String? = nil, contentType: Swift.String? = nil, fileName: Swift.String? = nil, fileSize: Swift.Double? = nil, videoLocalPath: Swift.String? = nil, videoCoverImage: Foundation.Data? = nil, coverUrl: Swift.String? = nil, videoName: Swift.String? = nil, linkUrl: Swift.String? = nil, title: Swift.String? = nil, link_description: Swift.String? = nil, openMethod: Swift.Int? = nil, imageUrl: Swift.String? = nil, url: Swift.String? = nil, button: Swift.String? = nil, cardType: Swift.Int? = nil, cardGuide: Swift.String? = nil, cardDesc: Swift.String? = nil, cardImg: Swift.String? = nil, cardLink: Swift.String? = nil, customFields: [VisionCCiOSSDK.MessageCustomFields]? = nil, customItems: [VisionCCiOSSDK.MessageCustomItems]? = nil, customMenus: [VisionCCiOSSDK.MessageCustomMenus]? = nil, businessProps: [Swift.String : Swift.String]? = nil)
+  public func getJsonString() -> Swift.String
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public class MessageCustomItems : Swift.Codable {
+  public init(customMenus: [VisionCCiOSSDK.MessageCustomMenus]? = nil, customFields: [VisionCCiOSSDK.MessageCustomFields]? = nil, customCardDesc: Swift.String? = nil, customCardLink: Swift.String? = nil, customCardName: Swift.String? = nil, customCardAmount: Swift.String? = nil, customCardThumbnail: Swift.String? = nil, customCardAmountSymbol: Swift.String? = nil, customCardAmountName: Swift.String? = nil, customCardOriginalAmount: Swift.String? = nil)
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public class MessageCustomMenus : Swift.Codable {
+  public init(type: Swift.Int? = nil, title: Swift.String? = nil, command: Swift.String? = nil, visible: [Swift.String]? = nil)
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public class MessageCustomFields : Swift.Codable {
+  public init(key: Swift.String? = nil, value: Swift.String? = nil)
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
