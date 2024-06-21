@@ -886,12 +886,10 @@ extension CCKFApi {
         }
     }
     
-    
     /// 关闭 SocketIO 对像
     public func close(){
         VXISocketManager.share.stopSocketIO(isNavgationback: true)
     }
-    
     
     /// 获取Global配置(没有入参，需要在startSession 或 show 之后调用)
     /// - Parameter _rc: ((Bool,Any?)->Void)
