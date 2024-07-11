@@ -305,7 +305,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class NSCoder;
 
 SWIFT_CLASS("_TtC14VisionCCiOSSDK7CCKFApi")
-@interface CCKFApi : UIViewController <WKUIDelegate>
+@interface CCKFApi : UIViewController <UIDocumentInteractionControllerDelegate, WKUIDelegate>
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewWillDisappear:(BOOL)animated;
 - (void)viewDidLoad;
@@ -313,20 +313,15 @@ SWIFT_CLASS("_TtC14VisionCCiOSSDK7CCKFApi")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIDocumentPickerViewController;
+@class NSURL;
 
-@class UIImagePickerController;
-
-@interface CCKFApi (SWIFT_EXTENSION(VisionCCiOSSDK)) <UIImagePickerControllerDelegate>
-- (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey, id> * _Nonnull)info;
+@interface CCKFApi (SWIFT_EXTENSION(VisionCCiOSSDK)) <UIDocumentPickerDelegate>
+- (void)documentPicker:(UIDocumentPickerViewController * _Nonnull)controller didPickDocumentsAtURLs:(NSArray<NSURL *> * _Nonnull)urls;
+- (void)documentPickerWasCancelled:(UIDocumentPickerViewController * _Nonnull)controller;
 @end
 
 
-@class WKUserContentController;
-@class WKScriptMessage;
-
-@interface CCKFApi (SWIFT_EXTENSION(VisionCCiOSSDK)) <UINavigationControllerDelegate, WKScriptMessageHandler>
-- (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
-@end
 
 @class WKWebView;
 @class WKNavigation;
@@ -336,13 +331,24 @@ SWIFT_CLASS("_TtC14VisionCCiOSSDK7CCKFApi")
 
 @interface CCKFApi (SWIFT_EXTENSION(VisionCCiOSSDK)) <WKNavigationDelegate>
 - (void)webView:(WKWebView * _Nonnull)webView didStartProvisionalNavigation:(WKNavigation * _Null_unspecified)navigation;
+/// 当内容开始返回时调用
 - (void)webView:(WKWebView * _Nonnull)webView didCommitNavigation:(WKNavigation * _Null_unspecified)navigation;
+/// 页面加载完成之后调用
 - (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
+- (void)webView:(WKWebView * _Nonnull)webView didFailNavigation:(WKNavigation * _Null_unspecified)navigation withError:(NSError * _Nonnull)error;
 - (void)webView:(WKWebView * _Nonnull)webView didFailProvisionalNavigation:(WKNavigation * _Null_unspecified)navigation withError:(NSError * _Nonnull)error;
 - (void)webView:(WKWebView * _Nonnull)webView didReceiveServerRedirectForProvisionalNavigation:(WKNavigation * _Null_unspecified)navigation;
 - (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationResponse:(WKNavigationResponse * _Nonnull)navigationResponse decisionHandler:(void (^ _Nonnull)(WKNavigationResponsePolicy))decisionHandler;
 - (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationAction:(WKNavigationAction * _Nonnull)navigationAction preferences:(WKWebpagePreferences * _Nonnull)preferences decisionHandler:(void (^ _Nonnull)(WKNavigationActionPolicy, WKWebpagePreferences * _Nonnull))decisionHandler;
 @end
+
+@class WKUserContentController;
+@class WKScriptMessage;
+
+@interface CCKFApi (SWIFT_EXTENSION(VisionCCiOSSDK)) <UINavigationControllerDelegate, WKScriptMessageHandler>
+- (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
+@end
+
 
 
 

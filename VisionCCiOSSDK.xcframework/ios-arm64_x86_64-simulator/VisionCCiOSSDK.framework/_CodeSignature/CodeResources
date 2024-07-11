@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/VisionCCiOSSDK-Swift.h</key>
 		<data>
-		iMJdn3VbaqzTpERuoZUx0Oel+L4=
+		xMj2InKyAfjJ1+fbiduf4fGwQts=
 		</data>
 		<key>Headers/VisionCCiOSSDK.h</key>
 		<data>
@@ -14,51 +14,87 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		y/NU6nX457tzWGAMWcrKeOWUyLg=
+		E2Wk8Wj2iWsf68qMCkgw8CgVt+c=
 		</data>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		b716bt8j1mgR3hVkd/t1MjiP3i4=
+		8KoPrGGRpTP3JDNCqXSbkOTrwFA=
 		</data>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		hoTITRT/PqNuk/g1ApUBPEICzV4=
+		c19Ay6bckw0TD5fEJSiKVwfFrx8=
 		</data>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		AvuAvL3cb5CoHc7R8FmObi/nLeo=
+		/NapYwMyaIJ5+NQj8WKI8IKWVo8=
 		</data>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		hoTITRT/PqNuk/g1ApUBPEICzV4=
+		c19Ay6bckw0TD5fEJSiKVwfFrx8=
 		</data>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		sOcpXtlIY8FoHPbEGLa6rk5Xjv0=
+		QuWFI6KzNl/Ljp4zMu7bMDrQIpI=
 		</data>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		b716bt8j1mgR3hVkd/t1MjiP3i4=
+		8KoPrGGRpTP3JDNCqXSbkOTrwFA=
 		</data>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		jfOjseb/xQiFw7h6G8dziB3o7us=
+		9rIP6n/RBilhm3r+Ay1BLFeUOgc=
 		</data>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		leRHOZXs4yevfP6rZ48mDZAiCSo=
+		Miu+FhqdpASNnRFDhd4tA+dPdLY=
 		</data>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		jfOjseb/xQiFw7h6G8dziB3o7us=
+		9rIP6n/RBilhm3r+Ay1BLFeUOgc=
 		</data>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		QruMDyyFFqGcM6gtRUMHJwbIPxo=
+		4gWcrEHtp/xHHzUmcb5DFBXFuHY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		OFA/jYPzZMtaB9EuBEb4y6EJgmM=
+		</data>
+		<key>VisionCCiOSSDK.bundle/dd_cancel_send_record.png</key>
+		<data>
+		l1PF/EgEDhlFooGlRFTsHM4cqsI=
+		</data>
+		<key>VisionCCiOSSDK.bundle/dd_cancel_send_record@2x.png</key>
+		<data>
+		3ieQ0MyCrSRcnAWG1kTr1lvNU9k=
+		</data>
+		<key>VisionCCiOSSDK.bundle/dd_record_too_short.png</key>
+		<data>
+		ICIE6CgqL/RSEDCe/hcn/5cnqnY=
+		</data>
+		<key>VisionCCiOSSDK.bundle/dd_record_too_short@2x.png</key>
+		<data>
+		G38Wotoe7vDahJ9w7tyimErgHnY=
+		</data>
+		<key>VisionCCiOSSDK.bundle/ico_talk_hint_voice-tube@2x.png</key>
+		<data>
+		iV0VvtjY0DmLzR2njFTk6gAp/ZU=
+		</data>
+		<key>VisionCCiOSSDK.bundle/ico_talk_hint_voice-tube@3x.png</key>
+		<data>
+		LgYgcFurwl4w1RdoBR7DPHohVKQ=
+		</data>
+		<key>VisionCCiOSSDK.bundle/ico_talk_hint_volume@2x.png</key>
+		<data>
+		zr/+XcdzkpJyPGgzkmu33/lp/i0=
+		</data>
+		<key>VisionCCiOSSDK.bundle/ico_talk_hint_volume@3x.png</key>
+		<data>
+		O1fiKpCyWC8K8Rf2tW76SSSEbNU=
+		</data>
+		<key>VisionCCiOSSDK.bundle/skeleton.html</key>
+		<data>
+		Yp/yIG+DIrda5wZSP91Ysi3x8U0=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -67,7 +103,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NF36zevIdXzFzX8jV57W7v+ovnci+BO8k0o+4WWwEXg=
+			O8aJPx9rU5wOh7KGA118caKslhLpSWwQDs/hWcuZ2z4=
 			</data>
 		</dict>
 		<key>Headers/VisionCCiOSSDK.h</key>
@@ -81,70 +117,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IaWLyDJcXbnpb7T0zVm5cYsYjxhOd85sW95/bRkFRFA=
+			dZNtOdHhLkee82r5ti9HqVk7ANHQeONNKii8OuoZ6kc=
 			</data>
 		</dict>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5f3yDdNUFvznvEV0JCSbFTszmlapNj3BZvUrPhquWog=
+			BJPsHYbDMFPwiih9jfcaphd7nqLiSEqE+nNqEwWlhSw=
 			</data>
 		</dict>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/iBFoOQwOvU+EKdorV667Xpm2IUsMavQsKYQnQeU02w=
+			EZ689QwBIx7PtEcOeV70aZqM14dKyZNWoy19id8ET0I=
 			</data>
 		</dict>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5f3yDdNUFvznvEV0JCSbFTszmlapNj3BZvUrPhquWog=
+			BJPsHYbDMFPwiih9jfcaphd7nqLiSEqE+nNqEwWlhSw=
 			</data>
 		</dict>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UK/fI+1t+nM2vNw4INPp6BX6esLAhejZY4XcxJy+wCI=
+			R7VFEdtZscg9ihgGIX32bgvVxTk2du1V0UMLuZkPtB0=
 			</data>
 		</dict>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IaWLyDJcXbnpb7T0zVm5cYsYjxhOd85sW95/bRkFRFA=
+			dZNtOdHhLkee82r5ti9HqVk7ANHQeONNKii8OuoZ6kc=
 			</data>
 		</dict>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0J9gxBNYjAasDbp6++CMT4QcQJv2wVUkSOABlHW8DzA=
+			EH3y1UqSkacHdsjnd7hIg6uvJIh2fVeFGCh3KFZWwsU=
 			</data>
 		</dict>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			69q8nUBFT8gyDex5RfKFoL2DwuuN68tSAU/qfdfvI9w=
+			tb4XDkD6Q4+R/nD1vzx5AaaFrTeTlL3RYYS9sJS0DJo=
 			</data>
 		</dict>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0J9gxBNYjAasDbp6++CMT4QcQJv2wVUkSOABlHW8DzA=
+			EH3y1UqSkacHdsjnd7hIg6uvJIh2fVeFGCh3KFZWwsU=
 			</data>
 		</dict>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kwfXZAViwDeVIcRsuA9VtCQS/C92S7v9A1ep6FKwe2M=
+			21HUOeom8RULjh7JXYRgOqqSfkZlHhKMdrTukrhcbDE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -152,6 +188,69 @@
 			<key>hash2</key>
 			<data>
 			Hfp2lE40yujeBdTzNVSDW7L5Z1lftC+NAnu+AwZw3sc=
+			</data>
+		</dict>
+		<key>VisionCCiOSSDK.bundle/dd_cancel_send_record.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gcqYDNp4owqHiVCUMgKqMq4mCRE0m8tOp+Lg/hQGvYY=
+			</data>
+		</dict>
+		<key>VisionCCiOSSDK.bundle/dd_cancel_send_record@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			JVna2cMQjoDgaa9w5nAfixYuT4BnvSzQGjgIqmNOYvw=
+			</data>
+		</dict>
+		<key>VisionCCiOSSDK.bundle/dd_record_too_short.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			GPStcZeaWj0SPuycAVKKNR09H1Qkxv/nzZ0xMP1tuVg=
+			</data>
+		</dict>
+		<key>VisionCCiOSSDK.bundle/dd_record_too_short@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			O8ojUF+mHF5ojQf6ybiazDgGmdgsgbR05p/94BJuEwo=
+			</data>
+		</dict>
+		<key>VisionCCiOSSDK.bundle/ico_talk_hint_voice-tube@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			9KkCfRqO2vp92WIelAgSP0A4uTZQ9F3d7jjRdYX+zvQ=
+			</data>
+		</dict>
+		<key>VisionCCiOSSDK.bundle/ico_talk_hint_voice-tube@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MoxUkUpdE+khdpnbHGWL9lFgAeXlXa6QYHc79I6EGwU=
+			</data>
+		</dict>
+		<key>VisionCCiOSSDK.bundle/ico_talk_hint_volume@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			PpNwgf7qyRyiOUWk6zMz9dzYyJpCqld/MOcrTT4cIh4=
+			</data>
+		</dict>
+		<key>VisionCCiOSSDK.bundle/ico_talk_hint_volume@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			GeaRlOYktci8rVS7zs6q5VPKm4NRL0J282HNoEuru2w=
+			</data>
+		</dict>
+		<key>VisionCCiOSSDK.bundle/skeleton.html</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Vla56BfXVujDvv/mfN55Bd194DErgc0s8vzFriqxhqY=
 			</data>
 		</dict>
 	</dict>

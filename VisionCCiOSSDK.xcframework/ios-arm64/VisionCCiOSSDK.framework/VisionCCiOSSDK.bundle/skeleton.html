@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<!-- query参数示例：redirect_url=http://www.baidu.com -->
+
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <meta content="width=device-width,initial-scale=1,user-scalable=no,viewport-fit=cover" name="viewport">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-touch-fullscreen" content="yes">
+  <meta name="format-detection" content="telephone=no,address=no">
+  <meta name="apple-mobile-web-app-status-bar-style" content="white">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>在线客服</title>
+  <style>
+    html,
+    body {
+      font-size: 18.75px;
+    }
+
+    .retry-btn {
+      width: 160px;
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      -webkit-box-shadow: 0 5px 0 #0880d7, 0 5px 3px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 5px 0 #0880d7, 0 5px 3px rgba(0, 0, 0, 0.3);
+      background-color: #1B9AF7;
+      border-color: #1B9AF7;
+      color: #FFF;
+      text-align: center;
+      line-height: 40px;
+      height: 40px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .goback-btn {
+      width: 120px;
+      position: fixed;
+      left: 0.4rem;
+      top: 0.4rem;
+      width: 40px;
+      height: 40px;
+      z-index: 2;
+    }
+
+    @keyframes glowing-highlight {
+      from {
+        -webkit-box-shadow: 0 0 0 rgba(254, 174, 27, 0.3);
+        box-shadow: 0 0 0 rgba(254, 174, 27, 0.3);
+      }
+
+      50% {
+        -webkit-box-shadow: 0 0 20px rgba(254, 174, 27, 0.8);
+        box-shadow: 0 0 20px rgba(254, 174, 27, 0.8);
+      }
+
+      to {
+        -webkit-box-shadow: 0 0 0 rgba(254, 174, 27, 0.3);
+        box-shadow: 0 0 0 rgba(254, 174, 27, 0.3);
+      }
+    }
+
+    .skt-container {
+      height: 100%;
+      width: 100%;
+      background-color: white;
+      z-index: 1;
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .skt-bg {
+      background: rgba(130, 130, 130, 0.2);
+      background: -webkit-gradient(linear, left top, right top,
+          color-stop(8%, rgba(130, 130, 130, 0.2)),
+          color-stop(18%, rgba(130, 130, 130, 0.3)),
+          color-stop(33%, rgba(130, 130, 130, 0.2)));
+      background: linear-gradient(to right, rgba(130, 130, 130, 0.2) 8%,
+          rgba(130, 130, 130, 0.3) 18%,
+          rgba(130, 130, 130, 0.2) 33%);
+    }
+
+    @keyframes wave-lines {
+      0% {
+        background-position: -100vw 0;
+      }
+
+      100% {
+        background-position: 100vw 0;
+      }
+    }
+
+    @keyframes wave-squares {
+      0% {
+        background-position: -100vw 0;
+      }
+
+      100% {
+        background-color: 100vw 0;
+      }
+    }
+
+    .skt-line {
+      background-size: 1600px 100px;
+      animation: wave-lines 2s infinite ease-out;
+      border-radius: 0.25rem;
+      height: 100%;
+      flex: 1;
+    }
+
+    .skt-circle {
+      border-radius: 50%;
+      height: 1.5rem;
+      width: 1.5rem;
+      background-size: 1600px 100px;
+      animation: wave-lines 2s infinite ease-out;
+    }
+
+    .skt-area {
+      width: calc(100% - 0.5rem);
+      height: calc(2rem - 0.5rem);
+      display: flex;
+      margin: 0.25rem;
+      flex-direction: row;
+      gap: 0.25rem;
+    }
+  </style>
+  <script>
+    // lib-flexible.js
+    ; (function (win,lib) {
+      var doc = win.document;
+      var docEl = doc.documentElement;
+      var metaEl = doc.querySelector('meta[name="viewport"]');
+      var flexibleEl = doc.querySelector('meta[name="flexible"]');
+      var dpr = 0;
+      var scale = 0;
+      var tid;
+      var flexible = lib.flexible || (lib.flexible = {});
+
+      if (metaEl) {
+        console.warn('将根据已有的meta标签来设置缩放比例');
+        var match = metaEl.getAttribute('content').match(/initial\-scale=([\d\.]+)/);
+        if (match) {
+          scale = parseFloat(match[1]);
+          dpr = parseInt(1 / scale);
+        }
+      } else if (flexibleEl) {
+        var content = flexibleEl.getAttribute('content');
+        if (content) {
+          var initialDpr = content.match(/initial\-dpr=([\d\.]+)/);
+          var maximumDpr = content.match(/maximum\-dpr=([\d\.]+)/);
+          if (initialDpr) {
+            dpr = parseFloat(initialDpr[1]);
+            scale = parseFloat((1 / dpr).toFixed(2));
+          }
+          if (maximumDpr) {
+            dpr = parseFloat(maximumDpr[1]);
+            scale = parseFloat((1 / dpr).toFixed(2));
+          }
+        }
+      }
+
+      if (!dpr && !scale) {
+        var isAndroid = win.navigator.appVersion.match(/android/gi);
+        var isIPhone = win.navigator.appVersion.match(/iphone/gi);
+        var devicePixelRatio = win.devicePixelRatio;
+        if (isIPhone) {
+          // iOS下，对于2和3的屏，用2倍的方案，其余的用1倍方案
+          if (devicePixelRatio >= 3 && (!dpr || dpr >= 3)) {
+            dpr = 3;
+          } else if (devicePixelRatio >= 2 && (!dpr || dpr >= 2)) {
+            dpr = 2;
+          } else {
+            dpr = 1;
+          }
+        } else {
+          // 其他设备下，仍旧使用1倍的方案
+          dpr = 1;
+        }
+        scale = 1 / dpr;
+      }
+
+      docEl.setAttribute('data-dpr',dpr);
+      if (!metaEl) {
+        metaEl = doc.createElement('meta');
+        metaEl.setAttribute('name','viewport');
+        metaEl.setAttribute('content','initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+        if (docEl.firstElementChild) {
+          docEl.firstElementChild.appendChild(metaEl);
+        } else {
+          var wrap = doc.createElement('div');
+          wrap.appendChild(metaEl);
+          doc.write(wrap.innerHTML);
+        }
+      }
+
+      function refreshRem() {
+        var width = docEl.getBoundingClientRect().width;
+        if (width / dpr > 540) {
+          width = 540 * dpr;
+        }
+        var rem = width / 20;
+        docEl.style.fontSize = rem + 'px';
+        flexible.rem = win.rem = rem;
+      }
+
+      win.addEventListener('resize',function () {
+        clearTimeout(tid);
+        tid = setTimeout(refreshRem,300);
+      },false);
+      win.addEventListener('pageshow',function (e) {
+        if (e.persisted) {
+          clearTimeout(tid);
+          tid = setTimeout(refreshRem,300);
+        }
+      },false);
+
+      if (doc.readyState === 'complete') {
+        doc.body.style.fontSize = 12 * dpr + 'px';
+      } else {
+        doc.addEventListener('DOMContentLoaded',function (e) {
+          doc.body.style.fontSize = 12 * dpr + 'px';
+        },false);
+      }
+
+
+      refreshRem();
+
+      flexible.dpr = win.dpr = dpr;
+      flexible.refreshRem = refreshRem;
+      flexible.rem2px = function (d) {
+        var val = parseFloat(d) * this.rem;
+        if (typeof d === 'string' && d.match(/rem$/)) {
+          val += 'px';
+        }
+        return val;
+      }
+      flexible.px2rem = function (d) {
+        var val = parseFloat(d) / this.rem;
+        if (typeof d === 'string' && d.match(/px$/)) {
+          val += 'rem';
+        }
+        return val;
+      }
+
+    })(window,window['lib'] || (window['lib'] = {}));
+
+    function handleRetryClick() {
+      const querySearch = new URLSearchParams(window.location.search)
+      const redirectUrl = querySearch.get('redirect_url')
+      if (redirectUrl && window.AndroidJSBridge) {
+        window.AndroidJSBridge.RedirectTo(redirectUrl)
+      }
+    }
+
+    function handleGoBack() {
+      if (window.AndroidJSBridge) {
+        window.AndroidJSBridge.GoBack()
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="skt-container">
+    <div class="skt-area" style="height: 4rem;">
+      <div class="skt-line skt-bg"></div>
+    </div>
+    <div class="skt-line skt-bg" style="margin: 0.25rem;"></div>
+    <div class="skt-area">
+      <div class="skt-line skt-bg"></div>
+    </div>
+    <div class="skt-area">
+      <div class="skt-circle skt-bg"></div>
+      <div class="skt-line skt-bg"></div>
+      <div class=" skt-circle skt-bg"></div>
+      <div style="width: 1rem;"></div>
+    </div>
+    <div class="skt-area">
+      <div class="skt-circle skt-bg"></div>
+      <div class="skt-circle skt-bg"></div>
+      <div class="skt-circle skt-bg"></div>
+      <div class="skt-circle skt-bg"></div>
+      <div class="skt-line skt-bg"></div>
+    </div>
+  </div>
+</body>
+
+</html>

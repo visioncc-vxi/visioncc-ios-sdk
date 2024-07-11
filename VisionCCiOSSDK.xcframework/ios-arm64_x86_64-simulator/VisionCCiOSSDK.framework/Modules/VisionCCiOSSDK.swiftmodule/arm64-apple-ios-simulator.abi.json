@@ -25,6 +25,482 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "ResponseErrorModel",
+        "printedName": "ResponseErrorModel",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ResponseErrorModel",
+                "printedName": "VisionCCiOSSDK.ResponseErrorModel",
+                "usr": "s:14VisionCCiOSSDK18ResponseErrorModelV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14VisionCCiOSSDK18ResponseErrorModelV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s14VisionCCiOSSDK18ResponseErrorModelV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "VisionCCiOSSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14VisionCCiOSSDK18ResponseErrorModelV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s14VisionCCiOSSDK18ResponseErrorModelV6encode2toys7Encoder_p_tKF",
+            "moduleName": "VisionCCiOSSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:14VisionCCiOSSDK18ResponseErrorModelV",
+        "mangledName": "$s14VisionCCiOSSDK18ResponseErrorModelV",
+        "moduleName": "VisionCCiOSSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UploadResposeModel",
+        "printedName": "UploadResposeModel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "url",
+            "printedName": "url",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14VisionCCiOSSDK18UploadResposeModelV3urlSSvp",
+            "mangledName": "$s14VisionCCiOSSDK18UploadResposeModelV3urlSSvp",
+            "moduleName": "VisionCCiOSSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK18UploadResposeModelV3urlSSvg",
+                "mangledName": "$s14VisionCCiOSSDK18UploadResposeModelV3urlSSvg",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK18UploadResposeModelV3urlSSvs",
+                "mangledName": "$s14VisionCCiOSSDK18UploadResposeModelV3urlSSvs",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK18UploadResposeModelV3urlSSvM",
+                "mangledName": "$s14VisionCCiOSSDK18UploadResposeModelV3urlSSvM",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "inputContentType",
+            "printedName": "inputContentType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14VisionCCiOSSDK18UploadResposeModelV16inputContentTypeSSvp",
+            "mangledName": "$s14VisionCCiOSSDK18UploadResposeModelV16inputContentTypeSSvp",
+            "moduleName": "VisionCCiOSSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK18UploadResposeModelV16inputContentTypeSSvg",
+                "mangledName": "$s14VisionCCiOSSDK18UploadResposeModelV16inputContentTypeSSvg",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK18UploadResposeModelV16inputContentTypeSSvs",
+                "mangledName": "$s14VisionCCiOSSDK18UploadResposeModelV16inputContentTypeSSvs",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK18UploadResposeModelV16inputContentTypeSSvM",
+                "mangledName": "$s14VisionCCiOSSDK18UploadResposeModelV16inputContentTypeSSvM",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "actualContentType",
+            "printedName": "actualContentType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14VisionCCiOSSDK18UploadResposeModelV17actualContentTypeSSvp",
+            "mangledName": "$s14VisionCCiOSSDK18UploadResposeModelV17actualContentTypeSSvp",
+            "moduleName": "VisionCCiOSSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK18UploadResposeModelV17actualContentTypeSSvg",
+                "mangledName": "$s14VisionCCiOSSDK18UploadResposeModelV17actualContentTypeSSvg",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK18UploadResposeModelV17actualContentTypeSSvs",
+                "mangledName": "$s14VisionCCiOSSDK18UploadResposeModelV17actualContentTypeSSvs",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK18UploadResposeModelV17actualContentTypeSSvM",
+                "mangledName": "$s14VisionCCiOSSDK18UploadResposeModelV17actualContentTypeSSvM",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(url:inputContentType:actualContentType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UploadResposeModel",
+                "printedName": "VisionCCiOSSDK.UploadResposeModel",
+                "usr": "s:14VisionCCiOSSDK18UploadResposeModelV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14VisionCCiOSSDK18UploadResposeModelV3url16inputContentType06actualiJ0ACSS_S2Stcfc",
+            "mangledName": "$s14VisionCCiOSSDK18UploadResposeModelV3url16inputContentType06actualiJ0ACSS_S2Stcfc",
+            "moduleName": "VisionCCiOSSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UploadResposeModel",
+                "printedName": "VisionCCiOSSDK.UploadResposeModel",
+                "usr": "s:14VisionCCiOSSDK18UploadResposeModelV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14VisionCCiOSSDK18UploadResposeModelV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s14VisionCCiOSSDK18UploadResposeModelV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "VisionCCiOSSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14VisionCCiOSSDK18UploadResposeModelV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s14VisionCCiOSSDK18UploadResposeModelV6encode2toys7Encoder_p_tKF",
+            "moduleName": "VisionCCiOSSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:14VisionCCiOSSDK18UploadResposeModelV",
+        "mangledName": "$s14VisionCCiOSSDK18UploadResposeModelV",
+        "moduleName": "VisionCCiOSSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VisionCCiOSSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VisionCCiOSSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "WebKit",
         "printedName": "WebKit",
@@ -803,6 +1279,16 @@
         "moduleName": "VisionCCiOSSDK"
       },
       {
+        "kind": "Import",
+        "name": "SVProgressHUD",
+        "printedName": "SVProgressHUD",
+        "declKind": "Import",
+        "moduleName": "VisionCCiOSSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "CCKFApi",
         "printedName": "CCKFApi",
@@ -913,6 +1399,117 @@
                 "declKind": "Accessor",
                 "usr": "s:14VisionCCiOSSDK7CCKFApiC18conversionDelegateAA0d12ConversationF0_pSgvM",
                 "mangledName": "$s14VisionCCiOSSDK7CCKFApiC18conversionDelegateAA0d12ConversationF0_pSgvM",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "documentInteractionController",
+            "printedName": "documentInteractionController",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIDocumentInteractionController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIDocumentInteractionController",
+                    "printedName": "UIKit.UIDocumentInteractionController",
+                    "usr": "c:objc(cs)UIDocumentInteractionController"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14VisionCCiOSSDK7CCKFApiC29documentInteractionControllerSo010UIDocumentfG0CSgvp",
+            "mangledName": "$s14VisionCCiOSSDK7CCKFApiC29documentInteractionControllerSo010UIDocumentfG0CSgvp",
+            "moduleName": "VisionCCiOSSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "Custom",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIDocumentInteractionController?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIDocumentInteractionController",
+                        "printedName": "UIKit.UIDocumentInteractionController",
+                        "usr": "c:objc(cs)UIDocumentInteractionController"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK7CCKFApiC29documentInteractionControllerSo010UIDocumentfG0CSgvg",
+                "mangledName": "$s14VisionCCiOSSDK7CCKFApiC29documentInteractionControllerSo010UIDocumentfG0CSgvg",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIDocumentInteractionController?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIDocumentInteractionController",
+                        "printedName": "UIKit.UIDocumentInteractionController",
+                        "usr": "c:objc(cs)UIDocumentInteractionController"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK7CCKFApiC29documentInteractionControllerSo010UIDocumentfG0CSgvs",
+                "mangledName": "$s14VisionCCiOSSDK7CCKFApiC29documentInteractionControllerSo010UIDocumentfG0CSgvs",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK7CCKFApiC29documentInteractionControllerSo010UIDocumentfG0CSgvM",
+                "mangledName": "$s14VisionCCiOSSDK7CCKFApiC29documentInteractionControllerSo010UIDocumentfG0CSgvM",
                 "moduleName": "VisionCCiOSSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -1309,56 +1906,6 @@
           },
           {
             "kind": "Function",
-            "name": "imagePickerController",
-            "printedName": "imagePickerController(_:didFinishPickingMediaWithInfo:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIImagePickerController",
-                "printedName": "UIKit.UIImagePickerController",
-                "usr": "c:objc(cs)UIImagePickerController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[UIKit.UIImagePickerController.InfoKey : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "InfoKey",
-                    "printedName": "UIKit.UIImagePickerController.InfoKey",
-                    "usr": "c:@T@UIImagePickerControllerInfoKey"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@VisionCCiOSSDK@objc(cs)CCKFApi(im)imagePickerController:didFinishPickingMediaWithInfo:",
-            "mangledName": "$s14VisionCCiOSSDK7CCKFApiC21imagePickerController_29didFinishPickingMediaWithInfoySo07UIImagefG0C_SDySo0nfgM3KeyaypGtF",
-            "moduleName": "VisionCCiOSSDK",
-            "objc_name": "imagePickerController:didFinishPickingMediaWithInfo:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "webView",
             "printedName": "webView(_:didStartProvisionalNavigation:)",
             "children": [
@@ -1491,6 +2038,57 @@
               "Custom",
               "AccessControl",
               "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webView",
+            "printedName": "webView(_:didFail:withError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "WebKit.WKNavigation?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKNavigation",
+                    "printedName": "WebKit.WKNavigation",
+                    "usr": "c:objc(cs)WKNavigation"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@VisionCCiOSSDK@objc(cs)CCKFApi(im)webView:didFailNavigation:withError:",
+            "mangledName": "$s14VisionCCiOSSDK7CCKFApiC7webView_7didFail9withErrorySo05WKWebF0C_So12WKNavigationCSgs0J0_ptF",
+            "moduleName": "VisionCCiOSSDK",
+            "objc_name": "webView:didFailNavigation:withError:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -1723,6 +2321,82 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "documentPicker",
+            "printedName": "documentPicker(_:didPickDocumentsAt:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIDocumentPickerViewController",
+                "printedName": "UIKit.UIDocumentPickerViewController",
+                "usr": "c:objc(cs)UIDocumentPickerViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Foundation.URL]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@VisionCCiOSSDK@objc(cs)CCKFApi(im)documentPicker:didPickDocumentsAtURLs:",
+            "mangledName": "$s14VisionCCiOSSDK7CCKFApiC14documentPicker_18didPickDocumentsAtySo010UIDocumentF14ViewControllerC_Say10Foundation3URLVGtF",
+            "moduleName": "VisionCCiOSSDK",
+            "objc_name": "documentPicker:didPickDocumentsAtURLs:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "documentPickerWasCancelled",
+            "printedName": "documentPickerWasCancelled(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIDocumentPickerViewController",
+                "printedName": "UIKit.UIDocumentPickerViewController",
+                "usr": "c:objc(cs)UIDocumentPickerViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@VisionCCiOSSDK@objc(cs)CCKFApi(im)documentPickerWasCancelled:",
+            "mangledName": "$s14VisionCCiOSSDK7CCKFApiC26documentPickerWasCancelledyySo010UIDocumentF14ViewControllerCF",
+            "moduleName": "VisionCCiOSSDK",
+            "objc_name": "documentPickerWasCancelled:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -1797,6 +2471,13 @@
             "printedName": "UITraitChangeObservable",
             "usr": "s:5UIKit23UITraitChangeObservableP",
             "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ZLPhotoBrowserCompatible",
+            "printedName": "ZLPhotoBrowserCompatible",
+            "usr": "s:14ZLPhotoBrowser0aB10CompatibleP",
+            "mangledName": "$s14ZLPhotoBrowser0aB10CompatibleP"
           }
         ]
       },
@@ -3165,6 +3846,23 @@
         "moduleName": "VisionCCiOSSDK"
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VisionCCiOSSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "VisionCCiOSSDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "ShortcutsModel",
         "printedName": "ShortcutsModel",
@@ -3656,9 +4354,1620 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "FileType",
+        "printedName": "FileType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "File",
+            "printedName": "File",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VisionCCiOSSDK.FileType.Type) -> VisionCCiOSSDK.FileType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FileType",
+                    "printedName": "VisionCCiOSSDK.FileType",
+                    "usr": "s:14VisionCCiOSSDK8FileTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VisionCCiOSSDK.FileType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FileType",
+                        "printedName": "VisionCCiOSSDK.FileType",
+                        "usr": "s:14VisionCCiOSSDK8FileTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14VisionCCiOSSDK8FileTypeO0D0yA2CmF",
+            "mangledName": "$s14VisionCCiOSSDK8FileTypeO0D0yA2CmF",
+            "moduleName": "VisionCCiOSSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "Image",
+            "printedName": "Image",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VisionCCiOSSDK.FileType.Type) -> VisionCCiOSSDK.FileType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FileType",
+                    "printedName": "VisionCCiOSSDK.FileType",
+                    "usr": "s:14VisionCCiOSSDK8FileTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VisionCCiOSSDK.FileType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FileType",
+                        "printedName": "VisionCCiOSSDK.FileType",
+                        "usr": "s:14VisionCCiOSSDK8FileTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14VisionCCiOSSDK8FileTypeO5ImageyA2CmF",
+            "mangledName": "$s14VisionCCiOSSDK8FileTypeO5ImageyA2CmF",
+            "moduleName": "VisionCCiOSSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "Video",
+            "printedName": "Video",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VisionCCiOSSDK.FileType.Type) -> VisionCCiOSSDK.FileType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FileType",
+                    "printedName": "VisionCCiOSSDK.FileType",
+                    "usr": "s:14VisionCCiOSSDK8FileTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VisionCCiOSSDK.FileType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FileType",
+                        "printedName": "VisionCCiOSSDK.FileType",
+                        "usr": "s:14VisionCCiOSSDK8FileTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14VisionCCiOSSDK8FileTypeO5VideoyA2CmF",
+            "mangledName": "$s14VisionCCiOSSDK8FileTypeO5VideoyA2CmF",
+            "moduleName": "VisionCCiOSSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "Record",
+            "printedName": "Record",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VisionCCiOSSDK.FileType.Type) -> VisionCCiOSSDK.FileType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FileType",
+                    "printedName": "VisionCCiOSSDK.FileType",
+                    "usr": "s:14VisionCCiOSSDK8FileTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VisionCCiOSSDK.FileType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FileType",
+                        "printedName": "VisionCCiOSSDK.FileType",
+                        "usr": "s:14VisionCCiOSSDK8FileTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14VisionCCiOSSDK8FileTypeO6RecordyA2CmF",
+            "mangledName": "$s14VisionCCiOSSDK8FileTypeO6RecordyA2CmF",
+            "moduleName": "VisionCCiOSSDK"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "VisionCCiOSSDK.FileType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FileType",
+                    "printedName": "VisionCCiOSSDK.FileType",
+                    "usr": "s:14VisionCCiOSSDK8FileTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14VisionCCiOSSDK8FileTypeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s14VisionCCiOSSDK8FileTypeO8rawValueACSgSS_tcfc",
+            "moduleName": "VisionCCiOSSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14VisionCCiOSSDK8FileTypeO8rawValueSSvp",
+            "mangledName": "$s14VisionCCiOSSDK8FileTypeO8rawValueSSvp",
+            "moduleName": "VisionCCiOSSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK8FileTypeO8rawValueSSvg",
+                "mangledName": "$s14VisionCCiOSSDK8FileTypeO8rawValueSSvg",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:14VisionCCiOSSDK8FileTypeO",
+        "mangledName": "$s14VisionCCiOSSDK8FileTypeO",
+        "moduleName": "VisionCCiOSSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UploadFileInfoModel",
+        "printedName": "UploadFileInfoModel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV4nameSSSgvp",
+            "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV4nameSSSgvp",
+            "moduleName": "VisionCCiOSSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV4nameSSSgvg",
+                "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV4nameSSSgvg",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV4nameSSSgvs",
+                "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV4nameSSSgvs",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV4nameSSSgvM",
+                "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV4nameSSSgvM",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "type",
+            "printedName": "type",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV4typeSSvp",
+            "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV4typeSSvp",
+            "moduleName": "VisionCCiOSSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV4typeSSvg",
+                "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV4typeSSvg",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV4typeSSvs",
+                "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV4typeSSvs",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV4typeSSvM",
+                "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV4typeSSvM",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "url",
+            "printedName": "url",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV3urlSSSgvp",
+            "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV3urlSSSgvp",
+            "moduleName": "VisionCCiOSSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV3urlSSSgvg",
+                "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV3urlSSSgvg",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV3urlSSSgvs",
+                "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV3urlSSSgvs",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV3urlSSSgvM",
+                "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV3urlSSSgvM",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "base64Str",
+            "printedName": "base64Str",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV9base64StrSSSgvp",
+            "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV9base64StrSSSgvp",
+            "moduleName": "VisionCCiOSSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV9base64StrSSSgvg",
+                "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV9base64StrSSSgvg",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV9base64StrSSSgvs",
+                "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV9base64StrSSSgvs",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV9base64StrSSSgvM",
+                "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV9base64StrSSSgvM",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "height",
+            "printedName": "height",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV6heightSdSgvp",
+            "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV6heightSdSgvp",
+            "moduleName": "VisionCCiOSSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV6heightSdSgvg",
+                "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV6heightSdSgvg",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV6heightSdSgvs",
+                "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV6heightSdSgvs",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV6heightSdSgvM",
+                "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV6heightSdSgvM",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "width",
+            "printedName": "width",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV5widthSdSgvp",
+            "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV5widthSdSgvp",
+            "moduleName": "VisionCCiOSSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV5widthSdSgvg",
+                "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV5widthSdSgvg",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV5widthSdSgvs",
+                "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV5widthSdSgvs",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV5widthSdSgvM",
+                "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV5widthSdSgvM",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "duration",
+            "printedName": "duration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV8durationSdSgvp",
+            "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV8durationSdSgvp",
+            "moduleName": "VisionCCiOSSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV8durationSdSgvg",
+                "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV8durationSdSgvg",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV8durationSdSgvs",
+                "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV8durationSdSgvs",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV8durationSdSgvM",
+                "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV8durationSdSgvM",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "suffix",
+            "printedName": "suffix",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV6suffixSSvp",
+            "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV6suffixSSvp",
+            "moduleName": "VisionCCiOSSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV6suffixSSvg",
+                "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV6suffixSSvg",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV6suffixSSvs",
+                "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV6suffixSSvs",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV6suffixSSvM",
+                "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV6suffixSSvM",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "size",
+            "printedName": "size",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int64?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV4sizes5Int64VSgvp",
+            "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV4sizes5Int64VSgvp",
+            "moduleName": "VisionCCiOSSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int64?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int64",
+                        "printedName": "Swift.Int64",
+                        "usr": "s:s5Int64V"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV4sizes5Int64VSgvg",
+                "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV4sizes5Int64VSgvg",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int64?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int64",
+                        "printedName": "Swift.Int64",
+                        "usr": "s:s5Int64V"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV4sizes5Int64VSgvs",
+                "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV4sizes5Int64VSgvs",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV4sizes5Int64VSgvM",
+                "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV4sizes5Int64VSgvM",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mimeType",
+            "printedName": "mimeType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV8mimeTypeSSSgvp",
+            "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV8mimeTypeSSSgvp",
+            "moduleName": "VisionCCiOSSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV8mimeTypeSSSgvg",
+                "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV8mimeTypeSSSgvg",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV8mimeTypeSSSgvs",
+                "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV8mimeTypeSSSgvs",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV8mimeTypeSSSgvM",
+                "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV8mimeTypeSSSgvM",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(name:type:url:base64Str:height:width:duration:suffix:size:mimeType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UploadFileInfoModel",
+                "printedName": "VisionCCiOSSDK.UploadFileInfoModel",
+                "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int64?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV4name4type3url9base64Str6height5width8duration6suffix4size8mimeTypeACSSSg_SSA2NSdSgA2OSSs5Int64VSgANtcfc",
+            "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV4name4type3url9base64Str6height5width8duration6suffix4size8mimeTypeACSSSg_SSA2NSdSgA2OSSs5Int64VSgANtcfc",
+            "moduleName": "VisionCCiOSSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UploadFileInfoModel",
+                "printedName": "VisionCCiOSSDK.UploadFileInfoModel",
+                "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "VisionCCiOSSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV6encode2toys7Encoder_p_tKF",
+            "moduleName": "VisionCCiOSSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:14VisionCCiOSSDK19UploadFileInfoModelV",
+        "mangledName": "$s14VisionCCiOSSDK19UploadFileInfoModelV",
+        "moduleName": "VisionCCiOSSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SVProgressHUD",
+        "printedName": "SVProgressHUD",
+        "declKind": "Import",
+        "moduleName": "VisionCCiOSSDK",
+        "declAttributes": [
+          "ImplementationOnly",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Alamofire",
+        "printedName": "Alamofire",
+        "declKind": "Import",
+        "moduleName": "VisionCCiOSSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "VisionCCiOSSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VisionCCiOSSDK"
+      },
+      {
         "kind": "Import",
         "name": "AVKit",
         "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "VisionCCiOSSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "VisionCCiOSSDK"
       },
@@ -3666,6 +5975,67 @@
         "kind": "Import",
         "name": "Photos",
         "printedName": "Photos",
+        "declKind": "Import",
+        "moduleName": "VisionCCiOSSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "ZLPhotoBrowser",
+        "printedName": "ZLPhotoBrowser",
+        "declKind": "Import",
+        "moduleName": "VisionCCiOSSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Alamofire",
+        "printedName": "Alamofire",
+        "declKind": "Import",
+        "moduleName": "VisionCCiOSSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SVProgressHUD",
+        "printedName": "SVProgressHUD",
+        "declKind": "Import",
+        "moduleName": "VisionCCiOSSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MobileCoreServices",
+        "printedName": "MobileCoreServices",
+        "declKind": "Import",
+        "moduleName": "VisionCCiOSSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VisionCCiOSSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "VisionCCiOSSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit.UIGestureRecognizerSubclass",
+        "printedName": "UIKit.UIGestureRecognizerSubclass",
         "declKind": "Import",
         "moduleName": "VisionCCiOSSDK"
       },
@@ -10871,6 +13241,30 @@
       },
       {
         "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "VisionCCiOSSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "VisionCCiOSSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VisionCCiOSSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -10888,16 +13282,79 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/VXIMessageManager.swift",
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/VXIMessageManager.swift",
+      "kind": "StringLiteral",
+      "offset": 440,
+      "length": 26,
+      "value": "\"https:\/\/vcc-dev.vxish.cn\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/VXIMessageManager.swift",
+      "kind": "StringLiteral",
+      "offset": 503,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/VXIMessageManager.swift",
+      "kind": "StringLiteral",
+      "offset": 538,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/VXIMessageManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 639,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/VXIMessageManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 644,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/VXIMessageManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 651,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/VXIMessageManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 693,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/VXIMessageManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 698,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/VXIMessageManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 705,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/VXIMessageManager.swift",
       "kind": "Array",
-      "offset": 474,
+      "offset": 757,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApiExtension.swift",
       "kind": "BooleanLiteral",
-      "offset": 2347,
+      "offset": 2556,
       "length": 5,
       "value": "false"
     },
@@ -10917,129 +13374,318 @@
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
-      "kind": "StringLiteral",
-      "offset": 4087,
-      "length": 12,
-      "value": "\"trackEvent\""
+      "kind": "BooleanLiteral",
+      "offset": 4491,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
-      "kind": "StringLiteral",
-      "offset": 4164,
-      "length": 9,
-      "value": "\"openUrl\""
-    },
-    {
-      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
-      "kind": "StringLiteral",
-      "offset": 4238,
-      "length": 8,
-      "value": "\"goBack\""
-    },
-    {
-      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
-      "kind": "StringLiteral",
-      "offset": 4320,
-      "length": 11,
-      "value": "\"appPicker\""
-    },
-    {
-      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
-      "kind": "StringLiteral",
-      "offset": 4396,
-      "length": 10,
-      "value": "\"zlPicker\""
+      "kind": "BooleanLiteral",
+      "offset": 4946,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "IntegerLiteral",
-      "offset": 4568,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4736,
+      "offset": 5071,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "StringLiteral",
-      "offset": 4874,
-      "length": 144,
-      "value": "\"Distance: safeDistanceTop:\""
+      "offset": 5134,
+      "length": 149,
+      "value": "\"Distance.load: safeDistanceTop:\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "StringLiteral",
-      "offset": 4933,
+      "offset": 5198,
       "length": 18,
       "value": "\" safeDistanceBottom:\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "StringLiteral",
-      "offset": 4988,
+      "offset": 5253,
       "length": 12,
       "value": "\" headerHeight:\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "StringLiteral",
-      "offset": 5017,
+      "offset": 5282,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5325,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5548,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
+      "kind": "StringLiteral",
+      "offset": 5629,
+      "length": 10,
+      "value": "\"skeleton\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
+      "kind": "StringLiteral",
+      "offset": 5649,
+      "length": 6,
+      "value": "\"html\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
+      "kind": "StringLiteral",
+      "offset": 6350,
+      "length": 12,
+      "value": "\"trackEvent\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
+      "kind": "StringLiteral",
+      "offset": 6427,
+      "length": 9,
+      "value": "\"openUrl\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
+      "kind": "StringLiteral",
+      "offset": 6501,
+      "length": 10,
+      "value": "\"openFile\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
+      "kind": "StringLiteral",
+      "offset": 6576,
+      "length": 8,
+      "value": "\"goBack\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
+      "kind": "StringLiteral",
+      "offset": 6649,
+      "length": 12,
+      "value": "\"openCamera\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
+      "kind": "StringLiteral",
+      "offset": 6726,
+      "length": 24,
+      "value": "\"openPhotoLibraryPicker\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
+      "kind": "StringLiteral",
+      "offset": 6815,
+      "length": 20,
+      "value": "\"openDocumentPicker\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
+      "kind": "StringLiteral",
+      "offset": 6900,
+      "length": 12,
+      "value": "\"initLoaded\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
+      "kind": "StringLiteral",
+      "offset": 6977,
+      "length": 11,
+      "value": "\"recording\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7141,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7308,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
+      "kind": "StringLiteral",
+      "offset": 7451,
+      "length": 144,
+      "value": "\"Distance: safeDistanceTop:\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
+      "kind": "StringLiteral",
+      "offset": 7510,
+      "length": 18,
+      "value": "\" safeDistanceBottom:\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
+      "kind": "StringLiteral",
+      "offset": 7565,
+      "length": 12,
+      "value": "\" headerHeight:\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
+      "kind": "StringLiteral",
+      "offset": 7594,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "StringLiteral",
-      "offset": 5144,
+      "offset": 7721,
       "length": 73,
       "value": "\"VxiChatSDK\/iOS\/\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "StringLiteral",
-      "offset": 5186,
+      "offset": 7763,
       "length": 1,
       "value": "\"(\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "StringLiteral",
-      "offset": 5215,
+      "offset": 7792,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 5303,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5399,
-      "length": 4,
-      "value": "true"
+      "offset": 8042,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "StringLiteral",
-      "offset": 5592,
+      "offset": 8236,
       "length": 114,
       "value": "\"document.documentElement.style.webkitTouchCallout='none';document.documentElement.style.webkitUserSelect='none';\""
     },
     {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Views\/RecordingView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 155,
+      "length": 3,
+      "value": "128"
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Views\/RecordingView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 192,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Views\/RecordingView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 240,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Views\/RecordingView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 251,
+      "length": 6,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Views\/RecordingView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 267,
+      "length": 12,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Views\/RecordingView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 240,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Views\/RecordingView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 251,
+      "length": 6,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Views\/RecordingView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 267,
+      "length": 12,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Views\/RecordingView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 240,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Views\/RecordingView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 251,
+      "length": 6,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Views\/RecordingView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 267,
+      "length": 12,
+      "value": "3"
+    },
+    {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/UIHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 2271,
+      "offset": 3010,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/UploadManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4038,
+      "length": 26,
+      "value": "\"application\/octet-stream\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/UploadManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4093,
+      "length": 6,
+      "value": "\"file\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Models\/MessageModel.swift",
@@ -11063,6 +13709,34 @@
       "value": "\"\""
     },
     {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/VoiceManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 293,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/VoiceManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 617,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/VoiceManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 653,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/VoiceManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 676,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/Extension.swift",
       "kind": "StringLiteral",
       "offset": 216,
@@ -11072,7 +13746,7 @@
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/Extension.swift",
       "kind": "IntegerLiteral",
-      "offset": 1796,
+      "offset": 2207,
       "length": 1,
       "value": "1"
     }

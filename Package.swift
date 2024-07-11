@@ -3,15 +3,6 @@
  
 import PackageDescription
 
-extension Target {
-    static func sdk() -> Target {
-        return .binaryTarget(
-                name: "VisionCCiOSSDK", 
-                path: "VisionCCiOSSDK.xcframework"
-            )
-    }
-}
-
 let package = Package(
     name: "VisionCCLibrary",
     defaultLocalization: "en",
@@ -35,7 +26,10 @@ let package = Package(
             ],
             path: "VisionCCLibrary"
         ),
-        Target.sdk()
+        .binaryTarget(
+            name: "VisionCCiOSSDK", 
+            path: "VisionCCiOSSDK.xcframework"
+        )
     ],
     swiftLanguageVersions: [
         .v5
