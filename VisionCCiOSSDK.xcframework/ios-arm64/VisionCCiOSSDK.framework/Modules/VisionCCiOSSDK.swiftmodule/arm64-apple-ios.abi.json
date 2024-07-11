@@ -6016,30 +6016,6 @@
         "moduleName": "VisionCCiOSSDK"
       },
       {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "VisionCCiOSSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "VisionCCiOSSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit.UIGestureRecognizerSubclass",
-        "printedName": "UIKit.UIGestureRecognizerSubclass",
-        "declKind": "Import",
-        "moduleName": "VisionCCiOSSDK"
-      },
-      {
         "kind": "TypeDecl",
         "name": "MessageModel",
         "printedName": "MessageModel",

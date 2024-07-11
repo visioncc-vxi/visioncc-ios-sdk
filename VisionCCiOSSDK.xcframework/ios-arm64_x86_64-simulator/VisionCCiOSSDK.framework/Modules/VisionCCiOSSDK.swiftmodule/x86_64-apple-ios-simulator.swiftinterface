@@ -7,7 +7,6 @@ import Foundation
 import MobileCoreServices
 import Photos
 import Swift
-import UIKit.UIGestureRecognizerSubclass
 import UIKit
 @_exported import VisionCCiOSSDK
 import WebKit
