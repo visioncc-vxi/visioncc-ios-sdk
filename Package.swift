@@ -16,17 +16,13 @@ let package = Package(
             name: "VisionCCLibraryTarget",
             targets: ["VisionCCLibraryTarget"]),
     ],
-     dependencies: [
-        .package(url: "https://github.com/SVProgressHUD/SVProgressHUD.git", .upToNextMinor(from: "2.3.1"))
-    ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "VisionCCLibraryTarget",
             dependencies: [
-                "VisionCCiOSSDK",
-                .product(name: "SVProgressHUD", package: "SVProgressHUD")
+                "VisionCCiOSSDK"
             ],
             path: "VisionCCLibrary"
         ),
