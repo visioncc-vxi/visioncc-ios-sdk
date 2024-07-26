@@ -15,16 +15,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "VisionCCiOSSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "TypeDecl",
         "name": "ResponseErrorModel",
         "printedName": "ResponseErrorModel",
@@ -504,6 +494,13 @@
         "kind": "Import",
         "name": "WebKit",
         "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "VisionCCiOSSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UniformTypeIdentifiers",
+        "printedName": "UniformTypeIdentifiers",
         "declKind": "Import",
         "moduleName": "VisionCCiOSSDK"
       },
@@ -1279,16 +1276,6 @@
         "moduleName": "VisionCCiOSSDK"
       },
       {
-        "kind": "Import",
-        "name": "SVProgressHUD",
-        "printedName": "SVProgressHUD",
-        "declKind": "Import",
-        "moduleName": "VisionCCiOSSDK",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
-      },
-      {
         "kind": "TypeDecl",
         "name": "CCKFApi",
         "printedName": "CCKFApi",
@@ -1399,117 +1386,6 @@
                 "declKind": "Accessor",
                 "usr": "s:14VisionCCiOSSDK7CCKFApiC18conversionDelegateAA0d12ConversationF0_pSgvM",
                 "mangledName": "$s14VisionCCiOSSDK7CCKFApiC18conversionDelegateAA0d12ConversationF0_pSgvM",
-                "moduleName": "VisionCCiOSSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "documentInteractionController",
-            "printedName": "documentInteractionController",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "UIKit.UIDocumentInteractionController?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIDocumentInteractionController",
-                    "printedName": "UIKit.UIDocumentInteractionController",
-                    "usr": "c:objc(cs)UIDocumentInteractionController"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:14VisionCCiOSSDK7CCKFApiC29documentInteractionControllerSo010UIDocumentfG0CSgvp",
-            "mangledName": "$s14VisionCCiOSSDK7CCKFApiC29documentInteractionControllerSo010UIDocumentfG0CSgvp",
-            "moduleName": "VisionCCiOSSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "Custom",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "UIKit.UIDocumentInteractionController?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "UIDocumentInteractionController",
-                        "printedName": "UIKit.UIDocumentInteractionController",
-                        "usr": "c:objc(cs)UIDocumentInteractionController"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14VisionCCiOSSDK7CCKFApiC29documentInteractionControllerSo010UIDocumentfG0CSgvg",
-                "mangledName": "$s14VisionCCiOSSDK7CCKFApiC29documentInteractionControllerSo010UIDocumentfG0CSgvg",
-                "moduleName": "VisionCCiOSSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "UIKit.UIDocumentInteractionController?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "UIDocumentInteractionController",
-                        "printedName": "UIKit.UIDocumentInteractionController",
-                        "usr": "c:objc(cs)UIDocumentInteractionController"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14VisionCCiOSSDK7CCKFApiC29documentInteractionControllerSo010UIDocumentfG0CSgvs",
-                "mangledName": "$s14VisionCCiOSSDK7CCKFApiC29documentInteractionControllerSo010UIDocumentfG0CSgvs",
-                "moduleName": "VisionCCiOSSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14VisionCCiOSSDK7CCKFApiC29documentInteractionControllerSo010UIDocumentfG0CSgvM",
-                "mangledName": "$s14VisionCCiOSSDK7CCKFApiC29documentInteractionControllerSo010UIDocumentfG0CSgvM",
                 "moduleName": "VisionCCiOSSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -1706,7 +1582,7 @@
           {
             "kind": "Function",
             "name": "startSession",
-            "printedName": "startSession(host:entryId:appkey:userMappings:callBack:)",
+            "printedName": "startSession(host:entryId:appkey:user:callBack:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1735,7 +1611,7 @@
                 "kind": "TypeNominal",
                 "name": "UserMappingModel",
                 "printedName": "VisionCCiOSSDK.UserMappingModel",
-                "usr": "s:14VisionCCiOSSDK16UserMappingModelV"
+                "usr": "s:14VisionCCiOSSDK16UserMappingModelC"
               },
               {
                 "kind": "TypeNominal",
@@ -1765,8 +1641,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:14VisionCCiOSSDK7CCKFApiC12startSession4host7entryId6appkey12userMappings8callBackySS_S2SAA16UserMappingModelVyycSgtF",
-            "mangledName": "$s14VisionCCiOSSDK7CCKFApiC12startSession4host7entryId6appkey12userMappings8callBackySS_S2SAA16UserMappingModelVyycSgtF",
+            "usr": "s:14VisionCCiOSSDK7CCKFApiC12startSession4host7entryId6appkey4user8callBackySS_S2SAA16UserMappingModelCyycSgtF",
+            "mangledName": "$s14VisionCCiOSSDK7CCKFApiC12startSession4host7entryId6appkey4user8callBackySS_S2SAA16UserMappingModelCyycSgtF",
             "moduleName": "VisionCCiOSSDK",
             "declAttributes": [
               "Custom",
@@ -1858,6 +1734,29 @@
             "declKind": "Func",
             "usr": "s:14VisionCCiOSSDK7CCKFApiC5closeyyF",
             "mangledName": "$s14VisionCCiOSSDK7CCKFApiC5closeyyF",
+            "moduleName": "VisionCCiOSSDK",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearWebViewCache",
+            "printedName": "clearWebViewCache()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14VisionCCiOSSDK7CCKFApiC17clearWebViewCacheyyF",
+            "mangledName": "$s14VisionCCiOSSDK7CCKFApiC17clearWebViewCacheyyF",
             "moduleName": "VisionCCiOSSDK",
             "declAttributes": [
               "Custom",
@@ -2362,7 +2261,8 @@
               "Dynamic",
               "ObjC",
               "Custom",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -2483,161 +2383,6 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "CCKFApiConversationDelegate",
-        "printedName": "CCKFApiConversationDelegate",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "unReadMessageCountEvent",
-            "printedName": "unReadMessageCountEvent(count:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:14VisionCCiOSSDK27CCKFApiConversationDelegateP23unReadMessageCountEvent5countySi_tF",
-            "mangledName": "$s14VisionCCiOSSDK27CCKFApiConversationDelegateP23unReadMessageCountEvent5countySi_tF",
-            "moduleName": "VisionCCiOSSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : VisionCCiOSSDK.CCKFApiConversationDelegate>",
-            "sugared_genericSig": "<Self where Self : VisionCCiOSSDK.CCKFApiConversationDelegate>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "shortCutEvent",
-            "printedName": "shortCutEvent(model:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ShortcutsModel",
-                "printedName": "VisionCCiOSSDK.ShortcutsModel",
-                "usr": "s:14VisionCCiOSSDK14ShortcutsModelV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:14VisionCCiOSSDK27CCKFApiConversationDelegateP13shortCutEvent5modelyAA14ShortcutsModelV_tF",
-            "mangledName": "$s14VisionCCiOSSDK27CCKFApiConversationDelegateP13shortCutEvent5modelyAA14ShortcutsModelV_tF",
-            "moduleName": "VisionCCiOSSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : VisionCCiOSSDK.CCKFApiConversationDelegate>",
-            "sugared_genericSig": "<Self where Self : VisionCCiOSSDK.CCKFApiConversationDelegate>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "messageEvent",
-            "printedName": "messageEvent(model:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MessageModel",
-                "printedName": "VisionCCiOSSDK.MessageModel",
-                "usr": "s:14VisionCCiOSSDK12MessageModelC"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:14VisionCCiOSSDK27CCKFApiConversationDelegateP12messageEvent5modelyAA12MessageModelC_tF",
-            "mangledName": "$s14VisionCCiOSSDK27CCKFApiConversationDelegateP12messageEvent5modelyAA12MessageModelC_tF",
-            "moduleName": "VisionCCiOSSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : VisionCCiOSSDK.CCKFApiConversationDelegate>",
-            "sugared_genericSig": "<Self where Self : VisionCCiOSSDK.CCKFApiConversationDelegate>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "trackEvent",
-            "printedName": "trackEvent(name:attributes:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Swift.String]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:14VisionCCiOSSDK27CCKFApiConversationDelegateP10trackEvent4name10attributesySS_SDyS2SGtF",
-            "mangledName": "$s14VisionCCiOSSDK27CCKFApiConversationDelegateP10trackEvent4name10attributesySS_SDyS2SGtF",
-            "moduleName": "VisionCCiOSSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : VisionCCiOSSDK.CCKFApiConversationDelegate>",
-            "sugared_genericSig": "<Self where Self : VisionCCiOSSDK.CCKFApiConversationDelegate>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:14VisionCCiOSSDK27CCKFApiConversationDelegateP",
-        "mangledName": "$s14VisionCCiOSSDK27CCKFApiConversationDelegateP",
-        "moduleName": "VisionCCiOSSDK",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
         "name": "UserMappingModel",
         "printedName": "UserMappingModel",
         "children": [
@@ -2662,8 +2407,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:14VisionCCiOSSDK16UserMappingModelV11identity_idSSSgvp",
-            "mangledName": "$s14VisionCCiOSSDK16UserMappingModelV11identity_idSSSgvp",
+            "usr": "s:14VisionCCiOSSDK16UserMappingModelC11identity_idSSSgvp",
+            "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC11identity_idSSSgvp",
             "moduleName": "VisionCCiOSSDK",
             "declAttributes": [
               "HasInitialValue",
@@ -2694,8 +2439,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14VisionCCiOSSDK16UserMappingModelV11identity_idSSSgvg",
-                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelV11identity_idSSSgvg",
+                "usr": "s:14VisionCCiOSSDK16UserMappingModelC11identity_idSSSgvg",
+                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC11identity_idSSSgvg",
                 "moduleName": "VisionCCiOSSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -2726,8 +2471,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14VisionCCiOSSDK16UserMappingModelV11identity_idSSSgvs",
-                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelV11identity_idSSSgvs",
+                "usr": "s:14VisionCCiOSSDK16UserMappingModelC11identity_idSSSgvs",
+                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC11identity_idSSSgvs",
                 "moduleName": "VisionCCiOSSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -2744,8 +2489,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14VisionCCiOSSDK16UserMappingModelV11identity_idSSSgvM",
-                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelV11identity_idSSSgvM",
+                "usr": "s:14VisionCCiOSSDK16UserMappingModelC11identity_idSSSgvM",
+                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC11identity_idSSSgvM",
                 "moduleName": "VisionCCiOSSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -2773,8 +2518,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:14VisionCCiOSSDK16UserMappingModelV12visitor_nameSSSgvp",
-            "mangledName": "$s14VisionCCiOSSDK16UserMappingModelV12visitor_nameSSSgvp",
+            "usr": "s:14VisionCCiOSSDK16UserMappingModelC12visitor_nameSSSgvp",
+            "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC12visitor_nameSSSgvp",
             "moduleName": "VisionCCiOSSDK",
             "declAttributes": [
               "HasInitialValue",
@@ -2805,8 +2550,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14VisionCCiOSSDK16UserMappingModelV12visitor_nameSSSgvg",
-                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelV12visitor_nameSSSgvg",
+                "usr": "s:14VisionCCiOSSDK16UserMappingModelC12visitor_nameSSSgvg",
+                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC12visitor_nameSSSgvg",
                 "moduleName": "VisionCCiOSSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -2837,8 +2582,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14VisionCCiOSSDK16UserMappingModelV12visitor_nameSSSgvs",
-                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelV12visitor_nameSSSgvs",
+                "usr": "s:14VisionCCiOSSDK16UserMappingModelC12visitor_nameSSSgvs",
+                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC12visitor_nameSSSgvs",
                 "moduleName": "VisionCCiOSSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -2855,8 +2600,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14VisionCCiOSSDK16UserMappingModelV12visitor_nameSSSgvM",
-                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelV12visitor_nameSSSgvM",
+                "usr": "s:14VisionCCiOSSDK16UserMappingModelC12visitor_nameSSSgvM",
+                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC12visitor_nameSSSgvM",
                 "moduleName": "VisionCCiOSSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -2884,8 +2629,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:14VisionCCiOSSDK16UserMappingModelV5phoneSSSgvp",
-            "mangledName": "$s14VisionCCiOSSDK16UserMappingModelV5phoneSSSgvp",
+            "usr": "s:14VisionCCiOSSDK16UserMappingModelC5phoneSSSgvp",
+            "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC5phoneSSSgvp",
             "moduleName": "VisionCCiOSSDK",
             "declAttributes": [
               "HasInitialValue",
@@ -2915,8 +2660,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14VisionCCiOSSDK16UserMappingModelV5phoneSSSgvg",
-                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelV5phoneSSSgvg",
+                "usr": "s:14VisionCCiOSSDK16UserMappingModelC5phoneSSSgvg",
+                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC5phoneSSSgvg",
                 "moduleName": "VisionCCiOSSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -2947,8 +2692,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14VisionCCiOSSDK16UserMappingModelV5phoneSSSgvs",
-                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelV5phoneSSSgvs",
+                "usr": "s:14VisionCCiOSSDK16UserMappingModelC5phoneSSSgvs",
+                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC5phoneSSSgvs",
                 "moduleName": "VisionCCiOSSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -2965,8 +2710,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14VisionCCiOSSDK16UserMappingModelV5phoneSSSgvM",
-                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelV5phoneSSSgvM",
+                "usr": "s:14VisionCCiOSSDK16UserMappingModelC5phoneSSSgvM",
+                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC5phoneSSSgvM",
                 "moduleName": "VisionCCiOSSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -2994,8 +2739,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:14VisionCCiOSSDK16UserMappingModelV5emailSSSgvp",
-            "mangledName": "$s14VisionCCiOSSDK16UserMappingModelV5emailSSSgvp",
+            "usr": "s:14VisionCCiOSSDK16UserMappingModelC5emailSSSgvp",
+            "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC5emailSSSgvp",
             "moduleName": "VisionCCiOSSDK",
             "declAttributes": [
               "HasInitialValue",
@@ -3025,8 +2770,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14VisionCCiOSSDK16UserMappingModelV5emailSSSgvg",
-                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelV5emailSSSgvg",
+                "usr": "s:14VisionCCiOSSDK16UserMappingModelC5emailSSSgvg",
+                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC5emailSSSgvg",
                 "moduleName": "VisionCCiOSSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -3057,8 +2802,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14VisionCCiOSSDK16UserMappingModelV5emailSSSgvs",
-                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelV5emailSSSgvs",
+                "usr": "s:14VisionCCiOSSDK16UserMappingModelC5emailSSSgvs",
+                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC5emailSSSgvs",
                 "moduleName": "VisionCCiOSSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -3075,8 +2820,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14VisionCCiOSSDK16UserMappingModelV5emailSSSgvM",
-                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelV5emailSSSgvM",
+                "usr": "s:14VisionCCiOSSDK16UserMappingModelC5emailSSSgvM",
+                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC5emailSSSgvM",
                 "moduleName": "VisionCCiOSSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -3104,8 +2849,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:14VisionCCiOSSDK16UserMappingModelV8deviceIdSSSgvp",
-            "mangledName": "$s14VisionCCiOSSDK16UserMappingModelV8deviceIdSSSgvp",
+            "usr": "s:14VisionCCiOSSDK16UserMappingModelC8deviceIdSSSgvp",
+            "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC8deviceIdSSSgvp",
             "moduleName": "VisionCCiOSSDK",
             "declAttributes": [
               "HasInitialValue",
@@ -3136,8 +2881,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14VisionCCiOSSDK16UserMappingModelV8deviceIdSSSgvg",
-                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelV8deviceIdSSSgvg",
+                "usr": "s:14VisionCCiOSSDK16UserMappingModelC8deviceIdSSSgvg",
+                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC8deviceIdSSSgvg",
                 "moduleName": "VisionCCiOSSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -3168,8 +2913,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14VisionCCiOSSDK16UserMappingModelV8deviceIdSSSgvs",
-                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelV8deviceIdSSSgvs",
+                "usr": "s:14VisionCCiOSSDK16UserMappingModelC8deviceIdSSSgvs",
+                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC8deviceIdSSSgvs",
                 "moduleName": "VisionCCiOSSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -3186,8 +2931,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14VisionCCiOSSDK16UserMappingModelV8deviceIdSSSgvM",
-                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelV8deviceIdSSSgvM",
+                "usr": "s:14VisionCCiOSSDK16UserMappingModelC8deviceIdSSSgvM",
+                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC8deviceIdSSSgvM",
                 "moduleName": "VisionCCiOSSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -3215,8 +2960,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:14VisionCCiOSSDK16UserMappingModelV6app_idSSSgvp",
-            "mangledName": "$s14VisionCCiOSSDK16UserMappingModelV6app_idSSSgvp",
+            "usr": "s:14VisionCCiOSSDK16UserMappingModelC6app_idSSSgvp",
+            "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC6app_idSSSgvp",
             "moduleName": "VisionCCiOSSDK",
             "declAttributes": [
               "HasInitialValue",
@@ -3246,8 +2991,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14VisionCCiOSSDK16UserMappingModelV6app_idSSSgvg",
-                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelV6app_idSSSgvg",
+                "usr": "s:14VisionCCiOSSDK16UserMappingModelC6app_idSSSgvg",
+                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC6app_idSSSgvg",
                 "moduleName": "VisionCCiOSSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -3278,8 +3023,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14VisionCCiOSSDK16UserMappingModelV6app_idSSSgvs",
-                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelV6app_idSSSgvs",
+                "usr": "s:14VisionCCiOSSDK16UserMappingModelC6app_idSSSgvs",
+                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC6app_idSSSgvs",
                 "moduleName": "VisionCCiOSSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -3296,8 +3041,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14VisionCCiOSSDK16UserMappingModelV6app_idSSSgvM",
-                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelV6app_idSSSgvM",
+                "usr": "s:14VisionCCiOSSDK16UserMappingModelC6app_idSSSgvM",
+                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC6app_idSSSgvM",
                 "moduleName": "VisionCCiOSSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -3325,8 +3070,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:14VisionCCiOSSDK16UserMappingModelV8app_nameSSSgvp",
-            "mangledName": "$s14VisionCCiOSSDK16UserMappingModelV8app_nameSSSgvp",
+            "usr": "s:14VisionCCiOSSDK16UserMappingModelC8app_nameSSSgvp",
+            "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC8app_nameSSSgvp",
             "moduleName": "VisionCCiOSSDK",
             "declAttributes": [
               "HasInitialValue",
@@ -3357,8 +3102,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14VisionCCiOSSDK16UserMappingModelV8app_nameSSSgvg",
-                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelV8app_nameSSSgvg",
+                "usr": "s:14VisionCCiOSSDK16UserMappingModelC8app_nameSSSgvg",
+                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC8app_nameSSSgvg",
                 "moduleName": "VisionCCiOSSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -3389,8 +3134,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14VisionCCiOSSDK16UserMappingModelV8app_nameSSSgvs",
-                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelV8app_nameSSSgvs",
+                "usr": "s:14VisionCCiOSSDK16UserMappingModelC8app_nameSSSgvs",
+                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC8app_nameSSSgvs",
                 "moduleName": "VisionCCiOSSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -3407,8 +3152,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14VisionCCiOSSDK16UserMappingModelV8app_nameSSSgvM",
-                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelV8app_nameSSSgvM",
+                "usr": "s:14VisionCCiOSSDK16UserMappingModelC8app_nameSSSgvM",
+                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC8app_nameSSSgvM",
                 "moduleName": "VisionCCiOSSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -3436,8 +3181,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:14VisionCCiOSSDK16UserMappingModelV8env_nameSSSgvp",
-            "mangledName": "$s14VisionCCiOSSDK16UserMappingModelV8env_nameSSSgvp",
+            "usr": "s:14VisionCCiOSSDK16UserMappingModelC8env_nameSSSgvp",
+            "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC8env_nameSSSgvp",
             "moduleName": "VisionCCiOSSDK",
             "declAttributes": [
               "HasInitialValue",
@@ -3468,8 +3213,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14VisionCCiOSSDK16UserMappingModelV8env_nameSSSgvg",
-                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelV8env_nameSSSgvg",
+                "usr": "s:14VisionCCiOSSDK16UserMappingModelC8env_nameSSSgvg",
+                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC8env_nameSSSgvg",
                 "moduleName": "VisionCCiOSSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -3500,8 +3245,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14VisionCCiOSSDK16UserMappingModelV8env_nameSSSgvs",
-                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelV8env_nameSSSgvs",
+                "usr": "s:14VisionCCiOSSDK16UserMappingModelC8env_nameSSSgvs",
+                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC8env_nameSSSgvs",
                 "moduleName": "VisionCCiOSSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -3518,8 +3263,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14VisionCCiOSSDK16UserMappingModelV8env_nameSSSgvM",
-                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelV8env_nameSSSgvM",
+                "usr": "s:14VisionCCiOSSDK16UserMappingModelC8env_nameSSSgvM",
+                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC8env_nameSSSgvM",
                 "moduleName": "VisionCCiOSSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -3535,7 +3280,7 @@
                 "kind": "TypeNominal",
                 "name": "UserMappingModel",
                 "printedName": "VisionCCiOSSDK.UserMappingModel",
-                "usr": "s:14VisionCCiOSSDK16UserMappingModelV"
+                "usr": "s:14VisionCCiOSSDK16UserMappingModelC"
               },
               {
                 "kind": "TypeNominal",
@@ -3659,48 +3404,13 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:14VisionCCiOSSDK16UserMappingModelV11identity_id12visitor_name5phone5email8deviceId04app_H00o1_J004env_J0ACSSSg_A7Ltcfc",
-            "mangledName": "$s14VisionCCiOSSDK16UserMappingModelV11identity_id12visitor_name5phone5email8deviceId04app_H00o1_J004env_J0ACSSSg_A7Ltcfc",
+            "usr": "s:14VisionCCiOSSDK16UserMappingModelC11identity_id12visitor_name5phone5email8deviceId04app_H00o1_J004env_J0ACSSSg_A7Ltcfc",
+            "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC11identity_id12visitor_name5phone5email8deviceId04app_H00o1_J004env_J0ACSSSg_A7Ltcfc",
             "moduleName": "VisionCCiOSSDK",
             "declAttributes": [
               "AccessControl"
             ],
             "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "==",
-            "printedName": "==(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UserMappingModel",
-                "printedName": "VisionCCiOSSDK.UserMappingModel",
-                "usr": "s:14VisionCCiOSSDK16UserMappingModelV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UserMappingModel",
-                "printedName": "VisionCCiOSSDK.UserMappingModel",
-                "usr": "s:14VisionCCiOSSDK16UserMappingModelV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:14VisionCCiOSSDK16UserMappingModelV2eeoiySbAC_ACtFZ",
-            "mangledName": "$s14VisionCCiOSSDK16UserMappingModelV2eeoiySbAC_ACtFZ",
-            "moduleName": "VisionCCiOSSDK",
-            "static": true,
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -3715,8 +3425,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:14VisionCCiOSSDK16UserMappingModelV10toURLQuerySSyF",
-            "mangledName": "$s14VisionCCiOSSDK16UserMappingModelV10toURLQuerySSyF",
+            "usr": "s:14VisionCCiOSSDK16UserMappingModelC10toURLQuerySSyF",
+            "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC10toURLQuerySSyF",
             "moduleName": "VisionCCiOSSDK",
             "declAttributes": [
               "AccessControl"
@@ -3736,8 +3446,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:14VisionCCiOSSDK16UserMappingModelV13getJsonStringSSyF",
-            "mangledName": "$s14VisionCCiOSSDK16UserMappingModelV13getJsonStringSSyF",
+            "usr": "s:14VisionCCiOSSDK16UserMappingModelC13getJsonStringSSyF",
+            "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC13getJsonStringSSyF",
             "moduleName": "VisionCCiOSSDK",
             "declAttributes": [
               "AccessControl"
@@ -3753,7 +3463,7 @@
                 "kind": "TypeNominal",
                 "name": "UserMappingModel",
                 "printedName": "VisionCCiOSSDK.UserMappingModel",
-                "usr": "s:14VisionCCiOSSDK16UserMappingModelV"
+                "usr": "s:14VisionCCiOSSDK16UserMappingModelC"
               },
               {
                 "kind": "TypeNominal",
@@ -3763,10 +3473,13 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:14VisionCCiOSSDK16UserMappingModelV4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s14VisionCCiOSSDK16UserMappingModelV4fromACs7Decoder_p_tKcfc",
+            "usr": "s:14VisionCCiOSSDK16UserMappingModelC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC4fromACs7Decoder_p_tKcfc",
             "moduleName": "VisionCCiOSSDK",
             "implicit": true,
+            "declAttributes": [
+              "Required"
+            ],
             "throwing": true,
             "init_kind": "Designated"
           },
@@ -3788,17 +3501,17 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:14VisionCCiOSSDK16UserMappingModelV6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s14VisionCCiOSSDK16UserMappingModelV6encode2toys7Encoder_p_tKF",
+            "usr": "s:14VisionCCiOSSDK16UserMappingModelC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC6encode2toys7Encoder_p_tKF",
             "moduleName": "VisionCCiOSSDK",
             "implicit": true,
             "throwing": true,
             "funcSelfKind": "NonMutating"
           }
         ],
-        "declKind": "Struct",
-        "usr": "s:14VisionCCiOSSDK16UserMappingModelV",
-        "mangledName": "$s14VisionCCiOSSDK16UserMappingModelV",
+        "declKind": "Class",
+        "usr": "s:14VisionCCiOSSDK16UserMappingModelC",
+        "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC",
         "moduleName": "VisionCCiOSSDK",
         "declAttributes": [
           "AccessControl",
@@ -3818,13 +3531,6 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
           }
         ]
       },
@@ -4342,6 +4048,23 @@
             "mangledName": "$sSE"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VisionCCiOSSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "VisionCCiOSSDK"
       },
       {
         "kind": "Import",
@@ -5942,6 +5665,13 @@
       },
       {
         "kind": "Import",
+        "name": "UniformTypeIdentifiers",
+        "printedName": "UniformTypeIdentifiers",
+        "declKind": "Import",
+        "moduleName": "VisionCCiOSSDK"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -5953,6 +5683,202 @@
         "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "VisionCCiOSSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VisionCCiOSSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "VisionCCiOSSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "SVProgressHUD",
+        "printedName": "SVProgressHUD",
+        "declKind": "Import",
+        "moduleName": "VisionCCiOSSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Photos",
+        "printedName": "Photos",
+        "declKind": "Import",
+        "moduleName": "VisionCCiOSSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "VisionCCiOSSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CCKFApiConversationDelegate",
+        "printedName": "CCKFApiConversationDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "unReadMessageCountEvent",
+            "printedName": "unReadMessageCountEvent(count:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14VisionCCiOSSDK27CCKFApiConversationDelegateP23unReadMessageCountEvent5countySi_tF",
+            "mangledName": "$s14VisionCCiOSSDK27CCKFApiConversationDelegateP23unReadMessageCountEvent5countySi_tF",
+            "moduleName": "VisionCCiOSSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : VisionCCiOSSDK.CCKFApiConversationDelegate>",
+            "sugared_genericSig": "<Self where Self : VisionCCiOSSDK.CCKFApiConversationDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "shortCutEvent",
+            "printedName": "shortCutEvent(model:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ShortcutsModel",
+                "printedName": "VisionCCiOSSDK.ShortcutsModel",
+                "usr": "s:14VisionCCiOSSDK14ShortcutsModelV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14VisionCCiOSSDK27CCKFApiConversationDelegateP13shortCutEvent5modelyAA14ShortcutsModelV_tF",
+            "mangledName": "$s14VisionCCiOSSDK27CCKFApiConversationDelegateP13shortCutEvent5modelyAA14ShortcutsModelV_tF",
+            "moduleName": "VisionCCiOSSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : VisionCCiOSSDK.CCKFApiConversationDelegate>",
+            "sugared_genericSig": "<Self where Self : VisionCCiOSSDK.CCKFApiConversationDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "messageEvent",
+            "printedName": "messageEvent(model:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MessageModel",
+                "printedName": "VisionCCiOSSDK.MessageModel",
+                "usr": "s:14VisionCCiOSSDK12MessageModelC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14VisionCCiOSSDK27CCKFApiConversationDelegateP12messageEvent5modelyAA12MessageModelC_tF",
+            "mangledName": "$s14VisionCCiOSSDK27CCKFApiConversationDelegateP12messageEvent5modelyAA12MessageModelC_tF",
+            "moduleName": "VisionCCiOSSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : VisionCCiOSSDK.CCKFApiConversationDelegate>",
+            "sugared_genericSig": "<Self where Self : VisionCCiOSSDK.CCKFApiConversationDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "trackEvent",
+            "printedName": "trackEvent(name:attributes:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14VisionCCiOSSDK27CCKFApiConversationDelegateP10trackEvent4name10attributesySS_SDyS2SGtF",
+            "mangledName": "$s14VisionCCiOSSDK27CCKFApiConversationDelegateP10trackEvent4name10attributesySS_SDyS2SGtF",
+            "moduleName": "VisionCCiOSSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : VisionCCiOSSDK.CCKFApiConversationDelegate>",
+            "sugared_genericSig": "<Self where Self : VisionCCiOSSDK.CCKFApiConversationDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:14VisionCCiOSSDK27CCKFApiConversationDelegateP",
+        "mangledName": "$s14VisionCCiOSSDK27CCKFApiConversationDelegateP",
+        "moduleName": "VisionCCiOSSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -5990,28 +5916,8 @@
       },
       {
         "kind": "Import",
-        "name": "Alamofire",
-        "printedName": "Alamofire",
-        "declKind": "Import",
-        "moduleName": "VisionCCiOSSDK",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SVProgressHUD",
-        "printedName": "SVProgressHUD",
-        "declKind": "Import",
-        "moduleName": "VisionCCiOSSDK",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "MobileCoreServices",
-        "printedName": "MobileCoreServices",
+        "name": "WebKit",
+        "printedName": "WebKit",
         "declKind": "Import",
         "moduleName": "VisionCCiOSSDK"
       },
@@ -13258,79 +13164,79 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/VXIMessageManager.swift",
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Manager\/CCKFApiManager.swift",
       "kind": "StringLiteral",
-      "offset": 440,
+      "offset": 434,
       "length": 26,
       "value": "\"https:\/\/vcc-dev.vxish.cn\""
     },
     {
-      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/VXIMessageManager.swift",
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Manager\/CCKFApiManager.swift",
       "kind": "StringLiteral",
-      "offset": 503,
+      "offset": 497,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/VXIMessageManager.swift",
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Manager\/CCKFApiManager.swift",
       "kind": "StringLiteral",
-      "offset": 538,
+      "offset": 535,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/VXIMessageManager.swift",
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Manager\/CCKFApiManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 639,
+      "offset": 615,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/VXIMessageManager.swift",
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Manager\/CCKFApiManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 644,
+      "offset": 620,
       "length": 4,
       "value": "1024"
     },
     {
-      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/VXIMessageManager.swift",
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Manager\/CCKFApiManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 651,
+      "offset": 627,
       "length": 4,
       "value": "1024"
     },
     {
-      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/VXIMessageManager.swift",
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Manager\/CCKFApiManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 693,
+      "offset": 669,
       "length": 2,
       "value": "50"
     },
     {
-      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/VXIMessageManager.swift",
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Manager\/CCKFApiManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 698,
+      "offset": 674,
       "length": 4,
       "value": "1024"
     },
     {
-      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/VXIMessageManager.swift",
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Manager\/CCKFApiManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 705,
+      "offset": 681,
       "length": 4,
       "value": "1024"
     },
     {
-      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/VXIMessageManager.swift",
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Manager\/CCKFApiManager.swift",
       "kind": "Array",
-      "offset": 757,
+      "offset": 733,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApiExtension.swift",
       "kind": "BooleanLiteral",
-      "offset": 2494,
+      "offset": 2652,
       "length": 5,
       "value": "false"
     },
@@ -13351,196 +13257,147 @@
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 4491,
+      "offset": 439,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 4885,
+      "offset": 472,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5538,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "IntegerLiteral",
-      "offset": 5017,
+      "offset": 5670,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 5216,
+      "offset": 5948,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "StringLiteral",
-      "offset": 5288,
+      "offset": 6025,
       "length": 10,
       "value": "\"skeleton\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "StringLiteral",
-      "offset": 5308,
+      "offset": 6045,
       "length": 6,
       "value": "\"html\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
-      "kind": "StringLiteral",
-      "offset": 5907,
-      "length": 12,
-      "value": "\"trackEvent\""
-    },
-    {
-      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
-      "kind": "StringLiteral",
-      "offset": 5984,
-      "length": 9,
-      "value": "\"openUrl\""
-    },
-    {
-      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
-      "kind": "StringLiteral",
-      "offset": 6058,
-      "length": 10,
-      "value": "\"openFile\""
-    },
-    {
-      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
-      "kind": "StringLiteral",
-      "offset": 6133,
-      "length": 8,
-      "value": "\"goBack\""
-    },
-    {
-      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
-      "kind": "StringLiteral",
-      "offset": 6206,
-      "length": 12,
-      "value": "\"openCamera\""
-    },
-    {
-      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
-      "kind": "StringLiteral",
-      "offset": 6283,
-      "length": 24,
-      "value": "\"openPhotoLibraryPicker\""
-    },
-    {
-      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
-      "kind": "StringLiteral",
-      "offset": 6372,
-      "length": 20,
-      "value": "\"openDocumentPicker\""
-    },
-    {
-      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
-      "kind": "StringLiteral",
-      "offset": 6457,
-      "length": 12,
-      "value": "\"initLoaded\""
-    },
-    {
-      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
-      "kind": "StringLiteral",
-      "offset": 6534,
-      "length": 11,
-      "value": "\"recording\""
-    },
-    {
-      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "IntegerLiteral",
-      "offset": 6783,
+      "offset": 7003,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "StringLiteral",
-      "offset": 6920,
+      "offset": 7140,
       "length": 138,
       "value": "\"Distance: safeDistanceTop:\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "StringLiteral",
-      "offset": 6979,
+      "offset": 7199,
       "length": 18,
       "value": "\" safeDistanceBottom:\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "StringLiteral",
-      "offset": 7034,
+      "offset": 7254,
       "length": 9,
       "value": "\" navHeight:\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "StringLiteral",
-      "offset": 7057,
+      "offset": 7277,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "StringLiteral",
-      "offset": 7184,
-      "length": 73,
+      "offset": 7411,
+      "length": 84,
       "value": "\"VxiChatSDK\/iOS\/\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "StringLiteral",
-      "offset": 7226,
+      "offset": 7459,
       "length": 1,
       "value": "\"(\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "StringLiteral",
-      "offset": 7255,
+      "offset": 7493,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
+      "kind": "FloatLiteral",
+      "offset": 7529,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 7339,
+      "offset": 7613,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 7435,
+      "offset": 7709,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 7493,
+      "offset": 7767,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 7553,
+      "offset": 7827,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "StringLiteral",
-      "offset": 7992,
+      "offset": 8207,
       "length": 114,
       "value": "\"document.documentElement.style.webkitTouchCallout='none';document.documentElement.style.webkitUserSelect='none';\""
     },
@@ -13622,25 +13479,256 @@
       "value": "3"
     },
     {
-      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/UIHelper.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3010,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/UploadManager.swift",
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Manager\/UploadManager.swift",
       "kind": "StringLiteral",
-      "offset": 4038,
+      "offset": 3852,
       "length": 26,
       "value": "\"application\/octet-stream\""
     },
     {
-      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/UploadManager.swift",
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Manager\/UploadManager.swift",
       "kind": "StringLiteral",
-      "offset": 4093,
+      "offset": 3907,
       "length": 6,
       "value": "\"file\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 500,
+      "length": 14,
+      "value": "\"未知错误\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 545,
+      "length": 18,
+      "value": "\"JSON解析失败\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 594,
+      "length": 17,
+      "value": "\"服务不可用\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 635,
+      "length": 17,
+      "value": "\"服务器错误\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 677,
+      "length": 14,
+      "value": "\"上传失败\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 718,
+      "length": 20,
+      "value": "\"服务请求超时\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 500,
+      "length": 14,
+      "value": "\"未知错误\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 545,
+      "length": 18,
+      "value": "\"JSON解析失败\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 594,
+      "length": 17,
+      "value": "\"服务不可用\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 635,
+      "length": 17,
+      "value": "\"服务器错误\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 677,
+      "length": 14,
+      "value": "\"上传失败\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 718,
+      "length": 20,
+      "value": "\"服务请求超时\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 814,
+      "length": 12,
+      "value": "\"trackEvent\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 846,
+      "length": 9,
+      "value": "\"openUrl\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 876,
+      "length": 10,
+      "value": "\"openFile\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 909,
+      "length": 12,
+      "value": "\"openCamera\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 956,
+      "length": 24,
+      "value": "\"openPhotoLibraryPicker\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 1011,
+      "length": 20,
+      "value": "\"openDocumentPicker\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 1054,
+      "length": 12,
+      "value": "\"initLoaded\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 1088,
+      "length": 11,
+      "value": "\"recording\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 1118,
+      "length": 8,
+      "value": "\"goBack\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 814,
+      "length": 12,
+      "value": "\"trackEvent\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 846,
+      "length": 9,
+      "value": "\"openUrl\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 876,
+      "length": 10,
+      "value": "\"openFile\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 909,
+      "length": 12,
+      "value": "\"openCamera\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 956,
+      "length": 24,
+      "value": "\"openPhotoLibraryPicker\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 1011,
+      "length": 20,
+      "value": "\"openDocumentPicker\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 1054,
+      "length": 12,
+      "value": "\"initLoaded\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 1088,
+      "length": 11,
+      "value": "\"recording\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 1118,
+      "length": 8,
+      "value": "\"goBack\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "FloatLiteral",
+      "offset": 2998,
+      "length": 3,
+      "value": "3.0"
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5498,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6531,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Manager\/ChatManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6830,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Models\/MessageModel.swift",
@@ -13664,44 +13752,37 @@
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/VoiceManager.swift",
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Manager\/VoiceManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 293,
+      "offset": 304,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/VoiceManager.swift",
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Manager\/VoiceManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 617,
+      "offset": 628,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/VoiceManager.swift",
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Manager\/VoiceManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 653,
+      "offset": 664,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/VoiceManager.swift",
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Manager\/VoiceManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 676,
+      "offset": 687,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/Extension.swift",
-      "kind": "StringLiteral",
-      "offset": 216,
-      "length": 22,
-      "value": "\"myCustomNotification\""
-    },
-    {
-      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/Extension.swift",
       "kind": "IntegerLiteral",
-      "offset": 2207,
+      "offset": 2749,
       "length": 1,
       "value": "1"
     }

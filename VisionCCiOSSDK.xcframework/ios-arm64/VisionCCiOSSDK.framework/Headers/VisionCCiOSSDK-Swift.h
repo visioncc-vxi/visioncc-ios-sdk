@@ -305,7 +305,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class NSCoder;
 
 SWIFT_CLASS("_TtC14VisionCCiOSSDK7CCKFApi")
-@interface CCKFApi : UIViewController <UIDocumentInteractionControllerDelegate, WKUIDelegate>
+@interface CCKFApi : UIViewController <UIGestureRecognizerDelegate, WKUIDelegate>
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewWillDisappear:(BOOL)animated;
 - (void)viewDidLoad;
@@ -320,7 +320,6 @@ SWIFT_CLASS("_TtC14VisionCCiOSSDK7CCKFApi")
 - (void)documentPicker:(UIDocumentPickerViewController * _Nonnull)controller didPickDocumentsAtURLs:(NSArray<NSURL *> * _Nonnull)urls;
 - (void)documentPickerWasCancelled:(UIDocumentPickerViewController * _Nonnull)controller;
 @end
-
 
 
 @class WKWebView;
@@ -345,7 +344,7 @@ SWIFT_CLASS("_TtC14VisionCCiOSSDK7CCKFApi")
 @class WKUserContentController;
 @class WKScriptMessage;
 
-@interface CCKFApi (SWIFT_EXTENSION(VisionCCiOSSDK)) <UINavigationControllerDelegate, WKScriptMessageHandler>
+@interface CCKFApi (SWIFT_EXTENSION(VisionCCiOSSDK)) <UIDocumentInteractionControllerDelegate, UINavigationControllerDelegate, WKScriptMessageHandler>
 - (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
 @end
 

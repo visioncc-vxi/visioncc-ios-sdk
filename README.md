@@ -1,3 +1,50 @@
+<H1 align="center">VisionCCiOSSDK</H1>
+
+<p align="center">
+    <img src="https://img.shields.io/github/license/visioncc-vxi/visioncc-ios-sdk.svg" alt="GitHub license"/>
+</p>
+
+[![Build Status](https://travis-ci.org/visioncc-vxi/visioncc-ios-sdk.svg)](https://travis-ci.org/visioncc-vxi/visioncc-ios-sdk)
+
+Installation
+==========================
+
+#### Installation with CocoaPods
+
+[![CocoaPods](https://img.shields.io/cocoapods/v/VisionCCiOSSDK.svg)](http://cocoadocs.org/docsets/VisionCCiOSSDK)
+
+*Swift 5.10, 5.9, 5.8, 5.7, 5.6, 5.5 (Xcode 15)*
+
+```ruby
+pod 'VisionCCiOSSDK'
+```
+
+*Or you can choose the version you need based on Swift support table from [Requirements](README.md#requirements)*
+
+```ruby
+pod 'VisionCCiOSSDK', '2.0.4'
+```
+
+
+#### Installation with Swift Package Manager
+
+[![Github tag](https://img.shields.io/github/tag/visioncc-vxi/visioncc-ios-sdk.svg)]()
+
+[Swift Package Manager(SPM)](https://swift.org/package-manager/) is Apple's dependency manager tool. It is now supported in Xcode 11. So it can be used in all appleOS types of projects. It can be used alongside other tools like CocoaPods and Carthage as well. 
+
+To install visioncc-ios-sdk package via Xcode
+
+ * Go to File -> Swift Packages -> Add Package Dependency...
+ * Then search for https://github.com/visioncc-vxi/visioncc-ios-sdk.git
+ * And choose the version you want
+
+
+```swift
+import VisionCCiOSSDK
+
+
+
+
 # 概述
 随着业务的不断演进和用户需求的日益多样化，我们决定对现有SDK的集成方案进行重要升级。此次更新的核心内容是将原生SDK方案转换为SDK内嵌WebView的方案。此变更旨在提高开发效率、增强功能灵活性，并优化用户体验。以下文档将详细介绍这一转变的背景、主要变化、优势、技术实现细节及开发者需注意的事项。
 
@@ -16,3 +63,19 @@
 - 降低开发成本：一次开发，多处运行，提高了代码复用率，降低了跨平台开发的复杂度。
 - 动态内容管理：便于实时调整页面内容和样式，快速响应市场变化。
 - 增强用户体验：通过优化加载策略和交互设计，使H5页面接近原生体验。
+
+
+```
+
+LICENSE
+---
+Distributed under the MIT License.
+
+Contributions
+---
+Any contribution is more than welcome! You can contribute through pull requests and issues on GitHub.
+
+Author
+---
+If you wish to contact me, email at: esbu@vxichina.com
+

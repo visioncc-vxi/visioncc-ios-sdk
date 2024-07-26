@@ -4,10 +4,10 @@
 import AVFoundation
 import AVKit
 import Foundation
-import MobileCoreServices
 import Photos
 import Swift
 import UIKit
+import UniformTypeIdentifiers
 @_exported import VisionCCiOSSDK
 import WebKit
 import _Concurrency
@@ -26,12 +26,13 @@ public struct UploadResposeModel : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 extension VisionCCiOSSDK.CCKFApi {
-  @_Concurrency.MainActor(unsafe) public func startSession(host: Swift.String, entryId: Swift.String, appkey: Swift.String, userMappings: VisionCCiOSSDK.UserMappingModel, callBack: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor(unsafe) public func startSession(host: Swift.String, entryId: Swift.String, appkey: Swift.String, user: VisionCCiOSSDK.UserMappingModel, callBack: (() -> Swift.Void)? = nil)
   @_Concurrency.MainActor(unsafe) public func sendMessage(msgType: Swift.Int, msgBody: VisionCCiOSSDK.MessageBody)
   @_Concurrency.MainActor(unsafe) public static func getSDKVersion(isShort: Swift.Bool = false) -> Swift.String
   @_Concurrency.MainActor(unsafe) public func close()
+  @_Concurrency.MainActor(unsafe) public func clearWebViewCache()
 }
-extension VisionCCiOSSDK.CCKFApi : WebKit.WKScriptMessageHandler, UIKit.UINavigationControllerDelegate {
+extension VisionCCiOSSDK.CCKFApi : WebKit.WKScriptMessageHandler, UIKit.UINavigationControllerDelegate, UIKit.UIDocumentInteractionControllerDelegate {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
 }
 extension VisionCCiOSSDK.CCKFApi : WebKit.WKNavigationDelegate {
@@ -44,6 +45,10 @@ extension VisionCCiOSSDK.CCKFApi : WebKit.WKNavigationDelegate {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationResponse: WebKit.WKNavigationResponse, decisionHandler: @escaping (WebKit.WKNavigationResponsePolicy) -> Swift.Void)
   @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, preferences: WebKit.WKWebpagePreferences, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy, WebKit.WKWebpagePreferences) -> Swift.Void)
 }
+extension VisionCCiOSSDK.CCKFApi : UIKit.UIDocumentPickerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func documentPicker(_ controller: UIKit.UIDocumentPickerViewController, didPickDocumentsAt urls: [Foundation.URL])
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func documentPickerWasCancelled(_ controller: UIKit.UIDocumentPickerViewController)
+}
 public struct WebViewEnvModel : Swift.Codable {
   public var app_name: Swift.String?
   public var env_name: Swift.String?
@@ -55,9 +60,8 @@ public struct WebViewEnvModel : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class CCKFApi : UIKit.UIViewController, WebKit.WKUIDelegate, UIKit.UIDocumentInteractionControllerDelegate {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class CCKFApi : UIKit.UIViewController, WebKit.WKUIDelegate, UIKit.UIGestureRecognizerDelegate {
   @_Concurrency.MainActor(unsafe) public var conversionDelegate: (any VisionCCiOSSDK.CCKFApiConversationDelegate)?
-  @_Concurrency.MainActor(unsafe) public var documentInteractionController: UIKit.UIDocumentInteractionController?
   @objc deinit
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
@@ -65,13 +69,7 @@ public struct WebViewEnvModel : Swift.Codable {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
-public protocol CCKFApiConversationDelegate {
-  func unReadMessageCountEvent(count: Swift.Int)
-  func shortCutEvent(model: VisionCCiOSSDK.ShortcutsModel)
-  func messageEvent(model: VisionCCiOSSDK.MessageModel)
-  func trackEvent(name: Swift.String, attributes: [Swift.String : Swift.String])
-}
-public struct UserMappingModel : Swift.Codable, Swift.Equatable {
+public class UserMappingModel : Swift.Codable {
   public var identity_id: Swift.String?
   public var visitor_name: Swift.String?
   public var phone: Swift.String?
@@ -81,11 +79,11 @@ public struct UserMappingModel : Swift.Codable, Swift.Equatable {
   public var app_name: Swift.String?
   public var env_name: Swift.String?
   public init(identity_id: Swift.String? = nil, visitor_name: Swift.String? = nil, phone: Swift.String? = nil, email: Swift.String? = nil, deviceId: Swift.String? = nil, app_id: Swift.String? = nil, app_name: Swift.String? = nil, env_name: Swift.String? = nil)
-  public static func == (lhs: VisionCCiOSSDK.UserMappingModel, rhs: VisionCCiOSSDK.UserMappingModel) -> Swift.Bool
   public func toURLQuery() -> Swift.String
   public func getJsonString() -> Swift.String
+  @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 public struct ShortcutsModel : Swift.Codable {
   public var title: Swift.String?
@@ -121,9 +119,11 @@ public struct UploadFileInfoModel : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-extension VisionCCiOSSDK.CCKFApi : UIKit.UIDocumentPickerDelegate {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func documentPicker(_ controller: UIKit.UIDocumentPickerViewController, didPickDocumentsAt urls: [Foundation.URL])
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func documentPickerWasCancelled(_ controller: UIKit.UIDocumentPickerViewController)
+public protocol CCKFApiConversationDelegate {
+  func unReadMessageCountEvent(count: Swift.Int)
+  func shortCutEvent(model: VisionCCiOSSDK.ShortcutsModel)
+  func messageEvent(model: VisionCCiOSSDK.MessageModel)
+  func trackEvent(name: Swift.String, attributes: [Swift.String : Swift.String])
 }
 public class MessageModel : Swift.Codable {
   final public let messageUUId: Swift.String
