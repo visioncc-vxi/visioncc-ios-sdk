@@ -505,6 +505,16 @@
         "moduleName": "VisionCCiOSSDK"
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VisionCCiOSSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "WebViewEnvModel",
         "printedName": "WebViewEnvModel",
@@ -1231,8 +1241,7 @@
         "mangledName": "$s14VisionCCiOSSDK15WebViewEnvModelV",
         "moduleName": "VisionCCiOSSDK",
         "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
+          "AccessControl"
         ],
         "conformances": [
           {
@@ -1582,7 +1591,7 @@
           {
             "kind": "Function",
             "name": "startSession",
-            "printedName": "startSession(host:entryId:appkey:user:callBack:)",
+            "printedName": "startSession(host:entryId:appkey:userMappings:callBack:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1641,8 +1650,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:14VisionCCiOSSDK7CCKFApiC12startSession4host7entryId6appkey4user8callBackySS_S2SAA16UserMappingModelCyycSgtF",
-            "mangledName": "$s14VisionCCiOSSDK7CCKFApiC12startSession4host7entryId6appkey4user8callBackySS_S2SAA16UserMappingModelCyycSgtF",
+            "usr": "s:14VisionCCiOSSDK7CCKFApiC12startSession4host7entryId6appkey12userMappings8callBackySS_S2SAA16UserMappingModelCyycSgtF",
+            "mangledName": "$s14VisionCCiOSSDK7CCKFApiC12startSession4host7entryId6appkey12userMappings8callBackySS_S2SAA16UserMappingModelCyycSgtF",
             "moduleName": "VisionCCiOSSDK",
             "declAttributes": [
               "Custom",
@@ -2379,6 +2388,16 @@
             "usr": "s:14ZLPhotoBrowser0aB10CompatibleP",
             "mangledName": "$s14ZLPhotoBrowser0aB10CompatibleP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VisionCCiOSSDK",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -5920,6 +5939,16 @@
         "printedName": "WebKit",
         "declKind": "Import",
         "moduleName": "VisionCCiOSSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VisionCCiOSSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -13236,21 +13265,21 @@
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApiExtension.swift",
       "kind": "BooleanLiteral",
-      "offset": 2652,
+      "offset": 2870,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Models\/WebViewEnvModel.swift",
       "kind": "StringLiteral",
-      "offset": 343,
+      "offset": 362,
       "length": 6,
       "value": "\"test\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Models\/WebViewEnvModel.swift",
       "kind": "StringLiteral",
-      "offset": 390,
+      "offset": 409,
       "length": 5,
       "value": "\"iOS\""
     },
@@ -13340,64 +13369,43 @@
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
-      "kind": "StringLiteral",
-      "offset": 7411,
-      "length": 84,
-      "value": "\"VxiChatSDK\/iOS\/\""
-    },
-    {
-      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
-      "kind": "StringLiteral",
-      "offset": 7459,
-      "length": 1,
-      "value": "\"(\""
-    },
-    {
-      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
-      "kind": "StringLiteral",
-      "offset": 7493,
-      "length": 1,
-      "value": "\")\""
-    },
-    {
-      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "FloatLiteral",
-      "offset": 7529,
+      "offset": 7466,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 7613,
+      "offset": 7550,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 7709,
+      "offset": 7646,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 7767,
+      "offset": 7704,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 7827,
+      "offset": 7764,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "StringLiteral",
-      "offset": 8207,
+      "offset": 8144,
       "length": 114,
       "value": "\"document.documentElement.style.webkitTouchCallout='none';document.documentElement.style.webkitUserSelect='none';\""
     },
@@ -13481,14 +13489,14 @@
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Manager\/UploadManager.swift",
       "kind": "StringLiteral",
-      "offset": 3852,
+      "offset": 3789,
       "length": 26,
       "value": "\"application\/octet-stream\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Manager\/UploadManager.swift",
       "kind": "StringLiteral",
-      "offset": 3907,
+      "offset": 3844,
       "length": 6,
       "value": "\"file\""
     },
@@ -13712,35 +13720,112 @@
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 5498,
+      "offset": 5447,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 6553,
+      "length": 9,
+      "value": "\"Unknown\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 6671,
+      "length": 67,
+      "value": "\"VxiChatSDK\/iOS\/\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 6705,
+      "length": 1,
+      "value": "\"(\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 6720,
+      "length": 1,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 6737,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 6922,
+      "length": 28,
+      "value": "\"CFBundleShortVersionString\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 6989,
+      "length": 9,
+      "value": "\"Unknown\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 7216,
+      "length": 17,
+      "value": "\"CFBundleVersion\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 7272,
+      "length": 9,
+      "value": "\"Unknown\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 7667,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7759,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 6531,
+      "offset": 8136,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Manager\/ChatManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 6830,
+      "offset": 6813,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Models\/MessageModel.swift",
       "kind": "StringLiteral",
-      "offset": 3289,
+      "offset": 3308,
       "length": 7,
       "value": "\"mBody\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Models\/MessageModel.swift",
       "kind": "StringLiteral",
-      "offset": 3289,
+      "offset": 3308,
       "length": 7,
       "value": "\"mBody\""
     },

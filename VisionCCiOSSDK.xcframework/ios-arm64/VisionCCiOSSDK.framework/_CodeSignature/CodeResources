@@ -8,37 +8,33 @@
 		<data>
 		yvFTTfxugg5fSIIA8FduxS16SFw=
 		</data>
-		<key>Headers/VisionCCiOSSDK.h</key>
-		<data>
-		kicuMzpVekVnIT9GLM5MhARUWew=
-		</data>
 		<key>Info.plist</key>
 		<data>
-		uuiWQe+kYJSbuI9CXBTDG3j7mic=
+		dJpLJd1fKqXdUUjzqc6MT+qp/Tg=
 		</data>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		rmerUkTDHcPmYLVCpDRQz5BHx7Q=
+		dsIpXx2d0NnF8bENztzffOg516o=
 		</data>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		Yk/h2A1aZbWzHvsqT6aldkPYSao=
+		j52mymnC362BTSkBjiOt7Qtln88=
 		</data>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		AVfRQxwLzAnagacD83ZJsQ5Yy1Q=
+		tmeWKxVE3kIwuW8vNPutfvUYUj4=
 		</data>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		Yk/h2A1aZbWzHvsqT6aldkPYSao=
+		j52mymnC362BTSkBjiOt7Qtln88=
 		</data>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		yUT9+tlvdoH59S2esyTrqxmTD3k=
+		khNHLPe5m/wueqL9Coho5X2Df70=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		OFA/jYPzZMtaB9EuBEb4y6EJgmM=
+		gOasPl+aO/H9BsThALoYCvGarWI=
 		</data>
 		<key>SVProgressHUD_SVProgressHUD.bundle/SVProgressHUD.bundle/angle-mask.png</key>
 		<data>
@@ -811,53 +807,46 @@
 			7JClAMdS1CR57Lbk6f5611Fq/Rwpmn7hax+fp5u4C+0=
 			</data>
 		</dict>
-		<key>Headers/VisionCCiOSSDK.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			1/vPCLLwRHU+9dar6lHgwVhQ6d/OK6mjZ99QF6TywrU=
-			</data>
-		</dict>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			o8yt1KKtQv/KsYXT+uA/Nubvn7z1QH7oMGuxCCNZJ5o=
+			pmCcFVqu1dV47k/DlmWz0Sk2pW0VSz6ND40sDmE3bXs=
 			</data>
 		</dict>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ttFKV7tbszbotLSjYPuiZ7b3rSRfQNFufEgbSsWAM70=
+			htwKIpZaSXQjrIRY32C+mrGYjNLcf1iHnUeNjAf3UF0=
 			</data>
 		</dict>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GN74h52KMbUrblUucgprfWG6iV9idUJubMmC4wosTME=
+			yNFmzgKQt3ClLV2EoZZ+FSpxU7WaFOXnQsR9O5p137E=
 			</data>
 		</dict>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ttFKV7tbszbotLSjYPuiZ7b3rSRfQNFufEgbSsWAM70=
+			htwKIpZaSXQjrIRY32C+mrGYjNLcf1iHnUeNjAf3UF0=
 			</data>
 		</dict>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KZVXpVq6Vb2h0OJvKAs0fTqgQdzr5wsULR6az0JjdAs=
+			A4lS118RC7DAdegtC8lYXHI7hEymZiEidCTcuRGECUI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Hfp2lE40yujeBdTzNVSDW7L5Z1lftC+NAnu+AwZw3sc=
+			yoSzraSpJ1XCChX/HkAranOWNX+vXhEA37NrtpSftoo=
 			</data>
 		</dict>
 		<key>SVProgressHUD_SVProgressHUD.bundle/SVProgressHUD.bundle/angle-mask.png</key>

@@ -8,7 +8,6 @@ import Photos
 import Swift
 import UIKit
 import UniformTypeIdentifiers
-@_exported import VisionCCiOSSDK
 import WebKit
 import _Concurrency
 import _StringProcessing
@@ -26,7 +25,7 @@ public struct UploadResposeModel : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 extension VisionCCiOSSDK.CCKFApi {
-  @_Concurrency.MainActor(unsafe) public func startSession(host: Swift.String, entryId: Swift.String, appkey: Swift.String, user: VisionCCiOSSDK.UserMappingModel, callBack: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor(unsafe) public func startSession(host: Swift.String, entryId: Swift.String, appkey: Swift.String, userMappings user: VisionCCiOSSDK.UserMappingModel, callBack: (() -> Swift.Void)? = nil)
   @_Concurrency.MainActor(unsafe) public func sendMessage(msgType: Swift.Int, msgBody: VisionCCiOSSDK.MessageBody)
   @_Concurrency.MainActor(unsafe) public static func getSDKVersion(isShort: Swift.Bool = false) -> Swift.String
   @_Concurrency.MainActor(unsafe) public func close()
