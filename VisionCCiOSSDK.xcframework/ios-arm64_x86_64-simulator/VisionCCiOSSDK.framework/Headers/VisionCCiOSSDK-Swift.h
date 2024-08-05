@@ -343,9 +343,12 @@ SWIFT_CLASS("_TtC14VisionCCiOSSDK7CCKFApi")
 
 @class WKUserContentController;
 @class WKScriptMessage;
+@class UIDocumentInteractionController;
 
 @interface CCKFApi (SWIFT_EXTENSION(VisionCCiOSSDK)) <UIDocumentInteractionControllerDelegate, UINavigationControllerDelegate, WKScriptMessageHandler>
 - (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
+- (UIViewController * _Nonnull)documentInteractionControllerViewControllerForPreview:(UIDocumentInteractionController * _Nonnull)controller SWIFT_WARN_UNUSED_RESULT;
+- (void)documentInteractionControllerDidEndPreview:(UIDocumentInteractionController * _Nonnull)controller;
 @end
 
 
@@ -704,9 +707,12 @@ SWIFT_CLASS("_TtC14VisionCCiOSSDK7CCKFApi")
 
 @class WKUserContentController;
 @class WKScriptMessage;
+@class UIDocumentInteractionController;
 
 @interface CCKFApi (SWIFT_EXTENSION(VisionCCiOSSDK)) <UIDocumentInteractionControllerDelegate, UINavigationControllerDelegate, WKScriptMessageHandler>
 - (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
+- (UIViewController * _Nonnull)documentInteractionControllerViewControllerForPreview:(UIDocumentInteractionController * _Nonnull)controller SWIFT_WARN_UNUSED_RESULT;
+- (void)documentInteractionControllerDidEndPreview:(UIDocumentInteractionController * _Nonnull)controller;
 @end
 
 

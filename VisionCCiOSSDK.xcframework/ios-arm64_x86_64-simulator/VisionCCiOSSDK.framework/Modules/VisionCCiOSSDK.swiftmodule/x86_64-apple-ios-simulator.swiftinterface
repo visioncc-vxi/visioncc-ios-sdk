@@ -3,6 +3,7 @@
 // swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name VisionCCiOSSDK
 import AVFoundation
 import AVKit
+import CryptoKit
 import Foundation
 import Photos
 import Swift
@@ -33,6 +34,8 @@ extension VisionCCiOSSDK.CCKFApi {
 }
 extension VisionCCiOSSDK.CCKFApi : WebKit.WKScriptMessageHandler, UIKit.UINavigationControllerDelegate, UIKit.UIDocumentInteractionControllerDelegate {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func documentInteractionControllerViewControllerForPreview(_ controller: UIKit.UIDocumentInteractionController) -> UIKit.UIViewController
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func documentInteractionControllerDidEndPreview(_ controller: UIKit.UIDocumentInteractionController)
 }
 extension VisionCCiOSSDK.CCKFApi : WebKit.WKNavigationDelegate {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didStartProvisionalNavigation navigation: WebKit.WKNavigation!)
@@ -61,6 +64,7 @@ public struct WebViewEnvModel : Swift.Codable {
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class CCKFApi : UIKit.UIViewController, WebKit.WKUIDelegate, UIKit.UIGestureRecognizerDelegate {
   @_Concurrency.MainActor(unsafe) public var conversionDelegate: (any VisionCCiOSSDK.CCKFApiConversationDelegate)?
+  @_Concurrency.MainActor(unsafe) public var documentInteractionController: UIKit.UIDocumentInteractionController?
   @objc deinit
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)

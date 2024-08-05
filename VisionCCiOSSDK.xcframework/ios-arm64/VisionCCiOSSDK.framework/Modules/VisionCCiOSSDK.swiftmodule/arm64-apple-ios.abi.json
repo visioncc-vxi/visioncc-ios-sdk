@@ -1402,6 +1402,118 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "documentInteractionController",
+            "printedName": "documentInteractionController",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIDocumentInteractionController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIDocumentInteractionController",
+                    "printedName": "UIKit.UIDocumentInteractionController",
+                    "usr": "c:objc(cs)UIDocumentInteractionController"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14VisionCCiOSSDK7CCKFApiC29documentInteractionControllerSo010UIDocumentfG0CSgvp",
+            "mangledName": "$s14VisionCCiOSSDK7CCKFApiC29documentInteractionControllerSo010UIDocumentfG0CSgvp",
+            "moduleName": "VisionCCiOSSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIDocumentInteractionController?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIDocumentInteractionController",
+                        "printedName": "UIKit.UIDocumentInteractionController",
+                        "usr": "c:objc(cs)UIDocumentInteractionController"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK7CCKFApiC29documentInteractionControllerSo010UIDocumentfG0CSgvg",
+                "mangledName": "$s14VisionCCiOSSDK7CCKFApiC29documentInteractionControllerSo010UIDocumentfG0CSgvg",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIDocumentInteractionController?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIDocumentInteractionController",
+                        "printedName": "UIKit.UIDocumentInteractionController",
+                        "usr": "c:objc(cs)UIDocumentInteractionController"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK7CCKFApiC29documentInteractionControllerSo010UIDocumentfG0CSgvs",
+                "mangledName": "$s14VisionCCiOSSDK7CCKFApiC29documentInteractionControllerSo010UIDocumentfG0CSgvs",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK7CCKFApiC29documentInteractionControllerSo010UIDocumentfG0CSgvM",
+                "mangledName": "$s14VisionCCiOSSDK7CCKFApiC29documentInteractionControllerSo010UIDocumentfG0CSgvM",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "viewWillAppear",
             "printedName": "viewWillAppear(_:)",
@@ -1803,6 +1915,70 @@
             "mangledName": "$s14VisionCCiOSSDK7CCKFApiC21userContentController_10didReceiveySo06WKUserfG0C_So15WKScriptMessageCtF",
             "moduleName": "VisionCCiOSSDK",
             "objc_name": "userContentController:didReceiveScriptMessage:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "documentInteractionControllerViewControllerForPreview",
+            "printedName": "documentInteractionControllerViewControllerForPreview(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIDocumentInteractionController",
+                "printedName": "UIKit.UIDocumentInteractionController",
+                "usr": "c:objc(cs)UIDocumentInteractionController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@VisionCCiOSSDK@objc(cs)CCKFApi(im)documentInteractionControllerViewControllerForPreview:",
+            "mangledName": "$s14VisionCCiOSSDK7CCKFApiC033documentInteractionControllerViewG10ForPreviewySo06UIViewG0CSo010UIDocumentfG0CF",
+            "moduleName": "VisionCCiOSSDK",
+            "objc_name": "documentInteractionControllerViewControllerForPreview:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "documentInteractionControllerDidEndPreview",
+            "printedName": "documentInteractionControllerDidEndPreview(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIDocumentInteractionController",
+                "printedName": "UIKit.UIDocumentInteractionController",
+                "usr": "c:objc(cs)UIDocumentInteractionController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@VisionCCiOSSDK@objc(cs)CCKFApi(im)documentInteractionControllerDidEndPreview:",
+            "mangledName": "$s14VisionCCiOSSDK7CCKFApiC42documentInteractionControllerDidEndPreviewyySo010UIDocumentfG0CF",
+            "moduleName": "VisionCCiOSSDK",
+            "objc_name": "documentInteractionControllerDidEndPreview:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -13187,6 +13363,13 @@
         "printedName": "WebKit",
         "declKind": "Import",
         "moduleName": "VisionCCiOSSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CryptoKit",
+        "printedName": "CryptoKit",
+        "declKind": "Import",
+        "moduleName": "VisionCCiOSSDK"
       }
     ],
     "json_format_version": 8
@@ -13286,126 +13469,126 @@
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 439,
+      "offset": 577,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 472,
+      "offset": 610,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 5538,
+      "offset": 5691,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "IntegerLiteral",
-      "offset": 5670,
+      "offset": 5823,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 5948,
+      "offset": 6101,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "StringLiteral",
-      "offset": 6025,
+      "offset": 6178,
       "length": 10,
       "value": "\"skeleton\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "StringLiteral",
-      "offset": 6045,
+      "offset": 6198,
       "length": 6,
       "value": "\"html\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "IntegerLiteral",
-      "offset": 7003,
+      "offset": 7156,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "StringLiteral",
-      "offset": 7140,
+      "offset": 7293,
       "length": 138,
       "value": "\"Distance: safeDistanceTop:\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "StringLiteral",
-      "offset": 7199,
+      "offset": 7352,
       "length": 18,
       "value": "\" safeDistanceBottom:\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "StringLiteral",
-      "offset": 7254,
+      "offset": 7407,
       "length": 9,
       "value": "\" navHeight:\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "StringLiteral",
-      "offset": 7277,
+      "offset": 7430,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "FloatLiteral",
-      "offset": 7466,
+      "offset": 7619,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 7550,
+      "offset": 7703,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 7646,
+      "offset": 7799,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 7704,
+      "offset": 7857,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 7764,
+      "offset": 7917,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "StringLiteral",
-      "offset": 8144,
+      "offset": 8297,
       "length": 114,
       "value": "\"document.documentElement.style.webkitTouchCallout='none';document.documentElement.style.webkitUserSelect='none';\""
     },
@@ -13489,14 +13672,14 @@
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Manager\/UploadManager.swift",
       "kind": "StringLiteral",
-      "offset": 3789,
+      "offset": 3800,
       "length": 26,
       "value": "\"application\/octet-stream\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Manager\/UploadManager.swift",
       "kind": "StringLiteral",
-      "offset": 3844,
+      "offset": 3855,
       "length": 6,
       "value": "\"file\""
     },
@@ -13735,7 +13918,7 @@
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
       "kind": "StringLiteral",
       "offset": 6671,
-      "length": 67,
+      "length": 68,
       "value": "\"VxiChatSDK\/iOS\/\""
     },
     {
@@ -13757,54 +13940,54 @@
       "kind": "StringLiteral",
       "offset": 6737,
       "length": 1,
-      "value": "\"\""
+      "value": "\")\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
       "kind": "StringLiteral",
-      "offset": 6922,
+      "offset": 6923,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
       "kind": "StringLiteral",
-      "offset": 6989,
+      "offset": 6990,
       "length": 9,
       "value": "\"Unknown\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
       "kind": "StringLiteral",
-      "offset": 7216,
+      "offset": 7217,
       "length": 17,
       "value": "\"CFBundleVersion\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
       "kind": "StringLiteral",
-      "offset": 7272,
+      "offset": 7273,
       "length": 9,
       "value": "\"Unknown\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
       "kind": "StringLiteral",
-      "offset": 7667,
+      "offset": 7668,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 7759,
+      "offset": 7760,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 8136,
+      "offset": 8137,
       "length": 5,
       "value": "false"
     },
@@ -13867,7 +14050,7 @@
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/Extension.swift",
       "kind": "IntegerLiteral",
-      "offset": 2749,
+      "offset": 3319,
       "length": 1,
       "value": "1"
     }
