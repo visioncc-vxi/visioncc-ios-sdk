@@ -22,7 +22,7 @@ pod 'VisionCCiOSSDK'
 *Or you can choose the version you need based on Swift support table from [Requirements](README.md#requirements)*
 
 ```ruby
-pod 'VisionCCiOSSDK', '2.0.4'
+pod 'VisionCCiOSSDK', '2.1.0'
 ```
 
 
