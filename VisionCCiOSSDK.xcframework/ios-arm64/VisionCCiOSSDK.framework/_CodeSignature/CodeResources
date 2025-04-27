@@ -6,31 +6,31 @@
 	<dict>
 		<key>Headers/VisionCCiOSSDK-Swift.h</key>
 		<data>
-		oHCUvU0Aln2M/xvmfUflMGVmZ0g=
+		YEVmcno0oHxyMjwHCfd+8SaGvek=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		8P3dtNrMGRj1VJLihfE4LndYdes=
+		bcL0apRGBEximYcOVZ7FDtzEeWE=
 		</data>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		NsM57zpzKb/gygSA5TYTV9RmLjk=
+		oQwDKIlrx9MuD+/BtZJMlRV30js=
 		</data>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		Nq+UTA/A63tHjmMPKzRwFZ32clI=
+		iwmqyTtU/0UdbyS5iEE83prUpFo=
 		</data>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		tmeWKxVE3kIwuW8vNPutfvUYUj4=
+		A6TRzIYyoAMhFSYL8ciU4+dCVzc=
 		</data>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		Nq+UTA/A63tHjmMPKzRwFZ32clI=
+		iwmqyTtU/0UdbyS5iEE83prUpFo=
 		</data>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		hhvE+6uF0yhkC3psafTwyMVOu3I=
+		BYWcpQFQBGhEMbpoaMk/Dk3+zNM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -127,6 +127,10 @@
 		<key>VisionCCiOSSDK.bundle/vconsole.min.js</key>
 		<data>
 		zHmpUi70VxiMGCgyKLK4dZt/rx4=
+		</data>
+		<key>VisionCCiOSSDK.xcconfig</key>
+		<data>
+		icXOWRpHFL/5jsb13WGiVKW44TQ=
 		</data>
 		<key>ZLPhotoBrowser_ZLPhotoBrowser.bundle/Info.plist</key>
 		<data>
@@ -804,42 +808,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VQQfS6GeH/gA784R0KOFIluIoTTJMu05vdoa1j5zNFg=
+			TJMdrvr2hewm1ggqIFrt5FV5bIadYsFm6OC+zs/eEgs=
 			</data>
 		</dict>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4QcRuTU4k3qlYO0QeFbP6hSzNlRsOjn4cg3MOEdp5EQ=
+			xLFsVB8BPhXztK1fyjaHpgyf+a9Yvs48ZD+/eL03UFU=
 			</data>
 		</dict>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pWMAU38VC+cJ0qaPvDwJBg680XQa4yu3ST5RpkRpRkE=
+			iVkfug7SPW/8rNCoGTGJfRO5lPFUs18usV8pjVzpnE4=
 			</data>
 		</dict>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yNFmzgKQt3ClLV2EoZZ+FSpxU7WaFOXnQsR9O5p137E=
+			o17DqxWfk6+Uormw4eqZWKaisG3ZBLKYplX7NtMs2aA=
 			</data>
 		</dict>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pWMAU38VC+cJ0qaPvDwJBg680XQa4yu3ST5RpkRpRkE=
+			iVkfug7SPW/8rNCoGTGJfRO5lPFUs18usV8pjVzpnE4=
 			</data>
 		</dict>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lpRKy+N9DJP0rFa1Xav+vAl+F/MVr1bnefMl78FQBPY=
+			TYOY+Y6BW3yGV3WEt3qp/MBzbytEw1zYuvmC3pymujY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1008,6 +1012,13 @@
 			<key>hash2</key>
 			<data>
 			NBiF69Hbn1eFFOhieaRJwKaYvogm2UlBgI1rVWKD6hY=
+			</data>
+		</dict>
+		<key>VisionCCiOSSDK.xcconfig</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Sy15W8lupT2Pr6LtY4GktUdRI+98d8qZJfZT93WNZ5g=
 			</data>
 		</dict>
 		<key>ZLPhotoBrowser_ZLPhotoBrowser.bundle/Info.plist</key>
