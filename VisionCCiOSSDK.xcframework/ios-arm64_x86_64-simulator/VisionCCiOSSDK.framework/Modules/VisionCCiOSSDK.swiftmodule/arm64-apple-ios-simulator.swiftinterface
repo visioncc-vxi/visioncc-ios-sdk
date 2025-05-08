@@ -88,11 +88,12 @@ public class UserMappingModel : Swift.Codable {
   public var app_id: Swift.String?
   public var app_name: Swift.String?
   public var env_name: Swift.String?
+  public var device_id: Swift.String? {
+    get
+  }
   public init(identity_id: Swift.String? = nil, visitor_name: Swift.String? = nil, phone: Swift.String? = nil, email: Swift.String? = nil, deviceId: Swift.String? = nil, app_id: Swift.String? = nil, app_name: Swift.String? = nil, env_name: Swift.String? = nil)
-  public func toURLQuery() -> Swift.String
-  public func getJsonString() -> Swift.String
-  @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
   required public init(from decoder: any Swift.Decoder) throws
 }
 extension VisionCCiOSSDK.UserMappingModel : Swift.Equatable {
