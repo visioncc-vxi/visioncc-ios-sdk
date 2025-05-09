@@ -4,7 +4,7 @@
     <img src="https://img.shields.io/github/license/visioncc-vxi/visioncc-ios-sdk.svg" alt="GitHub license"/>
 </p>
 
-[![Build Status](https://travis-ci.org/visioncc-vxi/visioncc-ios-sdk.svg)](https://travis-ci.org/visioncc-vxi/visioncc-ios-sdk)[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/visioncc-vxi/visioncc-ios-sdk)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/visioncc-vxi/visioncc-ios-sdk)
 
 Installation
 ==========================
@@ -14,7 +14,7 @@ Installation
 [![CocoaPods](https://img.shields.io/cocoapods/v/VisionCCiOSSDK.svg)](http://cocoadocs.org/docsets/VisionCCiOSSDK)
 
 *Swift 5.10, 5.9, 5.8, 5.7, 5.6, 5.5 (Xcode 15)*
-
+*Swift 6.0 (Xcode 16)*
 ```ruby
 pod 'VisionCCiOSSDK'
 ```
