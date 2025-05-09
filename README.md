@@ -4,7 +4,7 @@
     <img src="https://img.shields.io/github/license/visioncc-vxi/visioncc-ios-sdk.svg" alt="GitHub license"/>
 </p>
 
-[![Build Status](https://travis-ci.org/visioncc-vxi/visioncc-ios-sdk.svg)](https://travis-ci.org/visioncc-vxi/visioncc-ios-sdk)
+[![Build Status](https://travis-ci.org/visioncc-vxi/visioncc-ios-sdk.svg)](https://travis-ci.org/visioncc-vxi/visioncc-ios-sdk)[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/visioncc-vxi/visioncc-ios-sdk)
 
 Installation
 ==========================
