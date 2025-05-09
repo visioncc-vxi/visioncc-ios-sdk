@@ -5,6 +5,8 @@
 </p>
 
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/visioncc-vxi/visioncc-ios-sdk)
+[![Platforms](https://img.shields.io/badge/Platforms-iOS-yellowgreen?style=flat-square)](https://img.shields.io/badge/Platforms-iOS-Green?style=flat-square)
+[![Swift Package Manager](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange?style=flat-square)](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange?style=flat-square)
 
 Installation
 ==========================
@@ -13,9 +15,6 @@ Installation
 
 [![CocoaPods](https://img.shields.io/cocoapods/v/VisionCCiOSSDK.svg)](http://cocoadocs.org/docsets/VisionCCiOSSDK)
 
-*Swift 5.10, 5.9, 5.8, 5.7, 5.6, 5.5 (Xcode 15)*
-
-*Swift 6.0 (Xcode 16)*
 ```ruby
 pod 'VisionCCiOSSDK'
 ```
