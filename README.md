@@ -8,13 +8,13 @@
 [![Swift](https://img.shields.io/badge/Swift-5.6_5.7_5.8_5.9_5.10_6.0-orange?style=flat-square)](https://img.shields.io/badge/Swift-5.6_5.7_5.8_5.9_5.10_6.0-Orange?style=flat-square)
 [![Platforms](https://img.shields.io/badge/Platforms-iOS-yellowgreen?style=flat-square)](https://img.shields.io/badge/Platforms-iOS-Green?style=flat-square)
 [![Swift Package Manager](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange?style=flat-square)](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange?style=flat-square)
+[![CocoaPods](https://img.shields.io/cocoapods/v/VisionCCiOSSDK.svg)](http://cocoadocs.org/docsets/VisionCCiOSSDK)
+[![Github tag](https://img.shields.io/github/tag/visioncc-vxi/visioncc-ios-sdk.svg)]()
 
 Installation
 ==========================
 
 #### Installation with CocoaPods
-
-[![CocoaPods](https://img.shields.io/cocoapods/v/VisionCCiOSSDK.svg)](http://cocoadocs.org/docsets/VisionCCiOSSDK)
 
 ```ruby
 pod 'VisionCCiOSSDK'
@@ -29,7 +29,7 @@ pod 'VisionCCiOSSDK', '2.1.0'
 
 #### Installation with Swift Package Manager
 
-[![Github tag](https://img.shields.io/github/tag/visioncc-vxi/visioncc-ios-sdk.svg)]()
+
 
 [Swift Package Manager(SPM)](https://swift.org/package-manager/) is Apple's dependency manager tool. It is now supported in Xcode 11. So it can be used in all appleOS types of projects. It can be used alongside other tools like CocoaPods and Carthage as well. 
 
