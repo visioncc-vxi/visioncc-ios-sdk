@@ -27,14 +27,15 @@ public struct UploadResposeModel : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 extension VisionCCiOSSDK.CCKFApi {
-  @_Concurrency.MainActor @preconcurrency public func initSDK(host: Swift.String, entryId: Swift.String, appkey: Swift.String, userMappings user: VisionCCiOSSDK.UserMappingModel)
-  @_Concurrency.MainActor @preconcurrency public func startSession(host: Swift.String, entryId: Swift.String, appkey: Swift.String, userMappings user: VisionCCiOSSDK.UserMappingModel, callBack: (() -> Swift.Void)? = nil)
-  @_Concurrency.MainActor @preconcurrency public func getUnreadCount() -> Swift.Int
+  @_Concurrency.MainActor @preconcurrency public func initSDK(host: Swift.String, entryId: Swift.String, appkey: Swift.String, userMappings user: VisionCCiOSSDK.UserMappingModel, needRealtimePush: Swift.Bool = true)
+  @_Concurrency.MainActor @preconcurrency public func startSession(host: Swift.String, entryId: Swift.String, appkey: Swift.String, userMappings user: VisionCCiOSSDK.UserMappingModel, needRealtimePush: Swift.Bool = false, callBack: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public func getUnreadCount(host: Swift.String, entryId: Swift.String, appkey: Swift.String, userMappings user: VisionCCiOSSDK.UserMappingModel, completion: @escaping (Swift.Result<Swift.Int, any Swift.Error>) -> Swift.Void)
   @_Concurrency.MainActor @preconcurrency public func sendMessage(msgType: Swift.Int, msgBody: VisionCCiOSSDK.MessageBody)
   @_Concurrency.MainActor @preconcurrency public static func getSDKVersion(isShort: Swift.Bool = false) -> Swift.String
   @_Concurrency.MainActor @preconcurrency public func getUUID() -> Swift.String
-  @_Concurrency.MainActor @preconcurrency public func close()
+  @_Concurrency.MainActor @preconcurrency public func back()
   @_Concurrency.MainActor @preconcurrency public func clearWebViewCache()
+  @_Concurrency.MainActor @preconcurrency public func openNotificationSettings()
 }
 extension VisionCCiOSSDK.CCKFApi : WebKit.WKScriptMessageHandler, UIKit.UINavigationControllerDelegate, UIKit.UIDocumentInteractionControllerDelegate {
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)

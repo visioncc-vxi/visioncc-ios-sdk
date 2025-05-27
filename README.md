@@ -4,66 +4,233 @@
     <img src="https://img.shields.io/github/license/visioncc-vxi/visioncc-ios-sdk.svg" alt="GitHub license"/>
 </p>
 
-[![Build Status](https://travis-ci.org/visioncc-vxi/visioncc-ios-sdk.svg)](https://travis-ci.org/visioncc-vxi/visioncc-ios-sdk)
-
-Installation
-==========================
-
-#### Installation with CocoaPods
-
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/unpeng/visioncc-ios-sdk)
+[![Swift](https://img.shields.io/badge/Swift-5.6_5.7_5.8_5.9_5.10_6.0-orange?style=flat-square)](https://img.shields.io/badge/Swift-5.6_5.7_5.8_5.9_5.10_6.0-Orange?style=flat-square)
+[![Platforms](https://img.shields.io/badge/Platforms-iOS-yellowgreen?style=flat-square)](https://img.shields.io/badge/Platforms-iOS-Green?style=flat-square)
+[![Swift Package Manager](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange?style=flat-square)](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange?style=flat-square)
+[![Github tag](https://img.shields.io/github/tag/visioncc-vxi/visioncc-ios-sdk.svg)]()
 [![CocoaPods](https://img.shields.io/cocoapods/v/VisionCCiOSSDK.svg)](http://cocoadocs.org/docsets/VisionCCiOSSDK)
 
-*Swift 5.10, 5.9, 5.8, 5.7, 5.6, 5.5 (Xcode 15)*
 
-```ruby
-pod 'VisionCCiOSSDK'
-```
+## Overview
 
-*Or you can choose the version you need based on Swift support table from [Requirements](README.md#requirements)*
+The VisionCCiOSSDK is an iOS framework that enables communication capabilities within iOS applications. This document provides a high-level introduction to the SDK's purpose, architecture, and key components, with special emphasis on its WebView-based implementation approach.
 
-```ruby
-pod 'VisionCCiOSSDK', '2.1.0'
-```
+## Purpose and Scope
+
+VisionCCiOSSDK provides a communication framework that allows iOS applications to implement customer communication features. The SDK has evolved from a native implementation to a WebView-based architecture to enable more dynamic content delivery, faster updates without requiring app releases, and improved cross-platform compatibility.
+
+## Key Features
+
+- WebView-based architecture for dynamic content delivery
+- Support for rich communication features
+- Offline caching mechanisms for improved performance
+- Simple integration via CocoaPods or Swift Package Manager
+- Support for iOS 14.0 and above
+- Cross-platform compatibility through H5 technologies
+
+## WebView vs. Native Architecture
+
+The SDK has transitioned from a fully native implementation to a WebView-based approach, which offers several advantages:
+
+### Architecture Benefits
+
+| Feature| Native Architecture| WebView Architecture|
+| ---| ---| ---|
+| Update Mechanism| Requires app update| Server-side updates|
+| Iteration Speed| Slow (App Store review)| Fast (immediate)|
+| Cross-platform Compatibility| Limited| Excellent|
+| Content Management| Static| Dynamic|
+| System Integration| Deep| Moderate with JS bridge|
+| Performance| Higher| Optimized with caching|
 
 
-#### Installation with Swift Package Manager
+## Core Components
 
-[![Github tag](https://img.shields.io/github/tag/visioncc-vxi/visioncc-ios-sdk.svg)]()
+### CCKFApi
 
-[Swift Package Manager(SPM)](https://swift.org/package-manager/) is Apple's dependency manager tool. It is now supported in Xcode 11. So it can be used in all appleOS types of projects. It can be used alongside other tools like CocoaPods and Carthage as well. 
+The `CCKFApi` class is the main interface between the host application and the SDK. It's a subclass of `UIViewController` that manages the WebView and provides methods for communication.
 
-To install visioncc-ios-sdk package via Xcode
+## Installation and Setup
 
- * Go to File -> Swift Packages -> Add Package Dependency...
- * Then search for https://github.com/visioncc-vxi/visioncc-ios-sdk.git
- * And choose the version you want
+VisionCCiOSSDK in your iOS project. The SDK can be integrated using either CocoaPods or Swift Package Manager (SPM)
+
+## Requirements
+
+Before installing the VisionCCiOSSDK, ensure your development environment meets the following requirements:
+
+- iOS 14.0+ (as specified in the podspec)
+- Swift 5.0+
+- Xcode 11.0+ (for Swift Package Manager support)
+
+## Installation Methods
+
+The VisionCCiOSSDK supports two installation methods: CocoaPods and Swift Package Manager. The following diagram illustrates the installation workflow for both methods:
 
 
-```swift
-import VisionCCiOSSDK
+### Installation with CocoaPods
+
+CocoaPods is a dependency manager for Swift and Objective-C Cocoa projects. Follow these steps to install VisionCCiOSSDK using CocoaPods:
+
+1. If you haven't installed CocoaPods yet, install it by running the following command in Terminal:
+
+   ```bash
+   sudo gem install cocoapods
+   ```
+
+2. Create a `Podfile` in your project directory if you don't have one:
+
+   ```bash
+   pod init
+   ```
+
+3. Add the VisionCCiOSSDK to your Podfile:
+
+   ```ruby
+   pod 'VisionCCiOSSDK'
+   ```
+
+4. If you need a specific version, specify it in your Podfile:
+
+   ```ruby
+   pod 'VisionCCiOSSDK', '2.1.0'
+   ```
+
+5. Install the dependencies:
+
+   ```bash
+   pod install
+   ```
+
+6. Open the generated `.xcworkspace` file instead of your project file.
+
+7. Import the SDK in your Swift code:
+
+   ```swift
+   import VisionCCiOSSDK
+   ```
+
+### Installation with Swift Package Manager
+
+Swift Package Manager (SPM) is integrated with Xcode and provides a native experience for managing dependencies. Follow these steps to install VisionCCiOSSDK using SPM:
+
+1. Open your Xcode project.
+
+2. Go to `File` → `Swift Packages` → `Add Package Dependency...`
+
+3. Enter the repository URL:
+
+   ```plaintext
+   https://github.com/visioncc-vxi/visioncc-ios-sdk.git
+   ```
+
+4. Select the version rule:
+   - Exact: Choose a specific version (e.g., 2.1.0)
+   - Up to Next Major: Updates up to (but not including) the next major version
+   - Up to Next Minor: Updates up to (but not including) the next minor version
+   - Branch/Commit: Specific branch or commit
+
+5. Select the VisionCCiOSSDK target where you want to use the package.
+
+6. Click `Finish`.
+
+7. Import the SDK in your Swift code:
+
+   ```swift
+   import VisionCCiOSSDK
+   ```
 
 
-```
+## SDK Integration
+
+After installing the SDK using either method, you need to integrate it into your iOS application. The following diagram illustrates how the SDK components are integrated into your application:
 
 
-# 概述
-随着业务的不断演进和用户需求的日益多样化，我们决定对现有SDK的集成方案进行重要升级。此次更新的核心内容是将原生SDK方案转换为SDK内嵌WebView的方案。此变更旨在提高开发效率、增强功能灵活性，并优化用户体验。以下文档将详细介绍这一转变的背景、主要变化、优势、技术实现细节及开发者需注意的事项。
+## Verification
 
-## 更新背景
-- 提高迭代速度：原生SDK虽然提供了紧密的系统集成能力，但每次功能更新或修复都需要用户重新下载APP，影响了响应速度和用户体验。
-- 跨平台兼容性：随着业务的扩展，需要支持多平台快速部署，H5技术因其良好的跨平台特性成为首选。
-- 灵活的内容管理：通过Web技术，可以更便捷地管理和更新内容，无需依赖APP版本更新。
+To verify that the SDK has been successfully installed, you can perform these steps:
 
-## 主要变化
-1. 架构调整：原生SDK中的部分功能将被替换为通过WebView加载的H5页面。这意味着，相关功能逻辑和UI将通过Web技术实现。
-2. 资源管理：H5资源（HTML、CSS、JS等）将托管于云端服务器，APP端只需加载WebView并指向相应的URL即可。
-3. 性能优化：引入离线缓存机制和资源预加载策略，以减少加载时间，提升用户体验。
+1. Import the SDK in a Swift file:
 
-## 版本优势
-- 快速迭代：H5页面的更新无需用户升级APP，大大加快了功能迭代的速度。
-- 降低开发成本：一次开发，多处运行，提高了代码复用率，降低了跨平台开发的复杂度。
-- 动态内容管理：便于实时调整页面内容和样式，快速响应市场变化。
-- 增强用户体验：通过优化加载策略和交互设计，使H5页面接近原生体验。
+   ```swift
+   import VisionCCiOSSDK
+   ```
+
+2. Try to access the main class:
+
+   ```swift
+   let api = CCKFApi()
+   ```
+
+If no compilation errors occur, the SDK has been successfully installed.
+
+## Troubleshooting
+
+### Common CocoaPods Issues
+
+1. **Pod not found**:
+   - Ensure your Podfile contains the correct pod name: `pod 'VisionCCiOSSDK'`
+   - Run `pod repo update` before `pod install`
+   - Check your internet connection
+
+2. **Version conflicts**:
+   - Try using a specific version: `pod 'VisionCCiOSSDK', '2.1.0'`
+   - Make sure your iOS deployment target is at least 14.0 (as specified in the podspec)
+
+3. **Build errors after installation**:
+   - Ensure you're opening the `.xcworkspace` file, not the `.xcodeproj` file
+   - Clean the build folder (Cmd+Shift+K) and rebuild
+
+### Common Swift Package Manager Issues
+
+1. **Package resolution failure**:
+   - Check your internet connection
+   - Verify the repository URL is correct
+   - Try using a specific version rather than a branch
+
+2. **Integration issues**:
+   - Make sure the package is added to your target dependencies
+   - Clean the build folder (Cmd+Shift+K) and rebuild
+   - In Xcode, go to `File` → `Packages` → `Reset Package Caches`
+
+## Next Steps
+
+Once you've successfully installed the SDK, proceed to learn about the main SDK components and how to initialize it in your application. For more information about the SDK's core components.
+
+
+
+## Platform Support
+
+VisionCCiOSSDK is built as an XCFramework that supports:
+
+- iOS devices (arm64)
+- iOS simulators (arm64, x86_64)
+- Minimum iOS version: 14.0
+
+
+## Performance Optimization
+
+To ensure optimal performance despite the WebView architecture, the SDK implements:
+
+1. **Offline Caching**: H5 resources are cached locally to reduce loading times
+2. **Resource Preloading**: Essential resources are loaded proactively
+3. **Optimized JavaScript Bridge**: Efficient native-to-web communication
+
+
+## Permissions
+
+The SDK requires various permissions that may need to be included in your app's Info.plist:
+
+- Camera access for image capture
+- Microphone access for audio recording
+- Photo Library access for image selection
+
+
+## Conclusion
+
+VisionCCiOSSDK provides a flexible, updatable communication framework for iOS applications through its WebView-based architecture. This approach enables faster iterations, cross-platform compatibility, and dynamic content management while maintaining a native-like user experience through performance optimizations.
+
+For more detailed information about specific components and usage, please refer to the relevant sections in this documentation.
 
 
 

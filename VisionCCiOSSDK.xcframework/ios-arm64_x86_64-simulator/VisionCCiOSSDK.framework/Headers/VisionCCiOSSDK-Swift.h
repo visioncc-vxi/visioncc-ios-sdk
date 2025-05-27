@@ -317,6 +317,7 @@ SWIFT_CLASS("_TtC14VisionCCiOSSDK7CCKFApi")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
 @class UIDocumentPickerViewController;
 @class NSURL;
 
@@ -324,7 +325,6 @@ SWIFT_CLASS("_TtC14VisionCCiOSSDK7CCKFApi")
 - (void)documentPicker:(UIDocumentPickerViewController * _Nonnull)controller didPickDocumentsAtURLs:(NSArray<NSURL *> * _Nonnull)urls;
 - (void)documentPickerWasCancelled:(UIDocumentPickerViewController * _Nonnull)controller;
 @end
-
 
 @class WKWebView;
 @class WKNavigation;
@@ -345,6 +345,7 @@ SWIFT_CLASS("_TtC14VisionCCiOSSDK7CCKFApi")
 - (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationAction:(WKNavigationAction * _Nonnull)navigationAction preferences:(WKWebpagePreferences * _Nonnull)preferences decisionHandler:(void (^ _Nonnull)(WKNavigationActionPolicy, WKWebpagePreferences * _Nonnull))decisionHandler;
 @end
 
+
 @class WKUserContentController;
 @class WKScriptMessage;
 @class UIDocumentInteractionController;
@@ -354,6 +355,7 @@ SWIFT_CLASS("_TtC14VisionCCiOSSDK7CCKFApi")
 - (UIViewController * _Nonnull)documentInteractionControllerViewControllerForPreview:(UIDocumentInteractionController * _Nonnull)controller SWIFT_WARN_UNUSED_RESULT;
 - (void)documentInteractionControllerDidEndPreview:(UIDocumentInteractionController * _Nonnull)controller;
 @end
+
 
 
 
@@ -685,6 +687,7 @@ SWIFT_CLASS("_TtC14VisionCCiOSSDK7CCKFApi")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
 @class UIDocumentPickerViewController;
 @class NSURL;
 
@@ -692,7 +695,6 @@ SWIFT_CLASS("_TtC14VisionCCiOSSDK7CCKFApi")
 - (void)documentPicker:(UIDocumentPickerViewController * _Nonnull)controller didPickDocumentsAtURLs:(NSArray<NSURL *> * _Nonnull)urls;
 - (void)documentPickerWasCancelled:(UIDocumentPickerViewController * _Nonnull)controller;
 @end
-
 
 @class WKWebView;
 @class WKNavigation;
@@ -713,6 +715,7 @@ SWIFT_CLASS("_TtC14VisionCCiOSSDK7CCKFApi")
 - (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationAction:(WKNavigationAction * _Nonnull)navigationAction preferences:(WKWebpagePreferences * _Nonnull)preferences decisionHandler:(void (^ _Nonnull)(WKNavigationActionPolicy, WKWebpagePreferences * _Nonnull))decisionHandler;
 @end
 
+
 @class WKUserContentController;
 @class WKScriptMessage;
 @class UIDocumentInteractionController;
@@ -722,6 +725,7 @@ SWIFT_CLASS("_TtC14VisionCCiOSSDK7CCKFApi")
 - (UIViewController * _Nonnull)documentInteractionControllerViewControllerForPreview:(UIDocumentInteractionController * _Nonnull)controller SWIFT_WARN_UNUSED_RESULT;
 - (void)documentInteractionControllerDidEndPreview:(UIDocumentInteractionController * _Nonnull)controller;
 @end
+
 
 
 
