@@ -305,7 +305,8 @@ class ChatViewController: UIViewController, CCKFApiConversationDelegate {
     }
 }
 ```
-Or you 
+
+Or (Simply/Just) fetch the unread message count  
 
 ```swift
 import UIKit
