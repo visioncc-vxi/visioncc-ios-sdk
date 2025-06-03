@@ -51,6 +51,10 @@ The SDK has transitioned from a fully native implementation to a WebView-based a
 
 The `CCKFApi` class is the main interface between the host application and the SDK. It's a subclass of `UIViewController` that manages the WebView and provides methods for communication.
 
+### Architecture
+![00e5e970-fb66-4bd0-8122-aaa66654a2b1](https://github.com/user-attachments/assets/c2956356-4c76-48a9-905c-d7961878841d)
+
+
 ## Installation and Setup
 
 VisionCCiOSSDK in your iOS project. The SDK can be integrated using either CocoaPods or Swift Package Manager (SPM)
@@ -163,6 +167,80 @@ To verify that the SDK has been successfully installed, you can perform these st
    ```
 
 If no compilation errors occur, the SDK has been successfully installed.
+
+## Core SDK Methods
+
+#### Initialization and Session Management
+1. `initSDK(host:entryId:appkey:userMappings:needRealtimePush:)`
+   
+    Initializes the SDK with connection parameters and user information.
+
+
+    **Parameters**:
+    - `host: String` - VisionCC server host URL
+    - `entryId: String` - Entry point identifier for the conversation
+    - `appkey: String` - Application authentication key
+    - `userMappings: UserMappingModel` - User identity and device information
+    - `needRealtimePush: Bool` - Enable real-time push notifications (default: true)
+
+2. `startSession(host:entryId:appkey:userMappings:needRealtimePush:callBack:)`
+   
+    Starts a new communication session with the specified parameters.
+
+
+    **Parameters**:
+    - `host: String` - VisionCC server host URL
+    - `entryId: String` - Entry point identifier
+    - `appkey: String` - Application authentication key
+    - `userMappings: UserMappingModel` - User identity information
+    - `needRealtimePush: Bool` - Enable real-time push (default: false)
+    - `callBack: (() -> Void)?` - Optional completion callback
+
+3. `getUnreadCount(host:entryId:appkey:userMappings:completion:)`
+   
+    Retrieves the count of unread messages for the user.
+
+   
+    **Parameters**:
+    - `host: String` - VisionCC server host URL
+    - `entryId: String` - Entry point identifier
+    - `appkey: String` - Application authentication key
+    - `userMappings: UserMappingModel` - User identity information
+    - `completion: @escaping (Result<Int, Error>) -> Void` - Completion handler with unread count or error 
+
+
+4. `sendMessage(msgType:msgBody:)`
+   
+    Sends a message through the communication channel.
+
+   
+    **Parameters**:
+    - `msgType: Int` - Message type identifier
+    - `msgBody: MessageBody` - Message content and metadata
+
+## Delegate Protocols
+
+The `CCKFApiConversationDelegate` protocol is the primary interface that host applications implement to receive events from the SDK. This protocol defines three essential methods for handling conversation-related events.
+
+
+### Protocol Definition
+
+![image](https://github.com/user-attachments/assets/09f81749-2d99-47e8-8c87-97999c5bb4ee)
+
+### Delegate Protocol Methods
+
+| Method | Purpose | Parameters |
+| ---- | ---- | ---- |
+| `unReadMessageCountEvent(count:)` | Notifies when unread message count changes | count: Current unread message count |
+| `trackEvent(name:attributes:)` | Reports user interaction and analytics events | name: Event name, attributes: Event metadata |
+| `newMessageEvent(entryId:msgId:message:)` | Signals arrival of new messages | entryId: Entry identifier, msgId: Message ID, message: Message content |
+
+### Implementation Pattern
+
+Applications typically implement this delegate to update UI components, handle notifications, and track user engagement:
+
+![image](https://github.com/user-attachments/assets/f005abd4-d237-4017-880e-40d704a91529)
+
 
 ## Troubleshooting
 
