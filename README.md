@@ -338,9 +338,11 @@ class ChatViewController: UIViewController, CCKFApiConversationDelegate {
                     userMappings: userMapping){ result in
                             switch result {
                             case .success(let count):
+                                print(count)
                                 // Successfully fetched the unread count; `count` contains the value from the server
                                 // Update UI or perform business logic (e.g., show badge, sync data, etc.)
                             case .failure(let error):
+                                print(error.localizedDescription)
                                 // Failed to fetch unread count; `error` contains the failure details
                                 // Handle error (e.g., display alert, log error, retry mechanism, etc.)
                             }
