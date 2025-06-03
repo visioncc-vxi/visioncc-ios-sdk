@@ -241,6 +241,113 @@ Applications typically implement this delegate to update UI components, handle n
 
 ![image](https://github.com/user-attachments/assets/f005abd4-d237-4017-880e-40d704a91529)
 
+### Integration Example
+
+Below is a simplified integration example showing how to use the CCKFApi class in an iOS application:
+
+```swift
+import UIKit
+import VisionCCiOSSDK
+
+class ChatViewController: UIViewController, CCKFApiConversationDelegate {
+    
+    private var cckfApi: CCKFApi?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Initialize the API
+        cckfApi = CCKFApi()
+        cckfApi?.conversionDelegate = self
+        
+        // Create user mapping
+        let userMapping = UserMappingModel(
+            identity_id: "user123",
+            visitor_name: "John Doe",
+            app_id: "app id",
+            env_name: "test"
+        )
+        
+        // Configure and start session
+        cckfApi?.startSession(
+            host: "https://api.example.com",
+            entryId: "entry123",
+            appkey: "your-app-key",
+            userMappings: userMapping
+        )
+        
+        // Add the CCKFApi view controller as a child
+        if let cckfApiVC = cckfApi {
+            addChild(cckfApiVC)
+            view.addSubview(cckfApiVC.view)
+            cckfApiVC.view.frame = view.bounds
+            cckfApiVC.didMove(toParent: self)
+        }
+    }
+    
+    // MARK: - CCKFApiConversationDelegate
+    
+    func unReadMessageCountEvent(count: Int) {
+        print("Unread message count: \(count)")
+    }
+    
+    func trackEvent(name: String, attributes: [String : String]) {
+        print("Tracking event: \(name), attributes: \(attributes)")
+    }
+    
+    func newMessageEvent(entryId: String, msgId: Int, message: String) {
+        print("New message: \(message)")
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        cckfApi?.close()
+    }
+}
+```
+Or you 
+
+```swift
+import UIKit
+import VisionCCiOSSDK
+
+class ChatViewController: UIViewController, CCKFApiConversationDelegate {
+    
+    private var cckfApi: CCKFApi?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Initialize the API
+
+        cckfApi = CCKFApi()
+
+        // Create user mapping
+        let userMapping = UserMappingModel(
+            identity_id: "user123",
+            visitor_name: "John Doe",
+            app_id: "appid",
+            env_name: "test"
+        )
+
+        // Get the count of unread messages
+        cckfApi?.getUnreadCount(
+                    host: "https://api.example.com",
+                    entryId: "entry123",
+                    appkey: "your-app-key",
+                    userMappings: userMapping){ result in
+                            switch result {
+                            case .success(let count):
+                                // Successfully fetched the unread count; `count` contains the value from the server
+                                // Update UI or perform business logic (e.g., show badge, sync data, etc.)
+                            case .failure(let error):
+                                // Failed to fetch unread count; `error` contains the failure details
+                                // Handle error (e.g., display alert, log error, retry mechanism, etc.)
+                            }
+                    }
+}
+```
+
 
 ## Troubleshooting
 
