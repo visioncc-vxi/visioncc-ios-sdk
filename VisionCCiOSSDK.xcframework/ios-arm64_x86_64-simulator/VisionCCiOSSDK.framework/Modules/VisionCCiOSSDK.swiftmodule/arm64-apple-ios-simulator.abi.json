@@ -3792,6 +3792,159 @@
           },
           {
             "kind": "Var",
+            "name": "addition",
+            "printedName": "addition",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14VisionCCiOSSDK16UserMappingModelC8additionSDyS2SGSgvp",
+            "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC8additionSDyS2SGSgvp",
+            "moduleName": "VisionCCiOSSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK16UserMappingModelC8additionSDyS2SGSgvg",
+                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC8additionSDyS2SGSgvg",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK16UserMappingModelC8additionSDyS2SGSgvs",
+                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC8additionSDyS2SGSgvs",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VisionCCiOSSDK16UserMappingModelC8additionSDyS2SGSgvM",
+                "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC8additionSDyS2SGSgvM",
+                "moduleName": "VisionCCiOSSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "device_id",
             "printedName": "device_id",
             "children": [
@@ -3854,7 +4007,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(identity_id:visitor_name:phone:email:deviceId:app_id:app_name:env_name:)",
+            "printedName": "init(identity_id:visitor_name:phone:email:deviceId:app_id:app_name:env_name:addition:device_id:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3981,11 +4134,55 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:14VisionCCiOSSDK16UserMappingModelC11identity_id12visitor_name5phone5email8deviceId04app_H00o1_J004env_J0ACSSSg_A7Ltcfc",
-            "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC11identity_id12visitor_name5phone5email8deviceId04app_H00o1_J004env_J0ACSSSg_A7Ltcfc",
+            "usr": "s:14VisionCCiOSSDK16UserMappingModelC11identity_id12visitor_name5phone5email8deviceId04app_H00o1_J004env_J08addition0m1_H0ACSSSg_A7NSDyS2SGSgANtcfc",
+            "mangledName": "$s14VisionCCiOSSDK16UserMappingModelC11identity_id12visitor_name5phone5email8deviceId04app_H00o1_J004env_J08addition0m1_H0ACSSSg_A7NSDyS2SGSgANtcfc",
             "moduleName": "VisionCCiOSSDK",
             "declAttributes": [
               "AccessControl"
@@ -14001,21 +14198,21 @@
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApiExtension.swift",
       "kind": "BooleanLiteral",
-      "offset": 808,
+      "offset": 811,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApiExtension.swift",
       "kind": "BooleanLiteral",
-      "offset": 3633,
+      "offset": 3652,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApiExtension.swift",
       "kind": "BooleanLiteral",
-      "offset": 8895,
+      "offset": 9540,
       "length": 5,
       "value": "false"
     },
@@ -14351,91 +14548,91 @@
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 11487,
+      "offset": 12143,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
       "kind": "StringLiteral",
-      "offset": 12593,
+      "offset": 13249,
       "length": 9,
       "value": "\"Unknown\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
       "kind": "StringLiteral",
-      "offset": 12711,
+      "offset": 13367,
       "length": 68,
       "value": "\"VxiChatSDK\/iOS\/\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
       "kind": "StringLiteral",
-      "offset": 12745,
+      "offset": 13401,
       "length": 1,
       "value": "\"(\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
       "kind": "StringLiteral",
-      "offset": 12760,
+      "offset": 13416,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
       "kind": "StringLiteral",
-      "offset": 12777,
+      "offset": 13433,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
       "kind": "StringLiteral",
-      "offset": 12963,
+      "offset": 13619,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
       "kind": "StringLiteral",
-      "offset": 13030,
+      "offset": 13686,
       "length": 9,
       "value": "\"Unknown\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
       "kind": "StringLiteral",
-      "offset": 13257,
+      "offset": 13913,
       "length": 17,
       "value": "\"CFBundleVersion\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
       "kind": "StringLiteral",
-      "offset": 13313,
+      "offset": 13969,
       "length": 9,
       "value": "\"Unknown\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
       "kind": "StringLiteral",
-      "offset": 13708,
+      "offset": 14364,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 13800,
+      "offset": 14456,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 14177,
+      "offset": 14833,
       "length": 5,
       "value": "false"
     },
