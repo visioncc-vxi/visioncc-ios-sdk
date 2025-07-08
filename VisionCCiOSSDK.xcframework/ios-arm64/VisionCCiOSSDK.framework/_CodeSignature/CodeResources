@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ZiBXMgev61ikKdve+3MRtPqsbb8=
+		tCGQGWBZh86r+zpWVGvEnTUJ4eQ=
 		</data>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		RGm1NPGD6famifytvvAlTqOTHoQ=
+		RECj5ziqM8UuxGwuKjcxWlGDwjw=
 		</data>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		6CHZYvohqVUvW1x987Dxcl9JsbE=
+		E6JOzoBTopAi6/iye8yalAmbJj0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -815,7 +815,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VlZh3e9gCbJGvDkTAmVBskHOulIq1I5s18j7MTAsf1k=
+			jAJZ0Ulc+e2CnBcnZ8xT2CHNHKapaKKC6fGIDy/rHLg=
 			</data>
 		</dict>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -843,7 +843,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WIAlyKJc+dPbjSLRT/Se5+tAYvVhjWoKhJbGhk/YxZk=
+			9ui41YQ6AyLqE3j4/yiKUg4y3TzjiC0Iyw7gYtIKlNA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
