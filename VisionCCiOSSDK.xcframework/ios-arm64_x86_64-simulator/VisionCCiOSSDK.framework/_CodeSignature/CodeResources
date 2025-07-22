@@ -10,7 +10,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		C8UiHcmR8MnOjRdJZw4w4AeZ/4I=
+		P36jxbR8um//OvXd9AuHGTFXnfc=
 		</data>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		N7RkcaTW7iJnoaFBIhuhBi8cIjg=
+		jFSuj18Jztos0NmHl03h7VyhIIs=
 		</data>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		RA89Gmb0O2ezBtT4z63HrkNgXe4=
+		Fl432VJXyq1TqN4jVb3zypcPnbI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -863,7 +863,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GL7TkfwVV84pYmRYhJMuJSA//rgSjm3m4W/2pXcLlJQ=
+			FThd3SSD/EdKeUzFjgl8PNlb8DvPrvzuicP9qXgkM/0=
 			</data>
 		</dict>
 		<key>Modules/VisionCCiOSSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -898,7 +898,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cuckOTfAOQ8fE77P7aiEODWlZR5xC8QWmHVHxPqlUSk=
+			VYeugS6p3uTQqgfvoC0+NgZkDN857EjWBzFFG0MZ2XQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
