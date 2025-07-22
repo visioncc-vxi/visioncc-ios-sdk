@@ -34,6 +34,7 @@ extension VisionCCiOSSDK.CCKFApi {
   @_Concurrency.MainActor @preconcurrency public static func getSDKVersion(isShort: Swift.Bool = false) -> Swift.String
   @_Concurrency.MainActor @preconcurrency public func getUUID() -> Swift.String
   @_Concurrency.MainActor @preconcurrency public func back()
+  @_Concurrency.MainActor @preconcurrency public func removeObservers()
   @_Concurrency.MainActor @preconcurrency public func clearWebViewCache()
   @_Concurrency.MainActor @preconcurrency public func openNotificationSettings()
 }
@@ -77,6 +78,7 @@ public struct WebViewEnvModel : Swift.Codable {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewSafeAreaInsetsDidChange()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
