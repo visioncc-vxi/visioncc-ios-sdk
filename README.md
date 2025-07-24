@@ -97,7 +97,7 @@ CocoaPods is a dependency manager for Swift and Objective-C Cocoa projects. Foll
 4. If you need a specific version, specify it in your Podfile:
 
    ```ruby
-   pod 'VisionCCiOSSDK', '2.1.4d'
+   pod 'VisionCCiOSSDK', '2.1.4b'
    ```
 
 5. Install the dependencies:
@@ -129,7 +129,7 @@ Swift Package Manager (SPM) is integrated with Xcode and provides a native exper
    ```
 
 4. Select the version rule:
-   - Exact: Choose a specific version (e.g., 2.1.4d)
+   - Exact: Choose a specific version (e.g., 2.1.4b)
    - Up to Next Major: Updates up to (but not including) the next major version
    - Up to Next Minor: Updates up to (but not including) the next minor version
    - Branch/Commit: Specific branch or commit
@@ -362,7 +362,7 @@ class ChatViewController: UIViewController, CCKFApiConversationDelegate {
    - Check your internet connection
 
 2. **Version conflicts**:
-   - Try using a specific version: `pod 'VisionCCiOSSDK', '2.1.4d'`
+   - Try using a specific version: `pod 'VisionCCiOSSDK', '2.1.4b'`
    - Make sure your iOS deployment target is at least 14.0 (as specified in the podspec)
 
 3. **Build errors after installation**:
