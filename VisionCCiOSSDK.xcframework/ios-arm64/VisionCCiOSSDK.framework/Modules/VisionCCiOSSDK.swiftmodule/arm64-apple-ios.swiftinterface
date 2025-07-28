@@ -69,10 +69,6 @@ public struct WebViewEnvModel : Swift.Codable {
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class CCKFApi : UIKit.UIViewController, WebKit.WKUIDelegate, UIKit.UIGestureRecognizerDelegate {
   @_Concurrency.MainActor @preconcurrency public var conversionDelegate: (any VisionCCiOSSDK.CCKFApiConversationDelegate)?
-  @_Concurrency.MainActor @preconcurrency public var documentInteractionController: UIKit.UIDocumentInteractionController?
-  @_Concurrency.MainActor @preconcurrency public var isActive: Swift.Bool {
-    get
-  }
   @objc deinit
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
