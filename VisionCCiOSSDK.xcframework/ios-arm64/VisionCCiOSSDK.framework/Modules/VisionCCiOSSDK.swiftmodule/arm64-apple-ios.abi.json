@@ -14100,119 +14100,119 @@
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 920,
+      "offset": 912,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 3729,
+      "offset": 3845,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "IntegerLiteral",
-      "offset": 3864,
+      "offset": 3980,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 4142,
+      "offset": 4258,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "StringLiteral",
-      "offset": 4219,
+      "offset": 4335,
       "length": 10,
       "value": "\"skeleton\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "StringLiteral",
-      "offset": 4239,
+      "offset": 4355,
       "length": 6,
       "value": "\"html\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "IntegerLiteral",
-      "offset": 5239,
+      "offset": 5355,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "StringLiteral",
-      "offset": 5376,
+      "offset": 5492,
       "length": 155,
       "value": "\"Distance: safeDistanceTop:\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "StringLiteral",
-      "offset": 5435,
+      "offset": 5551,
       "length": 18,
       "value": "\" safeDistanceBottom:\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "StringLiteral",
-      "offset": 5490,
+      "offset": 5606,
       "length": 9,
       "value": "\" navHeight:\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "StringLiteral",
-      "offset": 5530,
+      "offset": 5646,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "FloatLiteral",
-      "offset": 5719,
+      "offset": 5835,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 5803,
+      "offset": 5919,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 5899,
+      "offset": 6015,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 5957,
+      "offset": 6073,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 6017,
+      "offset": 6133,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/gitlab\/ios-sdk-wkwv\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "StringLiteral",
-      "offset": 6397,
+      "offset": 6513,
       "length": 114,
       "value": "\"document.documentElement.style.webkitTouchCallout='none';document.documentElement.style.webkitUserSelect='none';\""
     },
