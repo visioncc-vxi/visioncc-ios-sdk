@@ -97,7 +97,7 @@ CocoaPods is a dependency manager for Swift and Objective-C Cocoa projects. Foll
 4. If you need a specific version, specify it in your Podfile:
 
    ```ruby
-   pod 'VisionCCiOSSDK', '2.1.5'
+   pod 'VisionCCiOSSDK', '2.1.6'
    ```
 
 5. Install the dependencies:
@@ -129,7 +129,7 @@ Swift Package Manager (SPM) is integrated with Xcode and provides a native exper
    ```
 
 4. Select the version rule:
-   - Exact: Choose a specific version (e.g., 2.1.5)
+   - Exact: Choose a specific version (e.g., 2.1.6)
    - Up to Next Major: Updates up to (but not including) the next major version
    - Up to Next Minor: Updates up to (but not including) the next minor version
    - Branch/Commit: Specific branch or commit
