@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "VisionCCiOSSDK"
-  s.version      = "2.1.5"
+  s.version      = "2.1.6"
   s.summary      = "VisionCCiOSSDK是维音CC客服系统在iOS平台访客端的解决方案，既包含了客服聊天逻辑管理，也提供了聊天界面，开发者可方便的将客服功能集成到自己的 App 中"
   s.homepage     = "https://github.com/visioncc-vxi/visioncc-ios-sdk"
   s.license      = "MIT"
