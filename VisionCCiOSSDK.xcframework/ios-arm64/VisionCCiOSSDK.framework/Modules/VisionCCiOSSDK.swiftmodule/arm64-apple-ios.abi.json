@@ -1341,8 +1341,17 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "WeakStorage",
-                "printedName": "(any VisionCCiOSSDK.CCKFApiConversationDelegate)?"
+                "name": "Optional",
+                "printedName": "(any VisionCCiOSSDK.CCKFApiConversationDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CCKFApiConversationDelegate",
+                    "printedName": "any VisionCCiOSSDK.CCKFApiConversationDelegate",
+                    "usr": "s:14VisionCCiOSSDK27CCKFApiConversationDelegateP"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
@@ -1354,11 +1363,9 @@
               "Preconcurrency",
               "Custom",
               "HasStorage",
-              "ReferenceOwnership",
               "AccessControl",
               "RawDocComment"
             ],
-            "ownership": 1,
             "hasStorage": true,
             "accessors": [
               {
@@ -4292,8 +4299,6 @@
         "usr": "s:14VisionCCiOSSDK27CCKFApiConversationDelegateP",
         "mangledName": "$s14VisionCCiOSSDK27CCKFApiConversationDelegateP",
         "moduleName": "VisionCCiOSSDK",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
@@ -14011,28 +14016,21 @@
     {
       "filePath": "\/Users\/wangpeng\/Documents\/Work\/Repository\/visioncc-ios-sdk-webview\/VisionCCiOSSDK\/VisionCCiOSSDK\/Manager\/CCKFApiManager.swift",
       "kind": "Array",
-      "offset": 1145,
+      "offset": 1127,
       "length": 2,
       "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/wangpeng\/Documents\/Work\/Repository\/visioncc-ios-sdk-webview\/VisionCCiOSSDK\/VisionCCiOSSDK\/Manager\/CCKFApiManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1211,
-      "length": 34,
-      "value": "\"com.vxichina.messageQueue.access\""
     },
     {
       "filePath": "\/Users\/wangpeng\/Documents\/Work\/Repository\/visioncc-ios-sdk-webview\/VisionCCiOSSDK\/VisionCCiOSSDK\/Manager\/CCKFApiManager.swift",
       "kind": "Array",
-      "offset": 1929,
+      "offset": 1482,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/wangpeng\/Documents\/Work\/Repository\/visioncc-ios-sdk-webview\/VisionCCiOSSDK\/VisionCCiOSSDK\/Manager\/CCKFApiManager.swift",
       "kind": "StringLiteral",
-      "offset": 1989,
+      "offset": 1542,
       "length": 35,
       "value": "\"com.vxichina.unreadMessages.queue\""
     },
@@ -14074,147 +14072,147 @@
     {
       "filePath": "\/Users\/wangpeng\/Documents\/Work\/Repository\/visioncc-ios-sdk-webview\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 612,
+      "offset": 578,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/Documents\/Work\/Repository\/visioncc-ios-sdk-webview\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 734,
+      "offset": 700,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/Documents\/Work\/Repository\/visioncc-ios-sdk-webview\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 809,
+      "offset": 775,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/Documents\/Work\/Repository\/visioncc-ios-sdk-webview\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 894,
+      "offset": 860,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/Documents\/Work\/Repository\/visioncc-ios-sdk-webview\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 946,
+      "offset": 912,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/Documents\/Work\/Repository\/visioncc-ios-sdk-webview\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 4805,
+      "offset": 3845,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/Documents\/Work\/Repository\/visioncc-ios-sdk-webview\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "IntegerLiteral",
-      "offset": 4940,
+      "offset": 3980,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wangpeng\/Documents\/Work\/Repository\/visioncc-ios-sdk-webview\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 5239,
+      "offset": 4258,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/Documents\/Work\/Repository\/visioncc-ios-sdk-webview\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "StringLiteral",
-      "offset": 5316,
+      "offset": 4335,
       "length": 10,
       "value": "\"skeleton\""
     },
     {
       "filePath": "\/Users\/wangpeng\/Documents\/Work\/Repository\/visioncc-ios-sdk-webview\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "StringLiteral",
-      "offset": 5336,
+      "offset": 4355,
       "length": 6,
       "value": "\"html\""
     },
     {
       "filePath": "\/Users\/wangpeng\/Documents\/Work\/Repository\/visioncc-ios-sdk-webview\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "IntegerLiteral",
-      "offset": 6350,
+      "offset": 5355,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wangpeng\/Documents\/Work\/Repository\/visioncc-ios-sdk-webview\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "StringLiteral",
-      "offset": 6487,
+      "offset": 5492,
       "length": 155,
       "value": "\"Distance: safeDistanceTop:\""
     },
     {
       "filePath": "\/Users\/wangpeng\/Documents\/Work\/Repository\/visioncc-ios-sdk-webview\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "StringLiteral",
-      "offset": 6546,
+      "offset": 5551,
       "length": 18,
       "value": "\" safeDistanceBottom:\""
     },
     {
       "filePath": "\/Users\/wangpeng\/Documents\/Work\/Repository\/visioncc-ios-sdk-webview\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "StringLiteral",
-      "offset": 6601,
+      "offset": 5606,
       "length": 9,
       "value": "\" navHeight:\""
     },
     {
       "filePath": "\/Users\/wangpeng\/Documents\/Work\/Repository\/visioncc-ios-sdk-webview\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "StringLiteral",
-      "offset": 6641,
+      "offset": 5646,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wangpeng\/Documents\/Work\/Repository\/visioncc-ios-sdk-webview\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "FloatLiteral",
-      "offset": 6830,
+      "offset": 5835,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/wangpeng\/Documents\/Work\/Repository\/visioncc-ios-sdk-webview\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 6914,
+      "offset": 5919,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/Documents\/Work\/Repository\/visioncc-ios-sdk-webview\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 7010,
+      "offset": 6015,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/Documents\/Work\/Repository\/visioncc-ios-sdk-webview\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 7068,
+      "offset": 6073,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/Documents\/Work\/Repository\/visioncc-ios-sdk-webview\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 7128,
+      "offset": 6133,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/wangpeng\/Documents\/Work\/Repository\/visioncc-ios-sdk-webview\/VisionCCiOSSDK\/VisionCCiOSSDK\/CCKFApi.swift",
       "kind": "StringLiteral",
-      "offset": 7508,
+      "offset": 6513,
       "length": 114,
       "value": "\"document.documentElement.style.webkitTouchCallout='none';document.documentElement.style.webkitUserSelect='none';\""
     },
@@ -14403,112 +14401,112 @@
     {
       "filePath": "\/Users\/wangpeng\/Documents\/Work\/Repository\/visioncc-ios-sdk-webview\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 12436,
+      "offset": 12212,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/wangpeng\/Documents\/Work\/Repository\/visioncc-ios-sdk-webview\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
       "kind": "StringLiteral",
-      "offset": 13542,
+      "offset": 13318,
       "length": 9,
       "value": "\"Unknown\""
     },
     {
       "filePath": "\/Users\/wangpeng\/Documents\/Work\/Repository\/visioncc-ios-sdk-webview\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
       "kind": "StringLiteral",
-      "offset": 13660,
+      "offset": 13436,
       "length": 91,
       "value": "\"VxiChatSDK\/iOS\/\""
     },
     {
       "filePath": "\/Users\/wangpeng\/Documents\/Work\/Repository\/visioncc-ios-sdk-webview\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
       "kind": "StringLiteral",
-      "offset": 13694,
+      "offset": 13470,
       "length": 1,
       "value": "\"(\""
     },
     {
       "filePath": "\/Users\/wangpeng\/Documents\/Work\/Repository\/visioncc-ios-sdk-webview\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
       "kind": "StringLiteral",
-      "offset": 13709,
+      "offset": 13485,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/wangpeng\/Documents\/Work\/Repository\/visioncc-ios-sdk-webview\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
       "kind": "StringLiteral",
-      "offset": 13726,
+      "offset": 13502,
       "length": 1,
       "value": "\")\/App\/\""
     },
     {
       "filePath": "\/Users\/wangpeng\/Documents\/Work\/Repository\/visioncc-ios-sdk-webview\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
       "kind": "StringLiteral",
-      "offset": 13750,
+      "offset": 13526,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wangpeng\/Documents\/Work\/Repository\/visioncc-ios-sdk-webview\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
       "kind": "StringLiteral",
-      "offset": 13909,
+      "offset": 13685,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
       "filePath": "\/Users\/wangpeng\/Documents\/Work\/Repository\/visioncc-ios-sdk-webview\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
       "kind": "StringLiteral",
-      "offset": 13976,
+      "offset": 13752,
       "length": 9,
       "value": "\"Unknown\""
     },
     {
       "filePath": "\/Users\/wangpeng\/Documents\/Work\/Repository\/visioncc-ios-sdk-webview\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
       "kind": "StringLiteral",
-      "offset": 14198,
+      "offset": 13974,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
       "filePath": "\/Users\/wangpeng\/Documents\/Work\/Repository\/visioncc-ios-sdk-webview\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
       "kind": "StringLiteral",
-      "offset": 14265,
+      "offset": 14041,
       "length": 9,
       "value": "\"Unknown\""
     },
     {
       "filePath": "\/Users\/wangpeng\/Documents\/Work\/Repository\/visioncc-ios-sdk-webview\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
       "kind": "StringLiteral",
-      "offset": 14492,
+      "offset": 14268,
       "length": 17,
       "value": "\"CFBundleVersion\""
     },
     {
       "filePath": "\/Users\/wangpeng\/Documents\/Work\/Repository\/visioncc-ios-sdk-webview\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
       "kind": "StringLiteral",
-      "offset": 14548,
+      "offset": 14324,
       "length": 9,
       "value": "\"Unknown\""
     },
     {
       "filePath": "\/Users\/wangpeng\/Documents\/Work\/Repository\/visioncc-ios-sdk-webview\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
       "kind": "StringLiteral",
-      "offset": 14943,
+      "offset": 14719,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/wangpeng\/Documents\/Work\/Repository\/visioncc-ios-sdk-webview\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 15035,
+      "offset": 14811,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/wangpeng\/Documents\/Work\/Repository\/visioncc-ios-sdk-webview\/VisionCCiOSSDK\/VisionCCiOSSDK\/Utils\/CCKFApiHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 15412,
+      "offset": 15188,
       "length": 5,
       "value": "false"
     },
@@ -14522,7 +14520,7 @@
     {
       "filePath": "\/Users\/wangpeng\/Documents\/Work\/Repository\/visioncc-ios-sdk-webview\/VisionCCiOSSDK\/VisionCCiOSSDK\/Manager\/ChatManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 8656,
+      "offset": 8615,
       "length": 4,
       "value": "true"
     },

@@ -68,7 +68,7 @@ public struct WebViewEnvModel : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class CCKFApi : UIKit.UIViewController, WebKit.WKUIDelegate, UIKit.UIGestureRecognizerDelegate {
-  @_Concurrency.MainActor @preconcurrency weak public var conversionDelegate: (any VisionCCiOSSDK.CCKFApiConversationDelegate)?
+  @_Concurrency.MainActor @preconcurrency public var conversionDelegate: (any VisionCCiOSSDK.CCKFApiConversationDelegate)?
   @objc deinit
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
@@ -97,7 +97,7 @@ public class UserMappingModel : Swift.Codable {
 extension VisionCCiOSSDK.UserMappingModel : Swift.Equatable {
   public static func == (lhs: VisionCCiOSSDK.UserMappingModel, rhs: VisionCCiOSSDK.UserMappingModel) -> Swift.Bool
 }
-public protocol CCKFApiConversationDelegate : AnyObject {
+public protocol CCKFApiConversationDelegate {
   func unReadMessageCountEvent(count: Swift.Int)
   func trackEvent(name: Swift.String, attributes: [Swift.String : Swift.String])
   func newMessageEvent(entryId: Swift.String, msgId: Swift.Int, message: Swift.String)

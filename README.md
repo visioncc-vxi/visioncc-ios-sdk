@@ -97,7 +97,7 @@ CocoaPods is a dependency manager for Swift and Objective-C Cocoa projects. Foll
 4. If you need a specific version, specify it in your Podfile:
 
    ```ruby
-   pod 'VisionCCiOSSDK', '2.1.6'
+   pod 'VisionCCiOSSDK', '2.1.7'
    ```
 
 5. Install the dependencies:
